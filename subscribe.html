@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+        <link rel="icon" type="image/ico" href="https://bhavyanshu.me/favicon.ico?v=2"/>
+    <title>
+        Subscribe -   Bhavyanshu's Personal Github Blog
+    </title>
+    
+    <meta name="author" content="Bhavyanshu Parasher">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google translate -->
+    <meta name="google-translate-customization" content="bb7ab015109b8f9f-4c99376c1c5f8757-gbacc4f9d65539b3c-14"></meta>	
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta content="Bhavyanshu Parasher" property="og:site_name">
+
+  <meta content="Subscribe" property="og:title">
+
+
+  <meta content="article" property="og:type">
+
+
+  <meta content="Subscribe to my blog via email. Get newletters daily on latest posts." property="og:description">
+
+
+  <meta content="http://bhavyanshu.github.io/subscribe.html" property="og:url">
+
+
+
+  <meta content="http://bhavyanshu.github.io/assets/imags/site_logo.jpeg" property="og:image">
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/assets/themes/hooligan/css/fuelx.css" rel="stylesheet">
+    <link href="/assets/themes/hooligan/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="/assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css">
+    <link href="/assets/themes/hooligan/css/pygments-light.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/hooligan/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">    
+    <link href="/assets/themes/hooligan/css/style-light.css?body=1" rel="stylesheet" type="text/css" media="all">
+<!--    <script>window.jQuery || document.write('<script src="/assets/themes/hooligan/js/jquery.min.js"><\/script>')</script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="/assets/themes/hooligan/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/themes/hooligan/js/gitquery.js"></script>
+    <script src="/assets/themes/hooligan/js/gitreleases.js"></script>
+    <script src="/assets/themes/hooligan/js/scrollto.js"></script>
+    <script src="/assets/themes/hooligan/js/jquery.urlshortner.js"></script>
+    <script src="/assets/themes/hooligan/js/twitter.js"></script>
+    <script src="/assets/themes/hooligan/js/liquidescape.js"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Scrollto -->
+<script type="text/javascript" >
+$(document).ready(function(){
+
+    $('body').plusAnchor({
+        speed:  1000
+    });
+
+});
+</script>
+	
+<!-- FeedEk Code -->
+<script type="text/javascript" >
+   /* $(document).ready(function () {  
+        $('#divRss').FeedEk({
+            FeedUrl: 'https://github.com/bhavyanshu.atom',
+	    ShowDesc : true,	
+            MaxCount: 5
+        });
+	$('#divRss').innerfade({ animationtype: 'slide', speed: 750, timeout: 2000, type: 'random', containerheight: '1em' }); 
+    }); */   
+</script>
+
+	<!-- Place this tag after the last widget tag. 
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/platform.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	-->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<link href="/assets/themes/hooligan/css/FeedEk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/assets/themes/hooligan/js/FeedEk.js"></script>
+<script type="text/javascript" src="/assets/themes/hooligan/js/jquery.innerfade.js"></script>
+<!--End Feed Includes-->
+
+<!-- Fetching total twitter followers -->
+<script type="text/javascript">
+$(function(){
+ $.ajax({
+  url: 'https://api.twitter.com/1/users/show.json',
+  data: {screen_name: 'pytacular'},
+  dataType: 'jsonp',
+  success: function(data) {
+  $('#followers').html(data.followers_count);
+  }
+ });
+});
+</script>
+<!-- End of twitter fetch -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-46107357-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<style>
+.ggd {
+display:none;
+}
+</style>
+    <!-- fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  <script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-46107357-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+
+  <body><script type="text/javascript">
+//<![CDATA[
+try{(function(a){var b="https://",c="bhavyanshu.me",d="/cdn-cgi/cl/",e="img.gif",f=new a;f.src=[b,c,d,e].join("")})(Image)}catch(e){}
+//]]>
+</script>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="top" class="navbar-brand" href="/">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+	<li><a href="/projects.html">Projects</a></li>
+ 	<li><a href="/archive.html">Blog</a></li>     
+	<li><a href="/releaseslist.html">Software Releases</a></li>
+        <li><a href="/tags.html">Tags</a></li>
+      </ul>
+      <div id="srch_btn">
+      <form id="srch_frm" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" id="q" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" id="btn_srch" class="btn btn-default srch"><span class="glyphicon glyphicon-search"></span></button>
+	</form>
+      </div>
+      <ul class="nav navbar-nav navbar-right social visible-desktop">
+              
+                <li><a href="https://github.com/bhavyanshu" class="zocial github icon" target="_blank">
+                    <span class="hidden-desktop">Github</span></a></li>
+		<li><a href="https://plus.google.com/112306240164215805986" rel="me" class="zocial googleplus icon" target="_blank">
+                    <span class="hidden-desktop">Google+</span></a></li>
+		 <li><a href="http://pytacular.tumblr.com" class="zocial tumblr icon" target="_blank">
+                    <span class="hidden-desktop">Tumblr</span></a></li>
+		<li><a href="https://twitter.com/pytacular" class="zocial twitter icon" target="_blank">
+                  <span class="hidden-desktop">Twitter</span></a></li>
+		<li>
+                  <a href="https://bhavyanshu.me/subscribe.html" class="zocial rss icon" target="_blank">
+                    <span class="hidden-desktop">Subscribe</span>
+                  </a>
+                </li>                    
+              
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container">
+
+      <div class="content">
+        
+	<div class="page-header-wrapper">
+	<div class="page-header">
+  		<h1>Subscribe</h1>
+  	</div>
+	<div id="mc_embed_signup">
+<form action="http://github.us3.list-manage1.com/subscribe/post?u=6babfa853857346476212c8c6&amp;id=756c65ecc4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h2>Subscribe for Newsletters</h2>
+	<h3>Emails are dispatched on Wednesday and Saturday only.</h3>
+	<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+	<br>
+	<div class="mc-field-group">
+		<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+	</label>
+		<input type="email" value="" placeholder="enter email address here" name="EMAIL" class="required email" id="mce-EMAIL" />
+	</div>
+
+	<div class="mc-field-group input-group">
+	    <strong>Email Format </strong>
+	    <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"checked><label for="mce-EMAILTYPE-0" /> <b>html (Preferable Choice)</b></label></li>
+	<li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1" /> <b>text</b></label></li>
+	</ul>
+	</div>
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	
+	<br>
+	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default"/></div></form>
+</div>
+      </div>
+
+</div>
+
+
+
+
+      <footer>
+<hr>
+ <p style="text-align:center;">Portions of site code is &copy; 2013 Bhavyanshu Parasher
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://github.com/dhulihan/hooligan" target="_blank">The Hooligan Theme</a> which was customized by me.</p>
+<p style="text-align:center;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Site Content</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://bhavyanshu.github.io" property="cc:attributionName" rel="cc:attributionURL">Bhavyanshu Parasher</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/bhavyanshu/bhavyanshu.github.com" rel="dct:source">https://github.com/bhavyanshu/bhavyanshu.github.com</a>.
+        </p>
+        <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </footer>
+    </div> <!-- /container -->
+
+
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43399799-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,30 @@
+---
+layout: page
+title: Bhavyanshu Parasher
+tagline: bhavyanshu@codershangout.org
+---
+{% include JB/setup %}
+
+
+
+## About Me
+
+>Bio : Hi all, welcome to my blog. I am doing engineering in computer science from India. I have set this blog up just to try out jekyll. It's pretty simple and amazing.   
+>><bhavyashu@codershangout.org>  
+>>[My github Profile](https://github.com/bhavyanshu)  
+>>[My Facebook Profile](https://www.facebook.com/ansh.parasher)   
+
+
+
+    
+## My latest Posts
+
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+
+

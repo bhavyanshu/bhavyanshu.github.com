@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /json/
+Disallow: /subscribed.html
+Disallow: /thanks.html‎
+Disallow: /sitemap.txt‎
+Disallow: /pages.html
+Disallow: /about.html
+Disallow: /pages/duel_masters/index.html

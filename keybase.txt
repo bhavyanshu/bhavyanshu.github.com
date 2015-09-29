@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/bhavyanshu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bhavyanshu.me
+  * I am bhavyanshu (https://keybase.io/bhavyanshu) on keybase.
+  * I have a public key with fingerprint 9423 DBCF 9BB3 B144 F1EB  AE16 CD19 67F4 FDF1 A9AB
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "9423dbcf9bb3b144f1ebae16cd1967f4fdf1a9ab",
+            "host": "keybase.io",
+            "key_id": "cd1967f4fdf1a9ab",
+            "kid": "0101dc3a5728da2067c6f7d5b9312ca660cf9c2641c79552ba4bd05c5b8af3f3b1a50a",
+            "uid": "f904a38918c7f651d657468fe3d6cc00",
+            "username": "bhavyanshu"
+        },
+        "service": {
+            "hostname": "bhavyanshu.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1419873825,
+    "expire_in": 157680000,
+    "prev": "7663e5828d10f4bfb33f3769715237def2ab72aad92bc0bb014904bb2d6d00f0",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.1
+Comment: https://keybase.io/crypto
+
+yMMzAnicbVJ7UFRlFF9ERCGR4WUWKtwpoob0vh+bZIbE6LAMo4Qo0vJ9935396bc
+XfeFDG1aySDPidF84FBLTJlhTuA4LoMTrW2TQTI+SKwph1BUhmUQISkdsnuZ+qu+
+f745v/M7v3POb05wcbghKuziMsv07OSJ9rC+wHq3oaC1MbUSgzapAjNWYjvQ3Ccr
+qgU57A5FdWFGTKBJSoKiLEBIQYKmZQJBgAhWlAiB5WRalmQCCABiGZjV5tQrNBkI
+nGiVYtMwLTArkob+D3/HXAIncEISKcBwJC8BEmc5kZU5iYECRZAiYFlcay6SLE2I
+nMAwJAQ0lHBGZCAPZErWhgIMDjQ595ycLOA0oHiB4EVOZhlCYhmOZnkZURIrijiu
+E53IoYIypLGhFXgqgOq0ujFvBqbhHkVEugn6Lv/hrNLiDMzusLlsom2nlrK6XHan
+US91Vdh1bjmC5n9UzFBRJc1KrcKDHE7FpmJGQmOKLkWXJWhC4DmKJ5kMDO22Kw5k
+VnQGw7E8rj29D/JokhzLUojhNXMIXKahDCltaY4VOIIhKU5CMgkgRwIgCSQUcQhx
+gtYsgJCUWAnHZX1hJ9ql2jAjrY0JLJqkU7GowOV2IMx7PrB9viEsyrAgYp5+DIao
+RbH/nkhawpLHOZfa/vhNvKs+sUHsCpkdnFJd/45p61j9SGlpTlPqQJmwtjV30+aX
+SctEgTH65r0LZf1dmf2dGSsrU3vpzPiu++EpKHdkU3Uhv+UF0ynL8paw4GV7VYIr
+eqawPvyw7S33F93Pvdp7px27Oj4REX/kVm3v8V8/8gzem+c8/2Bgze6e7C6azD1R
+OFb4duzlhUXnOuNacvw15m1en/8OMvmLr+XjLZ+ZFgdX5PcLW1s2zya3c+Bia8zq
+zpODedklHyQT9Qc/T2ug75bmXkm6nr5BrXjjXV9aRM5M8MG3i4qHg7SiJOydbhsQ
+/M8eLvG+9/HqsdpIzymyY6mB5e+b8kKyvM9X09NSdGwES26LzF4ZMsuZN1DaoY37
+Xynv+z70VURPXNng2VDN5LrRMGuMaeZQV2LxoxXXrnRPzR/deyz6UZ63NSZ+ga+1
+wGJtPiCkJDV80xT4WY29OvVMbWj7uDH4SdL7BQ/9ZyaGH/v/fL7etbP5NS5r4VO+
+2cjOkg//uvE0uL1syRa2uuPLwdNF+UVDdeee7Bg+0IY33+4ThYeliWd+MFz/tCSt
+e82LRwNV5etjpm+WBi6MUnu+bqwtn5qO7a5KybL7AsSPt9IL7bM5DZP7TvfVSeuC
+HW8asNebfl97sN3b+NNy9/jxrG2X6l6KTB8i9mQmn/1uVzJzcqhgaVzFUc8v8YmV
+fwOBTqv+
+=/XWc
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bhavyanshu
+
+==================================================================
+
