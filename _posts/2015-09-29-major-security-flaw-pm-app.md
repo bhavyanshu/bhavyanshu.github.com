@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Security loophole in Honorable PM's Android App has been reported"
-description: "The security loophole has been reported. Awaiting response from developer team."
+title: "Reported vulnerability in Honorable PM's Android App "
+description: "A vulnerability and related exploit has been reported to the developer team."
 tags: ["security"]
 change_frequency: "weekly"
 priority: 0.8
