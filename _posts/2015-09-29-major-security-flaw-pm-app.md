@@ -18,7 +18,10 @@ Will keep updating this page with more info. [Last updated - Sep 30, 2015 - 08:0
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Thanks for the help <a href="https://twitter.com/Vidyut">@Vidyut</a>&#10;I have reported it. Let&#39;s wait and watch.  &#10;<a href="https://t.co/d7RcqTINIX">https://t.co/d7RcqTINIX</a></p>&mdash; Bhavyanshu Parasher (@pytacular) <a href="https://twitter.com/pytacular/status/649030025518288896">September 30, 2015</a></blockquote><br>
 
-> Note that I am not disclosing the vulnerability details until they fix it. If they won't fix it within 7-10 days (starting from Sep 30, 2015), considering the level of security flaw, I will have to proceed with publicly disclosing selective information regarding the vulnerability. 
+> Note that I am withholding details of the vulnerability to allow enough time for dev team to fix it. 
+As mentioned above, I have disclosed vulnerability as well as exploit to developer team. 
+If still they won't fix it by 7th oct 2015, considering the level of security flaw, I will have to proceed with publicly disclosing selective information regarding the vulnerability. 
+Keeping in mind it's already affecting every user of the app, the information has to be made public in larger academic and security interest.
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
