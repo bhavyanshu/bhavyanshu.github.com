@@ -212,7 +212,7 @@ Next create a directory by name *pbuilder* in your *home*.
 
 Now use the following command
 
-     sudo pbuilder --create --mirror "https://archive.ubuntu.com/ubuntu"
+     sudo pbuilder --create --mirror "http://archive.ubuntu.com/ubuntu"
 
 Since I am on linux mint, i had to specify mirror url. Ubuntu users don't need to specify mirror argument as far as i know. It is a long process. It will take time so meanwhile please refer to [how to make a gpg key pair](/a-quick-guide-on-how-to-use-gnu-privacy-guard-gpg-to-generate-keys-and-distribute-them/11/27/2014) and create it. You will be needing it soon. Once the above operation is completed, you will see *build/* and *result/* in *home/pbuilder* directory along with *base.tgz* file. Do not remove this file or else you will need to execute above command again and it's going to take hell lot of time again. It is pointless to do it over and over again.
 
