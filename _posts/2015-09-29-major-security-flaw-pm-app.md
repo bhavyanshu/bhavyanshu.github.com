@@ -13,17 +13,17 @@ date: 2015-09-29 14:30:42
 
 ## Disclosure
 
-> Vulnerability disclosed to authorities on 30th sep, 2015 around 5:30 AM
+**Vulnerability disclosed to authorities on 30th sep, 2015 around 5:30 AM**
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/buzzindelhi">@buzzindelhi</a> Just sent two mails. All the instructions are in the mail. You may forward the PDF version to developer team.</p>&mdash; Bhavyanshu Parasher (@pytacular) <a href="https://twitter.com/pytacular/status/649010243796504576">September 29, 2015</a></blockquote>
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">The security loophole in PM&#39;s app has been reported. I have done my part. It&#39;s upto dev team on how seriously they take it.</p>&mdash; Bhavyanshu Parasher (@pytacular) <a href="https://twitter.com/pytacular/status/649028325671727104">September 30, 2015</a></blockquote>
 
-> After about 11 hours of reporting the vulnerability
+<br>After about 11 hours of reporting the vulnerability
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr">API is still accessible which should be the first thing they should have restricted access to.11+ hours of reporting, data still vulnerable.</p>&mdash; Bhavyanshu Parasher (@pytacular) <a href="https://twitter.com/pytacular/status/649202858559049728">September 30, 2015</a></blockquote>
 
-> After about 30 hours of reporting the vulnerabillity
+<br> After about 30 hours of reporting the vulnerabillity
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/pytacular">@pytacular</a> <a href="https://twitter.com/pranesh_prakash">@pranesh_prakash</a> Thanks for pointing the issue. Team is working on it. Partial fix has been rolled out and full fix expected soon</p>&mdash; Arvind Gupta (@buzzindelhi) <a href="https://twitter.com/buzzindelhi/status/649403115267993602">October 1, 2015</a></blockquote>
 
@@ -36,8 +36,6 @@ date: 2015-09-29 14:30:42
 <br>After this, I mailed them a solution regarding the issues. 
 
 ## Discussion with developer
-
-> After about 36 hours of reporting the vulnerability
 
 Received **call** from a developer. Discussed possible solutions to fix it.
 
