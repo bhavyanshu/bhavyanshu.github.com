@@ -30,7 +30,9 @@ Jump to - <a href="#what-were-the-issues-anyway">Issues & fixes</a> - <a href="#
 
 <br>After this, I mailed them a solution regarding the issues. 
 
-## Discussion with developer
+<hr>
+
+# Discussion with developer
 
 Received **call** from a developer. Discussed possible solutions to fix it.
 
@@ -43,6 +45,7 @@ Received **call** from a developer. Discussed possible solutions to fix it.
 
 <br> On Oct 3rd, I received mail from one of the developers who informed me they have fixed it. I could not check it out at that time as I was busy but I checked it around 5 PM. **I can now confirm they have fixed all three issues**.
 
+<hr>
 
 # What were the issues anyway?
 
