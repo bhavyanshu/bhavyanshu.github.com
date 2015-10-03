@@ -8,6 +8,8 @@ priority: 0.8
 date: 2015-09-29 14:30:42
 ---
 
+Jump to - <a href="#what-were-the-issues-anyway">Issues & fixes</a> - <a href="#discussion-with-developer">Discussion with developer</a>
+
 ## Disclosure
 
 **Vulnerability disclosed to authorities on 30th sep, 2015 around 5:30 AM**
