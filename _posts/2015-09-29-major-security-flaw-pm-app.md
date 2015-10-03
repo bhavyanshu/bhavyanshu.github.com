@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Developer team fixed vulnerabilities in Honorable PM's app & application programming interface"
+title: "Developer team fixed vulnerabilities in Honorable PM's app & API"
 description: "I reported the vulnerability and related exploit to the developer team. Discussed solutions and they have finally fixed the issues."
 tags: ["security"]
 change_frequency: "weekly"
@@ -36,7 +36,7 @@ Jump to - <a href="#what-were-the-issues-anyway">Issues & fixes</a> - <a href="#
 
 Received **call** from a developer. Discussed possible solutions to fix it.
 
-**Firstly, the solution that I proposed could not be implemented** since the vulnerability is caused by a design flaw that should have been thought about right from the beginning when they started developing the app. It just proved how difficult it is to fix such issues for mobile apps. For web apps, it's lot easier. Why? Because for mobile apps, you need to consider *backward compatibility*. If they applied my proposed solution, it would crash app for people running the older versions. Main problem is that **people don't upgrade to latest versions leaving themselves vulnerable to security flaws**. The one I proposed is a better way of doing it I think but it will break for people using older versions as stated by the developer. Though, they (developers) have come up with solutions that I think would fix most of the issues and can be considered an alternative.
+**The solution that I proposed could not be implemented** since the vulnerability is caused by a design flaw that should have been thought about right from the beginning when they started developing the app. It just proved how difficult it is to fix such issues for mobile apps. For web apps, it's lot easier. Why? Because for mobile apps, you need to consider *backward compatibility*. If they applied my proposed solution, it would crash app for people running the older versions. Main problem is that **people don't upgrade to latest versions leaving themselves vulnerable to security flaws**. The one I proposed is a better way of doing it I think but it will break for people using older versions as stated by the developer. Though, they (developers) have come up with solutions that I think would fix most of the issues and can be considered an alternative.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Thanks <a href="https://twitter.com/pranesh_prakash">@pranesh_prakash</a> &amp; <a href="https://twitter.com/Vidyut">@Vidyut</a> for helping me with this. Also <a href="https://twitter.com/prasanto">@prasanto</a> for helping me get in touch with the developer team.</p>&mdash; Bhavyanshu Parasher (@pytacular) <a href="https://twitter.com/pytacular/status/649597197156089856">October 1, 2015</a></blockquote>
 
