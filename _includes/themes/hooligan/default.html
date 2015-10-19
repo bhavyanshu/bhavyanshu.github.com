@@ -1,193 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% if site.enforce_ssl %}
-   <!--
-    redirect users to the https version of the website.
-    but: only check when on the production domain, as set in _config.yml.
-  -->
-  <script type="text/javascript">
-  var enforce = "{{ site.enforce_ssl }}";
-  if ((enforce == window.location.host) && (window.location.protocol != "https:"))
-    window.location = window.location.toString().replace(/^http:/, "https:");
-  </script>
+{% if site.enforce_ssl %}
+<script type="text/javascript">
+var enforce = "{{ site.enforce_ssl }}";
+if ((enforce == window.location.host) && (window.location.protocol != "https:"))
+window.location = window.location.toString().replace(/^http:/, "https:");
+</script>
+{% endif %}
+
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<link rel="icon" type="image/x-icon" href="https://bhavyanshu.me/favicon.ico?v=2"/>
+<title>
+  {% if page.title %}
+  {{ page.title }} | 
   {% endif %}
+  Bhavyanshu's Blog
+</title>
+{% if page.description %}
+<meta name="description" content="{{ page.description }}">{% endif %}
+<meta name="author" content="{{ site.author.name }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="author" href="https://plus.google.com/112306240164215805986"/>
+<!-- Google translate -->
+<meta name="google-translate-customization" content="bb7ab015109b8f9f-4c99376c1c5f8757-gbacc4f9d65539b3c-14"></meta>	
 
-  <meta charset="utf-8">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <META HTTP-EQUIV="Expires" CONTENT="-1">
-    <link rel="icon" type="image/x-icon" href="https://bhavyanshu.me/favicon.ico?v=2"/>
-    <title>
-      {% if page.title %}
-      {{ page.title }} | 
-      {% endif %}
-      Bhavyanshu's Blog
-    </title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="author" href="https://plus.google.com/112306240164215805986"/>
-    <!-- Google translate -->
-    <meta name="google-translate-customization" content="bb7ab015109b8f9f-4c99376c1c5f8757-gbacc4f9d65539b3c-14"></meta>	
+<meta content="{{ site.title }}" property="og:site_name">
+{% if page.title %}
+<meta content="{{ page.title }}" property="og:title">
+{% else %}
+<meta content="{{ site.title }}" property="og:title">
+{% endif %}
+{% if page.title %}
+<meta content="article" property="og:type">
+{% else %}
+<meta content="website" property="og:type">
+{% endif %}
+{% if page.description %}
+<meta content="{{ page.description }}" property="og:description">
+{% else %}
+<meta content="{{ site.description }}" property="og:description">
+{% endif %}
+{% if site.url %}
+<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+{% else %}
+<meta content="https://bhavyanshu.me{{ page.url }}" property="og:url">
+{% endif %}
+{% if page.date %}
+<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+{% endif %}
+{% if page.image %}
+<meta content="https://bhavyanshu.me/assets/imags/{{ page.image }}" property="og:image">
+{% else %}
+<meta content="https://bhavyanshu.me/assets/imags/site_logo.png" property="og:image">
+{% endif %}
+{% if page.categories %}
+{% for category in page.categories limit:1 %}
+<meta content="{{ category }}" property="article:section">
+{% endfor %}
+{% endif %}
+{% if page.tags %}
+{% for tag in page.tags %}
+<meta content="{{ tag }}" property="article:tag">
 
-    <meta content="{{ site.title }}" property="og:site_name">
-    {% if page.title %}
-    <meta content="{{ page.title }}" property="og:title">
-    {% else %}
-    <meta content="{{ site.title }}" property="og:title">
-    {% endif %}
-    {% if page.title %}
-    <meta content="article" property="og:type">
-    {% else %}
-    <meta content="website" property="og:type">
-    {% endif %}
-    {% if page.description %}
-    <meta content="{{ page.description }}" property="og:description">
-    {% else %}
-    <meta content="{{ site.description }}" property="og:description">
-    {% endif %}
-    {% if site.url %}
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    {% else %}
-    <meta content="https://bhavyanshu.me{{ page.url }}" property="og:url">
-    {% endif %}
-    {% if page.date %}
-    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-    {% endif %}
-    {% if page.image %}
-    <meta content="https://bhavyanshu.me/assets/imags/{{ page.image }}" property="og:image">
-    {% else %}
-    <meta content="https://bhavyanshu.me/assets/imags/site_logo.png" property="og:image">
-    {% endif %}
-    {% if page.categories %}
-    {% for category in page.categories limit:1 %}
-    <meta content="{{ category }}" property="article:section">
-    {% endfor %}
-    {% endif %}
-    {% if page.tags %}
-    {% for tag in page.tags %}
-    <meta content="{{ tag }}" property="article:tag">
+{% endfor %}
+{% endif %}
 
-    {% endfor %}
-    {% endif %}
+<link rel="alternate" type="application/rss+xml" title="RSS Feed for Bhavyanshu Parasher's Blog" href="/rss" />
 
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Bhavyanshu Parasher's Blog" href="/rss" />
+<!-- Twitter Card -->
 
-    <!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<meta name="twitter:creator" content="@pytacular" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:description" content="{{ page.description }}" >
+<meta name="twitter:domain" content="https://bhavyanshu.me">
+<meta name="twitter:site" content="@pytacular">
 
-    <meta name="twitter:card" content="summary" />
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <meta name="twitter:creator" content="@pytacular" />
-    <meta name="twitter:title" content="{{ page.title }}" />
-    <meta name="twitter:description" content="{{ page.description }}" >
-    <meta name="twitter:domain" content="https://bhavyanshu.me">
-    <meta name="twitter:site" content="@pytacular">
+<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="{{ ASSET_PATH }}/css/fuelx.css" rel="stylesheet">
+<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">   
+<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css-social-buttons/css/zocial.stripped.css">
+<link href="{{ ASSET_PATH }}/css/pygments-light.css" rel="stylesheet" type="text/css" media="all">
+<link href="{{ ASSET_PATH }}/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">    
+<link href="{{ ASSET_PATH }}/css/style-light.css?body=1" rel="stylesheet" type="text/css" media="all">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
-      <link href="{{ ASSET_PATH }}/css/fuelx.css" rel="stylesheet">
-      <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">   
-      <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css-social-buttons/css/zocial.stripped.css">
-      <link href="{{ ASSET_PATH }}/css/pygments-light.css" rel="stylesheet" type="text/css" media="all">
-      <link href="{{ ASSET_PATH }}/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">    
-      <link href="{{ ASSET_PATH }}/css/style-light.css?body=1" rel="stylesheet" type="text/css" media="all">
-      <!--    <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/jquery.min.js"><\/script>')</script> -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-      <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-      <script src="{{ ASSET_PATH }}/js/gitquery.js"></script>
-      <script src="{{ ASSET_PATH }}/js/gitreleases.js"></script>
-      <script src="{{ ASSET_PATH }}/js/scrollto.js"></script>
-      <script src="{{ ASSET_PATH }}/js/jquery.urlshortner.js"></script>
-      <script src="{{ ASSET_PATH }}/js/twitter.js"></script>
-      <script src="{{ ASSET_PATH }}/js/liquidescape.js"></script>
-      <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-      <!-- Scrollto -->
-      <script type="text/javascript" >
-      $(document).ready(function(){
-
-        $('body').plusAnchor({
-          speed:  1000
-        });
-
-      });
-      </script>
-
-      <!-- FeedEk Code -->
-      <script type="text/javascript" >
-   /* $(document).ready(function () {  
-        $('#divRss').FeedEk({
-            FeedUrl: 'https://github.com/bhavyanshu.atom',
-	    ShowDesc : true,	
-            MaxCount: 5
-        });
-	$('#divRss').innerfade({ animationtype: 'slide', speed: 750, timeout: 2000, type: 'random', containerheight: '1em' }); 
-}); */   
-</script>
-
-	<!-- Place this tag after the last widget tag. 
-	<script type="text/javascript">
-	  (function() {
-	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-	    po.src = 'https://apis.google.com/js/platform.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	  })();
-	</script>
--->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ ASSET_PATH }}/js/gitquery.js"></script>
+<script src="{{ ASSET_PATH }}/js/gitreleases.js"></script>
+<script src="{{ ASSET_PATH }}/js/scrollto.js"></script>
+<script src="{{ ASSET_PATH }}/js/jquery.urlshortner.js"></script>
+<script src="{{ ASSET_PATH }}/js/twitter.js"></script>
+<script src="{{ ASSET_PATH }}/js/liquidescape.js"></script>
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-<link href="{{ ASSET_PATH }}/css/FeedEk.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="{{ ASSET_PATH }}/js/FeedEk.js"></script>
-<script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.innerfade.js"></script>
-<!--End Feed Includes-->
-
-<!-- Fetching total twitter followers -->
-<script type="text/javascript">
-$(function(){
- $.ajax({
-  url: 'https://api.twitter.com/1.1/users/show.json',
-  data: {screen_name: 'pytacular'},
-  dataType: 'jsonp',
-  success: function(data) {
-    $('#followers').html(data.followers_count);
-  }
-});
-});
-</script>
-<!-- End of twitter fetch -->
-
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-46107357-1']);
-_gaq.push(['_trackPageview']);
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
-
-  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
-
 <style>
 .ggd {
   display:none;
 }
 </style>
-<!-- fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
+
 </head>
-
 <body>
-
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -266,13 +188,10 @@ _gaq.push(['_trackPageview']);
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-
         <div class="container-fluid">
           <div class="content">
            {{ content }}
          </div>
-
-
            <footer>
             <!--<div class="fb-like" data-href="http://bhavyanshu.github.io" data-width="450" data-colorscheme="dark" data-show-faces="false" data-send="true"></div>-->
             <a href="#top" id="back-to-top"><span class="icon-arrow-up"></span>Glide To Top</a>
@@ -301,8 +220,40 @@ _gaq.push(['_trackPageview']);
    });
    });
     </script>
+    <!-- Scrollto -->
+    <script type="text/javascript" >
+    $(document).ready(function(){
+      $('body').plusAnchor({
+        speed:  1000
+      });
+    });
+    </script>
 
+    <!-- Fetching total twitter followers -->
+    <script type="text/javascript">
+    $(function(){
+       $.ajax({
+        url: 'https://api.twitter.com/1.1/users/show.json',
+        data: {screen_name: 'pytacular'},
+        dataType: 'jsonp',
+        success: function(data) {
+          $('#followers').html(data.followers_count);
+        }
+      });
+    });
+    </script>
+    <!-- End of twitter fetch -->
 
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-46107357-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
     {% include JB/analytics %}
   </body>
-  </html>
+</html>
