@@ -105,18 +105,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://bhavyanshu.me/going-on-a-48-hours-coding-streak-again/10/31/2013</loc>
-        <lastmod>2013-11-02T15:09:08+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://bhavyanshu.me/almost-24-hours-left-to-complete-zbzquiz/11/02/2013</loc>
-        <lastmod>2013-11-02T16:36:12+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://bhavyanshu.me/tutorials/sql-joins-explained/11/02/2013</loc>
         <lastmod>2013-11-02T20:55:40+05:30</lastmod>
         <changefreq>weekly</changefreq>
@@ -392,7 +380,7 @@
         <loc>
             https://bhavyanshu.me/how-to-make-debian-packages-for-qt-c-based-applications/11/10/2014
         </loc>
-        <lastmod>2015-01-27T13:09:52+05:30</lastmod>
+        <lastmod>2015-10-01T22:29:32+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -508,7 +496,7 @@
         <loc>
             https://bhavyanshu.me/export-data-from-parsecom-in-json-and-csv-format-using-command-line-python/08/12/2015
         </loc>
-        <lastmod>2015-08-12T04:22:29+05:30</lastmod>
+        <lastmod>2015-12-26T00:56:03+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -581,10 +569,16 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://bhavyanshu.me/major-security-flaw-pm-app/09/29/2015</loc>
+        <lastmod>2015-10-08T13:30:11+05:30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>
-            https://bhavyanshu.me/major-security-flaw-in-honorable-narendra-modi-jis-android-app/09/29/2015
+            https://bhavyanshu.me/tutorials/custom-class-to-sanitize-input-in-laravel-52--laravel-security/01/11/2016
         </loc>
-        <lastmod>2015-09-29T22:52:22+05:30</lastmod>
+        <lastmod>2016-01-11T14:27:11+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -598,7 +592,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/json/</loc>
-        <lastmod>2015-09-29T22:52:22+05:30</lastmod>
+        <lastmod>2016-01-11T14:27:11+05:30</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/apps/tmd/</loc>
@@ -619,16 +613,16 @@
         <lastmod>2013-08-20T21:25:08+05:30</lastmod>
     </url>
     <url>
-        <loc>https://bhavyanshu.me/pages/apps/bsdownloader/privacy.html</loc>
-        <lastmod>2015-08-18T21:40:35+05:30</lastmod>
+        <loc>https://bhavyanshu.me/privacy.html</loc>
+        <lastmod>2014-08-15T19:30:22+05:30</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/apps/thingstodo/privacy.html</loc>
         <lastmod>2015-08-20T14:28:28+05:30</lastmod>
     </url>
     <url>
-        <loc>https://bhavyanshu.me/privacy.html</loc>
-        <lastmod>2014-08-15T19:30:22+05:30</lastmod>
+        <loc>https://bhavyanshu.me/pages/apps/bsdownloader/privacy.html</loc>
+        <lastmod>2015-08-18T21:40:35+05:30</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/apps/tmd/privacy.html</loc>
