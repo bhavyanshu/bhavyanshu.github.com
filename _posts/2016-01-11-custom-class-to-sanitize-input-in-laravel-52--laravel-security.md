@@ -3,7 +3,7 @@ layout: post
 title: "Custom class to sanitize input in laravel 5.x [Laravel Security]"
 description: "Using this custom class you can sanitize input in laravel 5.2 to prevent anyone from storing bad data in database."
 category: tutorials
-tags: ["laravel 5","xampp","PHP", "Security"]
+tags: ["laravel 5","xampp","PHP", "security"]
 change_frequency: "weekly"
 image: tuts/laravel5/laravel5-bootstrap.png
 priority: 0.8
