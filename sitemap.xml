@@ -415,14 +415,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>
-            https://bhavyanshu.me/developing-an-online-resource-for-open-education-where-people-volunteer-to-share-knowledge/12/04/2014
-        </loc>
-        <lastmod>2014-12-05T15:37:22+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://bhavyanshu.me/tutorials/setup-laravel-project-on-xampp-linux/01/12/2015</loc>
         <lastmod>2015-08-24T21:31:04+05:30</lastmod>
         <changefreq>weekly</changefreq>
@@ -457,14 +449,6 @@
             https://bhavyanshu.me/tutorials/use-of-foreign-keys-and-defining-relationships-in-laravel/01/27/2015
         </loc>
         <lastmod>2015-07-22T02:37:54+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>
-            https://bhavyanshu.me/cctv-is-a-fine-solution-but-wearable-tech-is-better-for-preventing-crime-against-woman/02/02/2015
-        </loc>
-        <lastmod>2015-02-03T16:38:02+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -540,7 +524,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/tutorials/quickly-setup-laravel-5-on-linux/08/24/2015</loc>
-        <lastmod>2015-08-24T23:33:00+05:30</lastmod>
+        <lastmod>2016-01-22T23:10:46+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -548,7 +532,7 @@
         <loc>
             https://bhavyanshu.me/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/24/2015
         </loc>
-        <lastmod>2015-08-24T23:32:47+05:30</lastmod>
+        <lastmod>2016-01-22T23:12:37+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -564,7 +548,7 @@
         <loc>
             https://bhavyanshu.me/tutorials/easy-user-registration-and-authentication-in-laravel-5/09/24/2015
         </loc>
-        <lastmod>2015-09-24T15:12:10+05:30</lastmod>
+        <lastmod>2016-01-22T23:17:41+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -592,7 +576,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/json/</loc>
-        <lastmod>2016-01-11T14:33:50+05:30</lastmod>
+        <lastmod>2016-01-22T23:17:41+05:30</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/apps/tmd/</loc>
@@ -604,7 +588,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/</loc>
-        <lastmod>2015-09-04T06:40:04+05:30</lastmod>
+        <lastmod>2016-01-22T23:55:18+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
