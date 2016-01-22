@@ -50,7 +50,7 @@ priority: 1.0
 
 <div class="row-fluid">
 <!-- Latest Post Div -->
-<div class="col-xs-12 col-md-8 latest_posts">
+<div class="col-md-8 latest_posts">
 <h2>My latest Posts</h2>
 <ul class="posts" style="float:left;">
   {% for post in site.posts limit:20 %}
@@ -60,7 +60,7 @@ priority: 1.0
 </div>
 <!-- End of Latest Post Div -->
 <!-- twitter div -->
-<div class="col-xs-10 col-md-4">
+<div class="col-md-4">
 <h2>Latest Tweets</h2>
 <a class="twitter-timeline" height="500" href="https://twitter.com/pytacular" data-widget-id="388676082561318912">Tweets by @pytacular</a>
 </div>
