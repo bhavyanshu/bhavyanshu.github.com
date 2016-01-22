@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Quickly setup laravel 5 on linux [xampp]"
-description: "This is a tutorial on how to setup your first laravel 5 project on xampp. I am running xampp on linux."
+title: "Quickly setup laravel 5.0 on linux [xampp]"
+description: "This is a tutorial on how to setup your first laravel 5.0 project on xampp. I am running xampp on linux."
 category: tutorials
-tags: ["laravel 5","xampp","PHP"]
+tags: ["laravel 5.0","xampp","PHP"]
 change_frequency: "weekly"
 image: tuts/laravel5/laravel5-intro.png
 priority: 0.8
@@ -114,12 +114,12 @@ Next, open your browser and navigate to http://localhost:8000 and you should see
 
       sudo php artisan migrate:install
 
-That's all. You can now start developing the app. Read details on configuration [here][4]. Find more laravel 5 tutorials [here](/pages/toc-laravel5.html).
+That's all. You can now start developing the app. Read details on configuration [here][4]. Find more laravel 5.0 tutorials [here](/pages/toc-laravel5.html).
 
 [1]: http://laravel.com/docs/5.1 "Laravel Introduction"
 [2]: https://www.apachefriends.org/index.html "Apache Xampp"
 [3]: https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx "Get Composer"
-[4]: http://laravel.com/docs/master/installation#environment-configuration "Laravel 5 Configuration"
+[4]: http://laravel.com/docs/master/installation#environment-configuration "Laravel 5.0 Configuration"
 [5]: http://laravel.com/docs/5.1/migrations "Migrations"
 
 {% include JB/setup %}

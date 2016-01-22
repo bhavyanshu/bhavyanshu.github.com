@@ -1,20 +1,22 @@
 ---
 layout: post
-title: "How to authenticate users in laravel 5"
-description: "In this laravel 5 tutorial, let us look at how to authenticate users."
+title: "How to authenticate users in laravel 5.0"
+description: "In this laravel 5.0 tutorial, let us look at how to authenticate users."
 category: tutorials
-tags: ["laravel 5","xampp","PHP"]
+tags: ["laravel 5.0","xampp","PHP"]
 change_frequency: "weekly"
 image: tuts/laravel5/laravel5-bootstrap.png
 priority: 0.8
 date: 2015-09-24 07:22:06
 ---
 
-This tutorial assumes you have already setup laravel 5 project. If you have not, then refer to my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/24/2015/) of laravel 5 series on how to setup laravel & xampp on linux. This tutorial also assumes you have twitter bootstrap setup with your project. [Optional] If not, then refer to the [second tutorial](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/24/2015/) of my laravel 5 series. Come back here when you have setup everything and are ready to add authentication to your laravel 5 project.
+> **Please note that this tutorial will not work with laravel 5.2. This will only work with 5.0 and 5.1.**
+
+This tutorial assumes you have already setup laravel 5.0/5.1 project. If you have not, then refer to my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/24/2015/) of laravel 5.0/5.1 series on how to setup laravel & xampp on linux. This tutorial also assumes you have twitter bootstrap setup with your project. [Optional] If not, then refer to the [second tutorial](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/24/2015/). Come back here when you have setup everything and are ready to add authentication to your laravel 5.0/5.1 project.
 
 #Let's begin
 
-In laravel 5, the authentication has been made really simple. Earlier for laravel 4, I personally preferred to use *Confide* because it was simple to use and very flexible but laravel 5 makes it really easy and I don't need to use confide anymore. The authentication configuration file is located at *config/auth.php*. It also provides default migrations for user table. These are located in *database/migrations/*. For example,
+In laravel 5.0/5.1, the authentication has been made really simple. Earlier for laravel 4, I personally preferred to use *Confide* because it was simple to use and very flexible but laravel 5.0/5.1 makes it really easy and I don't need to use confide anymore. The authentication configuration file is located at *config/auth.php*. It also provides default migrations for user table. These are located in *database/migrations/*. For example,
 
 	2014_10_12_000000_create_users_table
 	2014_10_12_100000_create_password_resets_table 
@@ -31,7 +33,7 @@ Now open the *_create_users_table file* and you will see two methods already in 
 	Migrated: 2014_10_12_000000_create_users_table
 	Migrated: 2014_10_12_100000_create_password_resets_table
 
-That's it. You can open your *phpmyadmin* and check the tables and their structure. Next step is how do we add data to table using forms. For this, we will first create our layouts using blade. Then we will write a controller to handle the actions of login and register. Also, in laravel 5, we make use of *HTTP Requests*. These let us validate the input provided by the users when they submit the form and also lets us define whether the users are authorized to make such requests or not. 
+That's it. You can open your *phpmyadmin* and check the tables and their structure. Next step is how do we add data to table using forms. For this, we will first create our layouts using blade. Then we will write a controller to handle the actions of login and register. Also, in laravel, we make use of *HTTP Requests*. These let us validate the input provided by the users when they submit the form and also lets us define whether the users are authorized to make such requests or not. 
 
 > **Important Note**: By default, laravel has namespace set to "App" and mapped to *app/* directory. But you can change the namespace of all classes using one simple command. For example, in this tutorial, I have changed namespace for the app using command `sudo php artisan app:name Learnlaravel`, where the new namespace is "LearnLaravel".
 
@@ -406,6 +408,6 @@ public function handle($request, Closure $next)
 }
 	{% endhighlight %}
 
-That's all. You can now test it. On project root, execute `php artisan serve` and try to open *http://localhost:8000/users/dashboard*. You will be redirected to login page. To open register page, visit *http://localhost:8000/users/register* and submit the form. Check the database to verify. That's all there is to user authentication in laravel 5.
+That's all. You can now test it. On project root, execute `php artisan serve` and try to open *http://localhost:8000/users/dashboard*. You will be redirected to login page. To open register page, visit *http://localhost:8000/users/register* and submit the form. Check the database to verify. That's all there is to user authentication in laravel 5.0/5.1.
 
 {% include JB/setup %}
