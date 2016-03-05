@@ -4,14 +4,13 @@ permalink: /:categories/:title/:month/:day/:year
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
-highlighter: "pygments"
+highlighter: "rouge"
 timezone: Asia/Kolkata
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-theme :
-  name : hooligan
+
 title : Home
 tagline: Hi all, I am doing computer science engineering from Gurgaon, India. This will be my official blog from now on. I find it easier to maintain.
 author :
