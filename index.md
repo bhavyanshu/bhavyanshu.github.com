@@ -13,7 +13,7 @@ priority: 1.0
 </div>-->
 <br>
 
-##Bio <a href="https://twitter.com/pytacular" class="twitter-follow-button" data-show-count="true" data-size="large" data-lang="en">Follow @pytacular</a>
+<h2>Bio</h2> <a href="https://twitter.com/pytacular" class="twitter-follow-button" data-show-count="true" data-size="large" data-lang="en">Follow @pytacular</a>
 <link href="https://plus.google.com/112306240164215805986" rel="publisher" />
 <!--<div class="g-person" data-href="https://plus.google.com/112306240164215805986" data-theme="dark" data-layout="landscape" data-width="273" data-rel="author"></div>-->
 
