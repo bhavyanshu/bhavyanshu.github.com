@@ -2,26 +2,26 @@
 layout: post
 title: "Posting to jekyll blog via android device"
 description: "This is a complete tutorial on how to post to a jekyll based blog hosted on github using android."
-category: 
+category:
 tags: ["tutorial", "jekyll for android", "nitrous ssh"]
 change_frequency: "weekly"
 priority: 0.8
 ---
 
-#Overview
+# Overview
 
 Well since i have got my blog set up on github.com with the help of jekyll, i wanted to post to this block even when i am travelling. So i needed to figure out a way to push commits to github using android device. I figured out that i need an ssh server running ruby on rails and with git to do this.
 
 Those who wanna know how i achieved this can read on. :)
 
-#Tutorial
+# Tutorial
 
-###Stuff that you need:
+### Stuff that you need:
 1) [Github](https://github.com) account with [jekyll](http://jekyllbootstrap.com/) blog set up.  
 2) [Nitrous.io](https://www.nitrous.io) account linked with your github account.   
 3) Connectbot (Or any SSH client for android).   
 
-###How to!
+### How to!
 1) Go to nitrous.io website and login with your github account.   
 2) Click on the boxes tab and create a box & choose "ruby on rails".  
 3) Get ConnectBot (Or any other app providing ssh with public keys manager) for android.   

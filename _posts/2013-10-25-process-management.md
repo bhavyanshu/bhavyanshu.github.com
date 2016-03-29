@@ -8,14 +8,14 @@ change_frequency: "weekly"
 priority: 0.8
 ---
 
-#Overview
+# Overview
 
 >A Process/Task is a program (Object code stored somewhere in the computer or external media) in the midst of execution. In simple terms, it is the active program.
->Also called *test section* in Unix. They are more than just running programs. They usually contain resources like internal kernel data, pending signals, threads, global variables etc. 
->**Threads** are nothing but objects of activity within the process. Each thread has a process counter, stack & process registers. 
+>Also called *test section* in Unix. They are more than just running programs. They usually contain resources like internal kernel data, pending signals, threads, global variables etc.
+>**Threads** are nothing but objects of activity within the process. Each thread has a process counter, stack & process registers.
 >The kernel schedules individual threads and not processes.
 
-#Key Terms
+# Key Terms
 
 >Process provides two virtualizations : A virtualized processor & Virtual Memory.				
 
@@ -23,13 +23,13 @@ priority: 0.8
 
 * Virtual Memory:  Lets the process think that it alone has complete control over memory in the system for allocation and management.						
 
-#Begin a process
+# Begin a process
 The <code>fork()</code> is responsible in Linux systems. It is a system call which creates a new process by duplicating an existing one. **Parent** is the one which calls this and **child** is the newly created process. The parent resumes right when child fork() returns. Finally the program exits via <code>exit()</code> system call. In this all the resources are freed. <code>wait4()</code> is used to inquire about the status of the termination of a specific process.			
 *How does kernel store the information about processes?*
->The kernel stores the processes in a circular doubly linked list called the **task list**. Each element in the task list is a <code>process descriptor</code> of >the type <code>struct task_struct</code> which is defined in <code> linux/sched.h </code>. It is pretty large data structure of about 1.7 Kb on a 32-bit machine. 
+>The kernel stores the processes in a circular doubly linked list called the **task list**. Each element in the task list is a <code>process descriptor</code> of >the type <code>struct task_struct</code> which is defined in <code> linux/sched.h </code>. It is pretty large data structure of about 1.7 Kb on a 32-bit machine.
 >The process descriptor has all the data that describes the existence and resources related to the executing program. 				
 
-##Allocation 
+## Allocation
 
 *Initial Scenario* : Before 2.6 kernel, <code>struct task_struct</code> was stored at the end of stack for each process which allowed x86 architectures to calculate the location of the process descriptor using stack pointer without using extra register to store the location. Now we use <code>struct thread_info</code>, a new structure, which stays at the bottom/top depending on the type of stack. Register impaired architectures were not the only reason for creating this new structure. It rather makes it pretty easy to calculate offsets of its value for use in assembly language. We know that with c language, we also require assembly for linux kernel.									
 
@@ -58,7 +58,7 @@ struct thread_info {	 //has a pointer to the process descriptor. This is located
 Each processes is identified by a unique **Process Identification** value known as PID. It is in the opaque type(a type whose physical representation is unknown) <code>pid_t //typically int</code>. This is stored as PID inside each process descriptor.
 *In the scenario of large servers,if the highest value for short int is 32,768, then what happens if in case it exceeds this value?*
 Well the value can be increased to upto 4 million even. This is in <code> linux/threads.h </code>. This value can be increased via **proc/sys/kernel/pid_max**.				
-						
+
 
 [Continue to part 2](http://bhavyanshu.github.io/tutorials/process-management-part-2/10/30/2013/)
 

@@ -10,7 +10,7 @@ priority: 0.8
 date: 2015-08-24 01:35:03
 ---
 
-##Overview
+## Overview
 
 What is [laravel][1]?
 
@@ -20,16 +20,16 @@ What is [xampp][2]?
 
 > XAMPP is a free and open source cross-platform web server solution stack package, consisting mainly of the Apache HTTP Server, MySQL database, and interpreters for scripts written in the PHP and Perl programming languages.
 
-##Requirements
+## Requirements
 
 * xampp
 * composer
 * mcrypt
 
-##Setup
+## Setup
 
 * First, <a href="https://www.apachefriends.org/download.html" target="_blank">Download</a> xampp. Then, you need to setup **xampp** and change its security settings. Execute,
-      
+
       chmod 755 xampp-linux-*-installer.run
       sudo ./xampp-linux-*-installer.run
 
@@ -42,7 +42,7 @@ What is [xampp][2]?
 
       sudo /opt/lampp/lampp security
 
-  Set all the passwords etc, and you are done! 
+  Set all the passwords etc, and you are done!
 
 * Now you need to get **composer**
 
@@ -55,7 +55,7 @@ What is [xampp][2]?
 
       sudo apt-get install php5-mcrypt php5-json
 
-  And now run, 
+  And now run,
 
       sudo php5enmod mcrypt
 
@@ -63,7 +63,7 @@ What is [xampp][2]?
 
       php -i | grep mcrypt
 
-  It will output 
+  It will output
 
       .......
       mcrypt support => enabled
@@ -95,7 +95,7 @@ Next, open your browser and navigate to http://localhost:8000 and you should see
 
 * Local environment - Let us setup mysql database. First of all, you need to create a database. Go to your **phpmyadmin** (Open in browser - http://localhost/phpmyadmin/), create a new database and edit your *learn-laravel5/.env* file with correct mysql configuration.
 
-	For example, change *DB_HOST* with host name (Usually localhost), *DB_DATABASE* with the one you just created. I named mine learnl5db. You can name it whatever you like. Then there is *DB_USERNAME* and *DB_PASSWORD* which you use to access your database in phpmyadmin. 
+	For example, change *DB_HOST* with host name (Usually localhost), *DB_DATABASE* with the one you just created. I named mine learnl5db. You can name it whatever you like. Then there is *DB_USERNAME* and *DB_PASSWORD* which you use to access your database in phpmyadmin.
 
       DB_HOST=localhost
       DB_DATABASE=learnl5db

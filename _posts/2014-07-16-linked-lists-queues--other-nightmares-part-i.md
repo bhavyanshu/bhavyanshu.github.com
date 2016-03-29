@@ -10,19 +10,19 @@ priority: 0.8
 date: 2014-07-16 08:05:45
 ---
 
-##Overview
+## Overview
 
 Oh well, I have been away from writing for a while now because of work. But I think I should share this little nightmare of mine with you all. I hate to admit that I have always disliked programming when it comes to data structures. But recently while going through the linux kernel source, i found that it really implements all these data structures in many cases so i must conquer this fear if i had to proceed with the kernel code.
 
 Better to focus on concepts and then think of how you can code it. First I am gonna talk about **pointers** because it is the most important and basic element required to construct data structures in C. This is also the major part where people are afraid to work upon but let me tell you one thing. Once you understand pointers, you won't ever leave C programming because it is actually a beautiful language and gives you more control over the hardware than any other language can. Forget java and c++ or c#, they are good for making fancy GUIs and mobile applications. If you wish to learn microcontroller programming or you wish to interact with the hardware, then C is the way to do it. Also I would like to let you know that I will be using [GNU GCC](https://gcc.gnu.org/) for compiling so you should know how to use it. If you don't then here is a [tutorial](http://bhavyanshu.me/programming-in-gcc/09/04/2013/) I wrote long time back. Refer to it and come back here to proceed.
 
-##Pointers
+## Pointers
 
 Understanding pointers is not really difficult. What is difficult is how to remember all the concepts related to the pointers. We will tackle it concept by concept.
 
-###Concept 1 - What is pointer? 
+### Concept 1 - What is pointer?
 
-When we declare a variable say`int a;`, this tells the compiler that a location in memory needs to be selected so that the variable name and its value can be stored at some address (2992 for example, it can be anything!). Now when we assign some value to the variable *a* say, for example, `a=25;`, the value field of the "memory box" is 25 and address field has some address in it. Refer to the table shown below. When we use *scanf*  in C programming, we use **&** operator which is nothing but an **address operator**. So `&a` simply means that we need to find the numeric value of the address where variable *a* is stored. So `b=&a;` is a valid statement, provided it is declared as `int *b;` as variable *b* gets the numeric value of the address of variable *a*. So `int *b;` declaration says that *b* will store the address of type Integer. 
+When we declare a variable say`int a;`, this tells the compiler that a location in memory needs to be selected so that the variable name and its value can be stored at some address (2992 for example, it can be anything!). Now when we assign some value to the variable *a* say, for example, `a=25;`, the value field of the "memory box" is 25 and address field has some address in it. Refer to the table shown below. When we use *scanf*  in C programming, we use **&** operator which is nothing but an **address operator**. So `&a` simply means that we need to find the numeric value of the address where variable *a* is stored. So `b=&a;` is a valid statement, provided it is declared as `int *b;` as variable *b* gets the numeric value of the address of variable *a*. So `int *b;` declaration says that *b* will store the address of type Integer.
 Now let us look at the third operation `c=*b;` where `*` is an **indirection operator**. An indirection operator tells the compiler to read contents of *b* which is nothing but the address of variable *a* and then it tells compiler to go to the address 2992 and retrieve its content which is again *25* in this case. Hence variable *c* has value 25.
 
 | Variable Name 	| Address 	| Contents 	| Operation 	|   	|
@@ -33,11 +33,11 @@ Now let us look at the third operation `c=*b;` where `*` is an **indirection ope
 
 Q. What is the difference between * being used in statement and * being used in declaration?
 
-This is a very important concept which people tend to forget. Atleast I made lot of mistakes during my graduation. The indirection operator used in the **declaration** only gives information that the variable will store an address whereas when it is used in **statement** it is an operator telling the compiler that the *contents* field of the variable contains an address which can be used to collect some data. (Like we did in case of variable *c* ) 
+This is a very important concept which people tend to forget. Atleast I made lot of mistakes during my graduation. The indirection operator used in the **declaration** only gives information that the variable will store an address whereas when it is used in **statement** it is an operator telling the compiler that the *contents* field of the variable contains an address which can be used to collect some data. (Like we did in case of variable *c* )
 
-###Concept 2 - Pointers in case of arrays and functions
+### Concept 2 - Pointers in case of arrays and functions
 
-A very important concept related to the arrays is that if we write `int * b;` and `int a[3]={1,2,3};` then the statements `b=&a[0];` and `b=a` are same because in both cases the address of the zeroth element of the array will be stored in variable *b*. 
+A very important concept related to the arrays is that if we write `int * b;` and `int a[3]={1,2,3};` then the statements `b=&a[0];` and `b=a` are same because in both cases the address of the zeroth element of the array will be stored in variable *b*.
 
 In case of functions, the most common errors made by me were when I was passing pointer type arguments. This is a very important concept that you must keep in mind. We use pointers in functions to **send addresses rather than values** to the formal arguments of the function. I am not going to explain this because it is a very common concept and you can refer it here http://www.codingunit.com/c-tutorial-call-by-value-or-call-by-reference They have given a very good example on it which will make it clear.
 
@@ -45,33 +45,33 @@ In case of functions, the most common errors made by me were when I was passing 
 
 Before moving on to linked lists and queues, let us look at stacks. A stack is a structure in which only the top element is accessible. Suppose there are n elements in the stack. Then you must "Pop" out the nth element in order to access (n-1)th element in the stack.
 
-Q. Why is stack called LIFO store? 
+Q. Why is stack called LIFO store?
 Because of the storing and retrieving of the elements only from one end. You can only "POP" out the top element from the stack. LIFO means *last in first out*!
 
 ### Let us write a program to simulate stack implementation using the concept of pointers.
-    
+
     {% highlight c %}
     #include<stdio.h>
     #include<stdlib.h>
     #include<malloc.h>
-    
+
     #define MAX 100
-    
+
     typedef struct stack {
     	int a[MAX]; //Array to store numbers.
     	int top; //The index of top most element
     }Stack;
-    Stack *ptr = (struct stack*)malloc(sizeof(struct stack)); //Pointer of type stack 
-    /** I would like to give special reference to the above statement. 
-     * While coding this i made a major blunder where i was accessing beyond 
-     * the memory allocated by the malloc. Refer to this to learn more : 
+    Stack *ptr = (struct stack*)malloc(sizeof(struct stack)); //Pointer of type stack
+    /** I would like to give special reference to the above statement.
+     * While coding this i made a major blunder where i was accessing beyond
+     * the memory allocated by the malloc. Refer to this to learn more :
      * http://stackoverflow.com/a/11745445
      */
-    
+
     void display(Stack *ptr);
     void push(Stack *ptr, int num, int l); //Pushes the number to the stack top
     int pop(Stack *ptr, int num); //Pops the number from the stack top
-    
+
 
     int main() {
 
@@ -110,7 +110,7 @@ Because of the storing and retrieving of the elements only from one end. You can
 
 			default: //Exit
 				exit(0);
-    		} 
+    		}
     	}
     }
 
@@ -124,7 +124,7 @@ Because of the storing and retrieving of the elements only from one end. You can
 
     void push(Stack *ptr, int num, int l) { //We push the element but first we check if the stack is full or not.
 
-	
+
 	if(ptr->top==l-1) {
 		printf("\n*******Stack Overflow Condition*******\n\n");
 	}
@@ -151,7 +151,7 @@ Because of the storing and retrieving of the elements only from one end. You can
     }
     {% endhighlight %}
 
-###Debugging using GDB      
+### Debugging using GDB      
 
 One more common thing that occurs when you deal with pointers is **Segmentation fault** error. To know which line of code is causing this, you need to use **gdb**. Look at the image below.
 
@@ -165,5 +165,3 @@ Look at [part II](http://bhavyanshu.me/tutorials/linked-lists-queues-and-other-n
 [1]: /assets/imags/tuts/linuxkernel/gdb.png
 
 {% include JB/setup %}
-
-

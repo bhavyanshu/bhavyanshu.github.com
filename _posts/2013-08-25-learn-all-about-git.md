@@ -2,19 +2,19 @@
 layout: post
 title: "Learn all about git"
 description: "This is tutorial to learn all about git."
-category: 
+category:
 tags: ["git","github tutorial"]
 image: gitlinux3.png
 change_frequency: "monthly"
 priority: 0.5
 ---
 
-#Overview
+# Overview
 
 Alright i am going to show you few simple steps on how to start off using git.
 
 
-##Tutorial  
+## Tutorial  
 
 Just follow these simple steps:  
 
@@ -26,7 +26,7 @@ Just follow these simple steps:
 
 Now the real thing begins.
 
-4) By using git shell, type 
+4) By using git shell, type
 
 	git clone repository-url //For example, repository-url in this case is "https://github.com/Society-of-Programming-Languages/TestingGit.git" & in your case it will be "https://github.com/'Your Github Username'/TestingGit.git".
 
@@ -34,7 +34,7 @@ Now the real thing begins.
 
 6) Now go to above cloned directory, and update this README file by adding your name in it. (There is a section below that says "Contributors". Update there and no where else)
 
-7) Now comes commiting these changes to your forked repository. Simply use these sequence of commands in git shell. -> 
+7) Now comes commiting these changes to your forked repository. Simply use these sequence of commands in git shell. ->
 
     git add . //This adds the files to the staging area.  
     git commit -m "Your message relating to the changes you have made"
@@ -63,7 +63,7 @@ Rewrite your master branch so that any commits of yours that aren't already in u
 That's it. Now you can carry on with "git push origin master", to make all the updated changes to you repo on github.
 
 
-##How to initialize a project for Git
+## How to initialize a project for Git
 
 Look at the image below  
 
@@ -73,6 +73,6 @@ So let me quickly explain what i did here
 
 
 In this tutorial, the first command, nano README.md is used to create a README file for the project. Then we have used "git init" command to initialize an empty git repository. The "git remote add origin 'url'" adds a remote for our repository. Then when we have made a change to the file and we want to commit to the reposiroty we use the following sequence of commands.
-First we modify the file by using any editor. Then we use the command "git add 'filename' to stage the file. Then we use the command "git commit -m "Your message about the change". After that we use the command "git push -u origin master" in order to finally add the file to the master branch of the repository on the server. That's how you contribute to the repositories. 
+First we modify the file by using any editor. Then we use the command "git add 'filename' to stage the file. Then we use the command "git commit -m "Your message about the change". After that we use the command "git push -u origin master" in order to finally add the file to the master branch of the repository on the server. That's how you contribute to the repositories.
 
 {% include JB/setup %}

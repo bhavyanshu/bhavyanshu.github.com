@@ -9,18 +9,18 @@ priority: 0.8
 date: 2014-01-23 11:30:45
 ---
 
-#Overview
+# Overview
 
 For the package index, you can take a look [here](http://developer.android.com/reference/packages.html) and for the class index you can look [here](http://developer.android.com/reference/classes.html).
 
-In this i will be showing you how to use some important classes from the pre-built packages. These are ofcourse which I use in most of my android apps and which I feel are very important and useful. If I miss out any, leave a comment below. 
+In this i will be showing you how to use some important classes from the pre-built packages. These are ofcourse which I use in most of my android apps and which I feel are very important and useful. If I miss out any, leave a comment below.
 
-##Package Name : android
+## Package Name : android
 
 Contains resource classes used by applications included in the platform and defines application permissions for system features.
 
->You can use some resources directly from these R classes in your own applications, but you should generally use only resources that you've provided directly in your application, in order to provide a cohesive application package that has no external dependencies. 
-In particular, you should not use drawable resources from the android package, because they may change between platform versions, causing unforeseen conflicts with your design. Typically, styles are the only resources you should use directly from these resources. Styles contains the themes. 
+>You can use some resources directly from these R classes in your own applications, but you should generally use only resources that you've provided directly in your application, in order to provide a cohesive application package that has no external dependencies.
+In particular, you should not use drawable resources from the android package, because they may change between platform versions, causing unforeseen conflicts with your design. Typically, styles are the only resources you should use directly from these resources. Styles contains the themes.
 
 But no, i always want to build my own theme for the application and hence comes the role of actionbarsherlock which I will be discussing in later tutorials. For now let's just stick with default themes.
 
@@ -36,13 +36,13 @@ For example, let's look at one of my [project's](https://github.com/bhavyanshu/C
     <?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright 2014 Bhavyanshu Parasher
-  
+
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
     http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -120,10 +120,10 @@ For example, let's look at one of my [project's](https://github.com/bhavyanshu/C
 
      </application>
     </manifest>
-    
+
     {% endhighlight %}
-    
-If you are familiar with the xml syntax, you would know that each element of the xml requires a start `<manifest>` and and end `</manifest>` tag. Similarly we use for all the child elements as well. Like the `<application></application>` tags etc. In xml, we write comments using `<!-- some comment -->` like I have used in writing my license information. 
+
+If you are familiar with the xml syntax, you would know that each element of the xml requires a start `<manifest>` and and end `</manifest>` tag. Similarly we use for all the child elements as well. Like the `<application></application>` tags etc. In xml, we write comments using `<!-- some comment -->` like I have used in writing my license information.
 
 Next is when you define what is the minimum SDK your application will support or run on and the target SDK which your application would be built upon. These are useful when you are planning to target specific devices. This is actually a very important attribute of the manifest file. `<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="18" />`
 
@@ -163,8 +163,8 @@ Now the `<application>` tag is used to define all the important attributes which
         </activity>
 	{% endhighlight %}
 
-Now let us move on the `<activity>` tag of the xml file. This is important and must be defined for every activity component of your application for which interface will be loaded. We will have **MainActivity.java** file in *src/com.pytacular.checkitcloudchecklist/* folder. 
-Now the `<intent-filter>` is another important attribute. To know more, I feel this particular [official documentation](http://developer.android.com/guide/components/intents-filters.html) is enough to explain this. 
+Now let us move on the `<activity>` tag of the xml file. This is important and must be defined for every activity component of your application for which interface will be loaded. We will have **MainActivity.java** file in *src/com.pytacular.checkitcloudchecklist/* folder.
+Now the `<intent-filter>` is another important attribute. To know more, I feel this particular [official documentation](http://developer.android.com/guide/components/intents-filters.html) is enough to explain this.
 
 Next is `CATEGORY_LAUNCHER`. The activity for which LAUNCHER category is set, is the initial activity of a task and is listed in the system's application launcher. This is important for defining the entry point/activity for your application.
 
@@ -172,10 +172,10 @@ That's it for now for the androidmanifest file. The `reciever` will be discussed
 
 Now let us get back to our `android` package. Look at my [MainActivity.java](https://github.com/bhavyanshu/CheckIt_Android/blob/master/CheckItCloudCheckList/src/com/pytacular/checkitcloudchecklist/MainActivity.java) file here.
 
-We first start by writing the package name which is `package com.pytacular.checkitcloudchecklist;` for my app. Then we have basic java classes `import java.util.ArrayList; import java.util.List;` from the util package. Now comes the most interesting part where you have to import classes from the android package. 
+We first start by writing the package name which is `package com.pytacular.checkitcloudchecklist;` for my app. Then we have basic java classes `import java.util.ArrayList; import java.util.List;` from the util package. Now comes the most interesting part where you have to import classes from the android package.
 
 	{% highlight java %}
-    import android.app.AlertDialog; // This is used to create an alert dialog 
+    import android.app.AlertDialog; // This is used to create an alert dialog
     import android.app.Dialog;
     import android.app.ProgressDialog; //This is used to display a progress dialog for any background process.
 	{% endhighlight %}
@@ -203,6 +203,6 @@ To create your own widget, extend View or a subclass. To use your widget in layo
 
 That's all for now. In next tutorial we will see how to define UI components in the layout XML file and we will also see how to define our custom styles to be used in app.
 
-Take a look at the [table of contents](http://bhavyanshu.me/pages/toc-android-tutorials.html) for all android tutorials. 
+Take a look at the [table of contents](http://bhavyanshu.me/pages/toc-android-tutorials.html) for all android tutorials.
 
 {% include JB/setup %}

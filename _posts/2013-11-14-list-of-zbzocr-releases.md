@@ -2,7 +2,7 @@
 layout: post
 title: "[Software Release] Zbzocr - Open Source OCR tool to extract text from images"
 description: "The list of releases for zBzOCR fetched directly from Github project page."
-category: 
+category:
 tags: ["releases"]
 change_frequency: "weekly"
 priority: 0.8
@@ -14,7 +14,7 @@ date: 2014-01-19 14:00:30
 
 **********************************************************************
 
-#List of Releases
+# List of Releases
 
 
 <script type="text/javascript">
@@ -28,9 +28,9 @@ date: 2014-01-19 14:00:30
 **********************************************************************
 **********************************************************************
 
-#INSTALLATION & USAGE
+# INSTALLATION & USAGE
 
-##WINDOWS :
+## WINDOWS :
 
 **Requirements**:		
 
@@ -49,21 +49,21 @@ Already scared? Don't worry, simply follow the instructions given below.
 https://pypi.python.org/pypi/setuptools/1.1.6
 Now open CLI and cd into setuptools extracted directory. Then run *python setup.py install*. It will install setuptools for you.
 
-3. Once done, you have all that is required to install and run the program. 
-Now simply cd into the directory and run *python setup.py install*. It will install my python program in your system. Once done, type in CLI *python zbzocr/zbzocr.py*. There is a test folder with a PNG image file, try it out on that. It will give you the basic idea of how it works. 
+3. Once done, you have all that is required to install and run the program.
+Now simply cd into the directory and run *python setup.py install*. It will install my python program in your system. Once done, type in CLI *python zbzocr/zbzocr.py*. There is a test folder with a PNG image file, try it out on that. It will give you the basic idea of how it works.
 
-##LINUX :
+## LINUX :
 
 
 1. apt-get install tesseract-ocr. You must have tesseract CLI in your system. It is in the package list for debian. Not sure about the rest. You can find the installation note here http://code.google.com/p/tesseract-ocr/source/browse/tags/release-3.02.02/INSTALL
 
-2. If you are running linux, then you might already be having complete python package in your system. If you want to check if you have python, then run in terminal *which python*. If you don't have, then you need to install python 2.7.X in your linux machine. 
+2. If you are running linux, then you might already be having complete python package in your system. If you want to check if you have python, then run in terminal *which python*. If you don't have, then you need to install python 2.7.X in your linux machine.
 
-3. Then you need to cd into the directory of my program and run *python setup.py install*. It will install my program in your linux machine. Now to use the program, simply issue *python zbzocr/zbzocr.py*. There is a test folder with a PNG image file, try it out on that. It will give you the basic idea of how it works. 
+3. Then you need to cd into the directory of my program and run *python setup.py install*. It will install my program in your linux machine. Now to use the program, simply issue *python zbzocr/zbzocr.py*. There is a test folder with a PNG image file, try it out on that. It will give you the basic idea of how it works.
 
 ******************************************************************************
 
-#Author Information : 
+# Author Information :
 
 [Bhavyanshu Parasher](http://bhavyanshu.me)
 Email: bhavyanshu@codershangout.org
@@ -71,15 +71,15 @@ Email: bhavyanshu@codershangout.org
 
 ******************************************************************************
 
-#Current Version : 1.0.1
+# Current Version : 1.0.1
 
-			
-###Change log:
+
+### Change log:
 
 * Version 1.0.1 - 25th September 2013
 GUI ported to Tkinter. The new GUI looks pretty awesome. Installation & Usage updated.
 
-* Version 1.0.0 - 23rd September 2013, The first release. 
+* Version 1.0.0 - 23rd September 2013, The first release.
 Its GUI is based on easyGUI. A simple GUI. There is nothing much to it. The next version is expected to have more advanced GUI as i am porting it to Tkinter
 
 

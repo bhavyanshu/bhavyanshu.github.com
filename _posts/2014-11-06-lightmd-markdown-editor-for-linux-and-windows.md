@@ -10,18 +10,18 @@ priority: 0.8
 date: 2014-11-06 5:20:42
 ---
 
-###Jump To
+### Jump To
 * [Download Section](#download--install)
 * [Screenshots](#screenshots)
 * [Contribute](#contribute)
 * [License](#license)         
-               
-               
+
+
 #LightMd Markdown Editor
 
 LightMd Markdown Editor is a free and open source editor for Markdown with a lot of features. It has been tested on Linux as well as Windows. In near future, support for Mac OS will be added.
 
-##Features (Currently Present)
+## Features (Currently Present)
 
 * Markdown formatting with keyboard shortcuts
 * Syntax Highlight for Markdown
@@ -37,8 +37,8 @@ To know what more features will be added, view [this](https://github.com/bhavyan
 ## Screenshots
 
 ![LightMd](/assets/imags/lightmd/lightmd1.png "LightMd")  
-  
-  
+
+
 ![LightMd](/assets/imags/lightmd/lightmd2.png "LightMd")
 
 
@@ -55,11 +55,11 @@ To know what more features will be added, view [this](https://github.com/bhavyan
 <div id="my-github-repo"></div>
 
 **********************************************************************
-         
+
 If you just want a tarball of this, get it from the [releases](https://github.com/bhavyanshu/LightMd_Editor/releases) page only. This page has been made only for non-tech people who just want to use this software. If you want to contribute, please view [contribute](#contribute) section.
 
 
-##License
+## License
 
 This application is under GNU GPLv3. Please read the COPYING.txt file for further terms and conditions of the license.
 
@@ -74,12 +74,12 @@ This application is under GNU GPLv3. Please read the COPYING.txt file for furthe
  You should have received a copy of the GNU General Public License along with "LightMd Editor".
  If not, see http://www.gnu.org/licenses/.
 
-##Contribute
+## Contribute
 
 To contribute, simply fork, clone, patch and send pull request.
 I have built it using Qt Creator. The source code is written in C++ and Qt5. So either use Qt Creator to build the project or follow the instructions given below.
 
-Use the following commands to build. Make sure you have g++, gcc and Qt5 libraries. 
+Use the following commands to build. Make sure you have g++, gcc and Qt5 libraries.
 
     cd ./src
     qmake
@@ -91,7 +91,7 @@ This will build the application if you have all the build dependencies. Come out
 
 Get the latest Qt Creator. Download [source](https://github.com/bhavyanshu/LightMd_Editor/archive/master.zip). Go to *src* directory and open *src.pro* file in Qt Creator. Configure and run the project. It will build and run automatically.
 
-###Support Libraries
+### Support Libraries
 
 * [PEG Markdown Highlight](http://hasseg.org/peg-markdown-highlight/)
 * [QtFindReplaceDialog](http://qtfindreplace.sourceforge.net/)

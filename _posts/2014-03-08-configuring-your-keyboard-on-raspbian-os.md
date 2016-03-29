@@ -10,11 +10,11 @@ priority: 0.8
 date: 2014-03-04 14:30:54
 ---
 
-#Overview
+# Overview
 
 You will have to use a USB mini-keyboard with Raspberry Pi. It is a must-have peripheral device. As i told in first tutorial of Raspberry Pi tutorial series, I am using an Intex keyboard. Actually there was some issue with keys like `#` and `"`. They were interchanged initially. Then I realized since it is a UK make, the default keyboard configuration for Raspbian OS is set to **Default (UK)**. That is why you would see a euro symbol when you press $ key.
 
-##How to fix it?
+## How to fix it?
 
 Fixing it is really simple. Run command `sudo dpkg-reconfigure keyboard-configuration`. Now follow the images shown below to reconfigure keyboard.			
 

@@ -2,13 +2,13 @@
 layout: post
 title: "Terminal I/O"
 description: "Importance of knowing all about terminal I/O."
-category: 
+category:
 tags: ["tutorial", "gcc", "I/O Terminal Interfaces"]
 change_frequency: "monthly"
 priority: 0.5
 ---
 
-#Overview  
+# Overview  
 
 Well, i am writing this because sometimes there is a need to change the speed of the terminal dsession to match that of the device it is connected to.  
 Okay, well, does it sound a bit too technical?  
@@ -19,7 +19,7 @@ Let me sum it up quickly.
 >The third state is the the <code>cbreak</code> mode, it is similar to raw mode but in this a signal is raised for the special characters.  
 >Ever used vi? Well, it uses raw mode for i/o.
 
-##Moving on
+## Moving on
 
 There is a struct named *termios* that has all the attributes controlling the terminal device.   
 
@@ -39,7 +39,7 @@ The above mentioned structure is used with two functions mainly,
 	#include <termios.h>
 	int tcgetattr(int filedes, struct termios *termptr); //Gets the current state of the terminal with open file descriptor filedes.
 	int tcsetattr(int filedes, int opt, const struct termios *termptr); //Set the attributes for the terminal.
-	/*Return error if the *filedes* argument is not associated with the terminal device. 
+	/*Return error if the *filedes* argument is not associated with the terminal device.
 	The argument opt specifies when the changes are to take place.
 	*/
 	{% endhighlight %}

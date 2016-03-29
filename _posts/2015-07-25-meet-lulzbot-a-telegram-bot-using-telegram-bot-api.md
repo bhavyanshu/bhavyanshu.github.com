@@ -14,7 +14,7 @@ I spent this weekend coding a bot for Telegram messaging app. The bot is similar
 
 It is free to use and you can actually grab the source code of it from [github](https://github.com/bhavyanshu/lulzbot-telegram-bot). The license is GPL so you are free to do whatever you want to do with it.
 
-##Commands
+## Commands
 
 | Commands argument  	    | *Function*								   | **Example**     			|
 | --------------------------| ---------------------------------------------| ---------------------------|
@@ -37,7 +37,7 @@ It is free to use and you can actually grab the source code of it from [github](
 
 > Note that some features of the actual bot @lulzbot registered on telegram will be missing from here. Like bot administration commands and commands meant for my own personal use. However, they do not break this code nor do they in any way affect the working on this code. They are completely unrelated modules. On request, I can explain how you can write bot administration commands for Telegram bot API.
 
-##Derive your own bot from this
+## Derive your own bot from this
 
 1. First open data/config.ini file and add all the required API keys from various social media sites. For telegram token, contact @BotFather on telegram and create a new bot there. @BotFather will reply provide you the token once the bot is created.
 2. Then you need to make sure you have all the [required dependencies](https://github.com/bhavyanshu/lulzbot-telegram-bot/blob/master/requirements.txt). **Python 2.7 is required**. Apart from that I have provided requirements.txt file and pip command should be able to fetch it all for you.
@@ -48,7 +48,7 @@ It is free to use and you can actually grab the source code of it from [github](
 4. For production mode, run `./botmon.sh` which will restart bot if it crashes.
 5. Now you can make any changes you want and use it as your own bot in telegram.
 
-##LICENSE
+## LICENSE
 
 > Copyright (C) 2015  Bhavyanshu Parasher <br>
 > This program is free software: you can redistribute it and/or modify
@@ -62,7 +62,7 @@ GNU General Public License for more details. <br>
 > You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-##Contribute
+## Contribute
 
 > Create an issue if you find any bug. If you want to improve something, send a pull request.
 

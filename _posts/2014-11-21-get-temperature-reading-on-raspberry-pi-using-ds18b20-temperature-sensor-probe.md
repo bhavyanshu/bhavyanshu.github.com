@@ -10,11 +10,11 @@ priority: 0.8
 date: 2014-11-21 13:30:45
 ---
 
-#Overview
+# Overview
 
 In this tutorial, we will use the DS18B20 temperature sensor probe to get temperature reading on our raspberry pi. Not just that, we will also log the temperature in valid JSON format using my code.
 
-##Hardware
+## Hardware
 
 1. Raspberry Pi
 2. DS18B20
@@ -22,7 +22,7 @@ In this tutorial, we will use the DS18B20 temperature sensor probe to get temper
 4. Breadboard and Jumper wires
 
 
-##Circuit
+## Circuit
 
 First of all, as you can see the temperature sensor probe has 3 pins. The wire connecting to VCC pin is often in RED, for GND it is BLACK and for DATA it is YELLOW or WHITE. These can vary too. you should always look at the manual provided by the manufacturer. It has all these specifications. We will use pin number 7 for DATA, pin number 1 (+3.3 V) for VCC and pin number 6 for GND. Don't forget to put a 10k ohm resistor (Some suggest 4.7k ohm) between DATA and VCC.
 
@@ -31,7 +31,7 @@ Refer to the figure shown below
 ![Temperature Sensor Connections](/assets/imags/raspi/tempi.png "Temperature Sensor Connections")
 
 
-##Testing
+## Testing
 
 Make sure all the connections are perfect. Now turn on your Raspberry Pi, let it boot and once you are in terminal, type
 
@@ -52,7 +52,7 @@ This should output something like shown below
 
 Now if you see something like this in the output and if you feel that the value of *t* is correct, then congrats your connections are perfect and we can move on. But if you find that the temperature reading is incorrect (Like really high or weird), then you must check your connections again and check the **resistor** if it is connected well and is placed between DATA and VCC. It is a very common mistake. Now that everything is working as we want, we must try to automate above step using the method provided below.
 
-##Automation 
+## Automation
 
 Let us create a log of temperature in JSON format. Even though this can be easily achieved using purely Python, i still went ahead and wrote it in C. The only thing I am using python for is to convert generated log by C to a valid JSON format. Soon I will replace that also with C. I just need some time to work on the code. Also please keep all the files in the same directory. You can get all the files from [github repository](https://github.com/bhavyanshu/rPiExperiments/tree/master/TemperaturePi).
 

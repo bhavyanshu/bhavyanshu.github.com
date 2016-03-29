@@ -22,13 +22,13 @@ Of course it is compatible with android studio. The support toolbar is designed 
 
 Also the source code is in public domain. You are free to do anything you want with it. More specific terms are in the [UNLICENSE](https://github.com/bhavyanshu/TemplateAppParse-dot-com/blob/master/UNLICENSE) document provided with the source code.
 
-##How to derive your own app from this template?
+## How to derive your own app from this template?
 
 Simply import it into your android studio. This post is basically about explaining the components & what each component does.
 
-To begin with, first let us look at the app [manifest](https://github.com/bhavyanshu/TemplateAppParse-dot-com/blob/master/app/src/main/AndroidManifest.xml) file. 
+To begin with, first let us look at the app [manifest](https://github.com/bhavyanshu/TemplateAppParse-dot-com/blob/master/app/src/main/AndroidManifest.xml) file.
 
-These permissions are the only permissions that are required for all the authentication work & push notifications. 
+These permissions are the only permissions that are required for all the authentication work & push notifications.
 
 	{% highlight xml %}
 	<uses-permission android:name="android.permission.INTERNET" />
@@ -88,7 +88,7 @@ Make sure you replace parse_application_ID & parse_client_key in **app.xml file*
 	</resources>
 	{% endhighlight %}
 
-BaseActivity.java & NoAuthActivity.java are two activities which are extended by other activities. NoAuthAcitivty is to be used by any activity that does not have any authentication data & BaseActivity is to be used for any activity that requires authenticated access. The point of having two is because it makes it easier to display separate menu items for authenticated & non-authenticate users. Both of these extend the AppCompatActivity. So you only need to extend any of these from some other activity & it will inherit everything. 
+BaseActivity.java & NoAuthActivity.java are two activities which are extended by other activities. NoAuthAcitivty is to be used by any activity that does not have any authentication data & BaseActivity is to be used for any activity that requires authenticated access. The point of having two is because it makes it easier to display separate menu items for authenticated & non-authenticate users. Both of these extend the AppCompatActivity. So you only need to extend any of these from some other activity & it will inherit everything.
 
 Like in LoginActivity.java
 
@@ -101,7 +101,7 @@ Like in LoginActivity.java
 	{% highlight java %}
 	public class MainActivity extends BaseActivity {
 	{% endhighlight %}
-	
+
 ### Tables modified in the database
 
 The columns mentioned below are the ones I have added and will not exist in default app setup on parse.com so make sure you add these.
@@ -153,11 +153,11 @@ The SignIn & SignUp are both handled by signInTwitter function called when Log I
                     Log.d("RYC", "Uh oh. The user cancelled the Twitter login.");
                     spinner.setVisibility(View.GONE);
                     v.setEnabled(true);
-                } 
+                }
 		else if (user.isNew()) { //Sign up
                     Log.d("RYC", "User signed up and logged in through Twitter!");
                     String userscreenName = ParseTwitterUtils.getTwitter().getScreenName();
-                    user.put("screenName", userscreenName); //screenName is a column in parse.com _User table. 
+                    user.put("screenName", userscreenName); //screenName is a column in parse.com _User table.
                     try {
                         user.save();
                     } catch (ParseException e) {
@@ -192,11 +192,11 @@ One more thing. In case you need to check whether the user has verified email or
 		}
 	}
 	{% endhighlight %}
-	
+
 Twitter does not allow extracting email addresses. Hence, the values of column "email" are only set for people who register using email and not for those who register via twitter. Therefore checking containsKey("email") is very important otherwise it will return undefined value for twitter users & they will be sent back to Login Acitivty. **Also make sure you turn on email verification in your parse settings.**
 
 
-### AppCompat & Toolbar support 
+### AppCompat & Toolbar support
 
 To get the toolbar functionality, you need to have toolbar in the layout file. Like
 
@@ -206,7 +206,7 @@ To get the toolbar functionality, you need to have toolbar in the layout file. L
         layout="@layout/toolbar" />
 	{% endhighlight %}
 
-This is backward compatible with android versions prior to lollipop. So you don't have to worry about compatibility issues. This method is used to custom design actionbars for Lollipop. Look at toolbar.xml & styles.xml for more details. Now in YourActivity.java just add the below code to use toolbar wherever you want. 
+This is backward compatible with android versions prior to lollipop. So you don't have to worry about compatibility issues. This method is used to custom design actionbars for Lollipop. Look at toolbar.xml & styles.xml for more details. Now in YourActivity.java just add the below code to use toolbar wherever you want.
 
 	{% highlight java %}
 	Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -215,9 +215,6 @@ This is backward compatible with android versions prior to lollipop. So you don'
 
 That's all there is. I hope you are able to use this easily with the above mentioned customizations. In case you encounter a problem, leave a comment below.
 
-Refer [Table of contents](//bhavyanshu.me/pages/toc-android-tutorials.html) for all android tutorials. 
+Refer [Table of contents](//bhavyanshu.me/pages/toc-android-tutorials.html) for all android tutorials.
 
 {% include JB/setup %}
-
-
-

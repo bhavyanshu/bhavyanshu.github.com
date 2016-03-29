@@ -10,7 +10,7 @@ priority: 0.7
 date: 2013-11-02 10:26:10
 ---
 
-#Overview 
+# Overview 
 In this tutorial, i will try to explain the JOINS in MySQL with their example. I hope you would atleast have an idea of what happens in the joins. I am using MySQl as i am on linux and this is the most widely used open source RDBMS. 							
 
 We have two tables **table_A** & **table_B**.					
@@ -24,7 +24,7 @@ We have two tables **table_A** & **table_B**.
 ![Screenshot 2]({{ site.url }}/assets/imags/mysql_join/tableB.png)						
 <br/><br/>
 
-##Inner Join 
+## Inner Join
 Inner join produces only the set of records that are matching in both Table A and Table B.							
 
 ![Screenshot 3]({{ site.url }}/assets/imags/mysql_join/inner_join.png)					
@@ -37,7 +37,7 @@ SELECT * FROM table_A INNER JOIN table_B ON table_A.name = table_B.name;
 	{% endhighlight %}
 
 
-##Full Outer Join 
+## Full Outer Join
 Full outer join produces the set of all records in Table A and Table B, with matching records from both sides. If there is no match, the missing side will contain NULL. Outer joins, on the other hand, are for finding records that may not have a match in the other table. As such, you have to specify which side of the join is allowed to have a missing record.									
 
 LEFT JOIN and RIGHT JOIN are shorthand for LEFT OUTER JOIN and RIGHT OUTER JOIN.										
@@ -52,7 +52,7 @@ SELECT * FROM table_A FULL OUTER JOIN table_B ON table_A.name = table_B.name;
 	{% endhighlight %}
 
 
-##Left Outer Join
+## Left Outer Join
 Left outer join produces a complete set of records from Table A, with the matching records (where available) in Table B. If there is no match, the right side will contain null.								
 ![Screenshot 10]({{ site.url }}/assets/imags/mysql_join/left_outer_join.png)			
 <br/><br/>
@@ -69,7 +69,7 @@ SELECT * FROM table_A LEFT OUTER JOIN table_B ON table_A.name = table_B.name WHE
 
 ![Screenshot 6]({{ site.url }}/assets/imags/mysql_join/left_outer_join_cli.png)
 <br/><br/>
-##Cross Join
+## Cross Join
 There's also a cartesian product or cross join, which as far as I can tell, can't be expressed as a Venn diagram. This joins "everything to everything", resulting in 4 x 3 = 12 rows, far more than we had in the original sets. If you do the math, you can see why this is a very dangerous join to run against large tables.
 
 	{% highlight mysql %}

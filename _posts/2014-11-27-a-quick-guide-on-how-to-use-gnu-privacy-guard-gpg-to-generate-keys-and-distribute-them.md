@@ -8,7 +8,7 @@ priority: 0.8
 date: 2014-11-27 10:05:23
 ---
 
-#Overview 
+# Overview
 
 I am not gonna debate on whether you should encrypt your communications or not. That's your choice. Also this is not a tutorial on how PGP works or how does it encrypt your data. You can easily find these on web. One important thing I would like you to read is the [difference between PGP and GPG](http://www.differencebetween.net/technology/software-technology/difference-between-pgp-and-gpg/). Let me highlight key differences below in case the web page is lost
 
@@ -18,12 +18,12 @@ I am not gonna debate on whether you should encrypt your communications or not. 
 
 My post is a really simple cheatsheet for command line gpg which you can use for quick reference. Forgive me if i have missed out on anything. Better to mention in comments so that I update this post. Thanks!
 
-##Using gpg
+## Using gpg
 
 * **Generate Key**
 
 		gpg --gen-key
-	
+
 	When it asks "What keysize do you want? (2048)", just type 4096. You can just go with the defaults for other values. One thing I wanna tell is that if it tells you that there isn't enough entropy, you should open a new terminal and type `ls -R /`. Let it execute and side by side you can do lot of I/O and utilize disk. That should be enough for gpg.
 
 * **List keys** - Lists all the public keys
@@ -74,7 +74,7 @@ My post is a really simple cheatsheet for command line gpg which you can use for
 * **Export Keys** - Export/Dump public and private keys to files
 
 		gpg --export -a "Real Name that you entered" > public
-	
+
 		gpg --export-secret-key -a "Real Name that you entered" > private
 
 * **Encrypting some file** - Lets you encrypt some data
@@ -98,7 +98,7 @@ It will automatically choose your secret key and will prompt you for your passwo
 * **Revocation Certificate** - Generates revocation certification
 
 		gpg --gen-revoke
-	
+
 	It creates a revocation certificate which means that when you will distribute this revocation certificate to keyserver, it will know that your respective key is no longer a valid key. This can also be achieved using
 
 		gpg --edit-key "Real Name You entered"

@@ -8,7 +8,7 @@ change_frequency: "weekly"
 priority: 0.8
 ---
 
-#Overview
+# Overview
 
 In this i am going to show you sorting algorithms ported to python. If you have done them in c/c++/java then you must be aware of these basic sorting algos.
 The first step is to create a menu with options like selection sort, bubble sort, insertion sort, merge sort, quick sort etc.
@@ -18,44 +18,44 @@ Before calling we should request some array input from the user which he/she wou
 Since python does not have switch statement (Yeah! you might be thinking that sucks but wait, read ahead!).				 
 It was proposed and rejected in PEP 3103. Basicallly some people believe that having switch statement is just bad design and we should always try to replace switch cases. 						
 *Why bad design?*			
-Because having switch statements lead to duplicacy of code. It is often known as "SwitchSmell". Typically, similar switch statements are scattered throughout a program. If you add or remove a clause in one switch, you often have to find and repair the others too. 
+Because having switch statements lead to duplicacy of code. It is often known as "SwitchSmell". Typically, similar switch statements are scattered throughout a program. If you add or remove a clause in one switch, you often have to find and repair the others too.
 
 The following is a direct quote from [RefactoringImprovingTheDesignOfExistingCode](http://c2.com/cgi/wiki?RefactoringImprovingTheDesignOfExistingCode), page 256.						
-			
+
 >Polymorphism gives you many advantages. The biggest gain occurs when the same set of conditions appears in many places in the program. If you want to add a new type, you have to find and update all of the conditionals. But with subclasses, you just create a new subclass and provide the appropriate methods. Clients of the class don't need to know about the subclasses, which reduces the dependencies in your system and makes it easier to update.
 
 Anyway, in python either we can implement polymorphism or we can use associative arrays also known as dictionaries. These provide one-to-one matching of a key-value pair. In this particular example we will be using dictionaries instead of polymorphism. Then we will port this code to use the concept of polymorphism. That's it for the theory of python. Let's begin some coding.					
 
 In this we will be looking at the following sorting algos :			
-1. Bubble Sort 
+1. Bubble Sort
 2. Selection Sort
 3. Merge Sort
 4. Quick Sort
 5. Insertion Sort
 
 
-#Coding
+# Coding
 
 * First thing to do would be to define main and create a function that builds array/list
 
 	{% highlight python %}
-#Main function that is called as soon as the program executes. 
+#Main function that is called as soon as the program executes.
 def main():
-	print  '''Help Menu : 
-			1. Bubble Sort, 
-			2. Selection Sort, 
-			3. Merge Sort, 
+	print  '''Help Menu :
+			1. Bubble Sort,
+			2. Selection Sort,
+			3. Merge Sort,
 			4. Quick Sort,
 			5. Insertion Sort'''
 	num=raw_input("Which sorting algo would you like to run?");
-	options = {'1' : bubblesort, 
+	options = {'1' : bubblesort,
            '2' : selectionsort,
            '3' : mergesort,
            '4' : quicksort,
            '5' : insertionsort,
 	} #Declaring a dictionary
 	options.get(num, errorMessage)()
-	
+
 
 if __name__ == '__main__':
 	main() #Called as soon as the program runs.
@@ -74,14 +74,14 @@ def errorMessage():
 
 	{% endhighlight %}
 
-						
-##Bubble Sort
+
+## Bubble Sort
 
 Basic idea behind bubble sort : easy to implement but cannot be used for large or medium sized datasets. Now we will apply it on a small array of integers
-Theory: The bubble sort works by passing sequentially over a list, comparing each value to the one immediately after it. If the first value is greater than the second, their positions are switched. Over a number of passes, at most equal to the number of elements in the list, all of the values drift into their correct positions (large values "bubble" rapidly toward the end, pushing others down around them). Because each pass finds the maximum item and puts it at the end, the portion of the list to be sorted can be reduced at each pass. A boolean variable is used to track whether any changes have been made in the current pass; when a pass completes without changing anything, the algorithm exits. 
-	
+Theory: The bubble sort works by passing sequentially over a list, comparing each value to the one immediately after it. If the first value is greater than the second, their positions are switched. Over a number of passes, at most equal to the number of elements in the list, all of the values drift into their correct positions (large values "bubble" rapidly toward the end, pushing others down around them). Because each pass finds the maximum item and puts it at the end, the portion of the list to be sorted can be reduced at each pass. A boolean variable is used to track whether any changes have been made in the current pass; when a pass completes without changing anything, the algorithm exits.
+
 	{% highlight python %}
-def bubblesort(): 
+def bubblesort():
 	print "You selected bubble sort. \n"
 	newarr=createarr() #Calling function createarr() to build an array & pass the value to a local array.
 	print "Before sorting the array is ", newarr
@@ -95,16 +95,16 @@ def bubblesort():
 				newarr[i-1]=newarr[i]
 				newarr[i]=tmp
 	print "After sorting the array is ", newarr #once done = 1, generate the final array.
-####################################################################################	
+####################################################################################
 
 	{% endhighlight %}
 
-##Selection Sort
-In this we first find the smallest element in the array and exchange it with the element in the first position. In simple terms we shift the smallest element to first positions, then find the second smallest element and exchange with the element on the second position and so on. 
+## Selection Sort
+In this we first find the smallest element in the array and exchange it with the element in the first position. In simple terms we shift the smallest element to first positions, then find the second smallest element and exchange with the element on the second position and so on.
 	This is also inefficient for large arrays.
-	Application: Its primary purpose is for when writing data is very expensive (slow) when compared to reading, eg writing to flash memory or EEPROM. No other sorting algorithm has less data movement. 
+	Application: Its primary purpose is for when writing data is very expensive (slow) when compared to reading, eg writing to flash memory or EEPROM. No other sorting algorithm has less data movement.
 
-	
+
 	{% highlight python %}
 def selectionsort():
 	print "You selected selection sort. \n"
@@ -123,10 +123,10 @@ def selectionsort():
 
 	{% endhighlight %}
 
-##Merge Sort
+## Merge Sort
 The basic idea is to split the collection into smaller groups by halving it until the groups only have one element or no elements (which are both entirely sorted groups). Then merge the groups back together so that their elements are in order. This is how the algorithm gets its "divide and conquer" description.
 
-	
+
 	{% highlight python %}
 def mergesort():
 	print "You selected merge sort. \n"
@@ -137,7 +137,7 @@ def mergesort():
 def divide(arrToDivide):
 	if (len(arrToDivide))<=1:
 		return arrToDivide #check if there is just a single element in the array.
-	
+
 	middle = len(arrToDivide)/2 #Divide given array in two parts left and right
 	left = arrToDivide[:middle] #Left partition of array. You should read more on lists in python and how do we access list elements
 	right = arrToDivide[middle:] #Right partition of array
@@ -154,7 +154,7 @@ def merge(left,right):
 		if left[leftID]<=right[rightID]: #ex, if first of left <= first of right
 			result.append(left[leftID]) #then append left to result
 			leftID+=1
-		else:	
+		else:
 			result.append(right[rightID]) #else append right to result
 			rightID+=1
 	if left:		#merge sorted halfs back to single array result
@@ -166,12 +166,12 @@ def merge(left,right):
 
 	{% endhighlight %}
 
-##Quick Sort
-	
+## Quick Sort
+
 1.Choose any element of the array to be the pivot.
     2.Divide all other elements (except the pivot) into two partitions.
         All elements less than the pivot must be in the first partition.
-        All elements greater than the pivot must be in the second partition. 
+        All elements greater than the pivot must be in the second partition.
     3.Use recursion to sort both partitions.
     4.Join the first sorted partition, the pivot, and the second sorted partition.
 
@@ -205,8 +205,8 @@ def sort(newarr): #This is where quick sort actually occurs
 
 	{% endhighlight %}
 
-##Insertion Sort
-It involves moving one element at a time into the previous sorted part of the array. Its simplicity, low overhead, good locality of reference and efficiency make it a good choice in two cases (i) small n (where n is the total number of elements in the list), (ii) as the final finishing-off algorithm for O(n logn) algorithms such as mergesort and quicksort. 
+## Insertion Sort
+It involves moving one element at a time into the previous sorted part of the array. Its simplicity, low overhead, good locality of reference and efficiency make it a good choice in two cases (i) small n (where n is the total number of elements in the list), (ii) as the final finishing-off algorithm for O(n logn) algorithms such as mergesort and quicksort.
 
 	{% highlight python %}
 def insertionsort():  
@@ -231,6 +231,6 @@ def insertion(iarr):
 
 That's it for now. If you wish to view the complete code for this, then check out my [python tutorials repository on github](https://github.com/bhavyanshu/PythonCodeSnippets/tree/master/src).				
 
-If you have any questions, then you can comment below. 
+If you have any questions, then you can comment below.
 
 {% include JB/setup %}

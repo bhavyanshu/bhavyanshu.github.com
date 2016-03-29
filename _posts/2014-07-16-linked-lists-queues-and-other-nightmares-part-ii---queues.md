@@ -11,9 +11,9 @@ date: 2014-07-16 18:05:45
 
 This is in continuation to [Part I](http://bhavyanshu.me/tutorials/linked-lists-queues--other-nightmares-part-i/07/16/2014/) in which I showed the use of pointers in implementing stack. I also talked about various concepts on pointers. Now we can move further.
 
-##Queues
+## Queues
 
-Unlike stacks, queue follows the rule of FIFO (first in first out). So our job is to construct a program that keeps track of the head which is nothing but the first element and the tail which will represent the empty space next to the last element. Why so? Because when we need to add a new element to the end of queue, we need an empty space. 
+Unlike stacks, queue follows the rule of FIFO (first in first out). So our job is to construct a program that keeps track of the head which is nothing but the first element and the tail which will represent the empty space next to the last element. Why so? Because when we need to add a new element to the end of queue, we need an empty space.
 Say for example our queue is **| 4 | 5 | 2 | 3 | _ | _ |**. So our head should point to 4 and tail should point to the empty space next to 3. The queue has two operations : Enqueue & Dequeue
 **Enqueue**: When we want to add a new element.
 **Dequeue**: When we want to remove an element. Keep in mind that the first element must be removed and the position of *head* must be moved to next element.
@@ -22,7 +22,7 @@ Say for example our queue is **| 4 | 5 | 2 | 3 | _ | _ |**. So our head should p
 
 **Concept** : In stack we only required **top** to represent top of stack. In queue we need two things, **head** and a **tail**.
 
-So our stucture would have 
+So our stucture would have
 
     {% highlight c%}
     typedef struct queue {
@@ -32,7 +32,7 @@ So our stucture would have
     }Queue;
     Queue *ptr = (struct queue*)malloc(sizeof(struct queue)); //Pointer of type queue
     {% endhighlight %}
-    
+
 After this in `main()` we use:
 
     {% highlight c%}
@@ -40,7 +40,7 @@ After this in `main()` we use:
 	ptr->tail=0; //because the queue has nothing.
 	{% endhighlight %}
 
-The two important functions are 
+The two important functions are
 
     {% highlight c%}
     void enque(queue *ptr, int num, int l); //Pushes the number to the end of queue and increases the tail by 1.
@@ -57,9 +57,9 @@ We need to send the limit as parameter as well because we need to check if the t
     		printf("|%d|\n",ptr->a[i]);
     	}
     }
-    
+
     void enque(queue *ptr, int num, int l) { //We push the element but first we check if the queue is full or not.
-    
+
     	if(ptr->tail==l) { // l is the limit. We check if tail is at last or not.
     		printf("\nQueue limit reached\n");
     		display(ptr);
@@ -72,10 +72,10 @@ We need to send the limit as parameter as well because we need to check if the t
     }
 
     int deque(queue *ptr, int num) {
-    
+
     	int result;
     	result = ptr->a[ptr->head]; //The head must be representing some element. We take that out and display queue is empty now message.
-    	
+
     	if(ptr->head==ptr->tail){
     		ptr->head=ptr->tail=0;
     		printf("\nQueue is empty Now\n");

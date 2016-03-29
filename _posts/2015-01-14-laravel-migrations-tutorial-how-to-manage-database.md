@@ -10,13 +10,13 @@ priority: 0.8
 date: 2015-01-14 14:20:08
 ---
 
-#Overview
+# Overview
 
 > Migrations are a type of version control for your database. They allow a team to modify the database schema and stay up to date on the current schema state. ~ [Laravel 4.2 Docs](http://laravel.com/docs/4.2/migrations)
 
 Well, by now I hope you have setup laravel and are able to run it on xampp. If not, then view [previous tutorial][1] on how to set things up. In this tutorial, I will show you how powerful laravel migrations are. Traditionally, you had to write an SQL query for PHP to manage databases. But using laravel migrations, you won't have to write SQL queries in php. Laravel will handle everything for you. Migrations are powerful because they allow you to put milestones whenever your database is modified. For instance, if you want to add a new table to the database, make a migration. If you want to drop a table, then just rollback your migration. Similarly, you can modify individual columns, rows etc.
 
-##Migrate - [Docs][2]
+## Migrate - [Docs][2]
 
 * First of all, you need to create a database. Go to your phpmyadmin, create a new database and edit your */LARAVEL_PROJECT_ROOT/local/database.php* with correct mysql configuration.
 
@@ -127,7 +127,7 @@ class DummyUsers extends Migration {
 
 * Now check your phpmyadmin and you can see the values are inserted in the table. Powerful, right? Don't forget to try out `php artisan migrate:rollback` to undo the changes.
 
-> Even though migrations are useful and all but we won't be using migrations to add data to our database. Migrations are mostly used to create tables and modify columns and other table properties. Moreover, if you use migrations, your data will interfere with production data. Hence, it is a bad practice to use migrations for insert. To add dummy data, we use another powerful technique of laravel, which is known as **seeding**. This is mostly used when you are running tests on your development environment. 
+> Even though migrations are useful and all but we won't be using migrations to add data to our database. Migrations are mostly used to create tables and modify columns and other table properties. Moreover, if you use migrations, your data will interfere with production data. Hence, it is a bad practice to use migrations for insert. To add dummy data, we use another powerful technique of laravel, which is known as **seeding**. This is mostly used when you are running tests on your development environment.
 
 ## Seeder
 
@@ -177,7 +177,7 @@ That's all. Please do refer to the [docs][2] for more information.
 
 [1]:https://bhavyanshu.me/tutorials/setup-laravel-project-on-xampp-linux/01/12/2015 "Setup laravel on lampp"
 [2]:http://laravel.com/docs/4.2/migrations "Laravel Docs - Migrations"
-                
+
 
 [View more tutorials on laravel](/pages/toc-laravel.html)
 

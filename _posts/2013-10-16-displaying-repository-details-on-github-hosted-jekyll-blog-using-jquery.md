@@ -8,27 +8,27 @@ change_frequency: "weekly"
 priority: 0.7
 ---
 
-#Overview 
+# Overview 
 
 >I just wanted to list the names of my on-going projects on github right on my blog so that visitors can really look at the work i have done so far or the work i am doing. I google'd for stand-alone jekyll plugins and already built modules that could be integrated with jekyll blog but nothing worked like i wanted.
 >So i went on and built my own script to do this task. I used javascript & jquery to achieve this. You can look at the demo on ["My projects"](http://bhavyanshu.me/projects.html).       
 
-##Requirement
+## Requirement
 
 1. Make sure you have latest jquery. That's all.                                                      
 
-##Tutorial
+## Tutorial
 
 I won't be showing you the css for it because that way you can style it yourself according to your site. I am pretty sure of that. I will just show you the javascript code for it.                                                                                                           
 
 * First of all create a page/post where you want to list the names of the projects. It will create a .md file. You can also add a simple html file if you wish to. That's just upto you. Now make a **gitquery.js** file and copy/paste the below given contents.                                                  
 
-###Code - gitquery.js                                                               
+### Code - gitquery.js                                                               
 
-                     
+
 
 	{% highlight javascript %}
-        
+
 		jQuery.gitUser = function (username, callback) {
 	    jQuery.getJSON('https://api.github.com/users/' + username + '/repos?per_page=100&callback=?', callback) //Change per_page according to your need.
 	}
@@ -63,8 +63,8 @@ I won't be showing you the css for it because that way you can style it yourself
 
 * Let us take a look at what all info you can fetch using github API. Take a look at the snippet of the JSON response.                                  
 
-###Code - Snippet of Json Response from Github API                
-                                                                                                     
+### Code - Snippet of Json Response from Github API                
+
 	{% highlight json%}
    {
     "id": 13015554,
@@ -151,13 +151,13 @@ I won't be showing you the css for it because that way you can style it yourself
     "master_branch": "master",
     "default_branch": "master"
    }
-	{% endhighlight %}	
-                                                                                   
-* Now create a .html file or .md file and include the code below. **display-projects** is a div element where the fetched result will be displayed.           
-                    
+	{% endhighlight %}
 
-###Code - html file
-	
+* Now create a .html file or .md file and include the code below. **display-projects** is a div element where the fetched result will be displayed.           
+
+
+### Code - html file
+
 	{% highlight html%}
 	...
 	<script src="path_to_js/gitquery.js"></script>

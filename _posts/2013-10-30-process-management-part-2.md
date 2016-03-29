@@ -45,13 +45,13 @@ int main()
 }
 	{% endhighlight %}
 
-##Process Scheduling
+## Process Scheduling
 
-Linux promises that no process will be completely starved of execution resources. There is a **niceness** value (zero by default) which means that if it is higher then the process is given a lesser execution priority. 
+Linux promises that no process will be completely starved of execution resources. There is a **niceness** value (zero by default) which means that if it is higher then the process is given a lesser execution priority.
 
-##Killing a process
+## Killing a process
 
-We have often used **kill** command in linux system to kill a process but did you ever think how it works internally? Well, the kill command works by sending the process a SIGTERM, or termination, signal. This causes the process to terminate, unless the executing program explicitly handles or masks the SIGTERM signal. 
+We have often used **kill** command in linux system to kill a process but did you ever think how it works internally? Well, the kill command works by sending the process a SIGTERM, or termination, signal. This causes the process to terminate, unless the executing program explicitly handles or masks the SIGTERM signal.
 
 In the next part we will read about threads. You can [subscribe via email](http://bhavyanshu.me/subscribe.html) for latest posts.
 

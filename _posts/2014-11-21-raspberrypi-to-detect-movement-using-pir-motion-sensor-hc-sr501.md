@@ -10,11 +10,11 @@ priority: 0.8
 date: 2014-11-21 10:30:45
 ---
 
-#Overview
+# Overview
 
 I recently bought a motion detection sensor [HC-SR501](http://www.amazon.in/HC-SR501-Electrical-Sensor-Pyroelectric-Infrared/dp/B00NR2W4NE). First, we will see how to connect it to our raspberry pi and then we will run the C code which helps us detect motion. Once the movement has been detected, it will set LED to HIGH and play an audio (.wav) file. There are a lot of [python implementations](https://github.com/bhavyanshu/rPiExperiments/blob/master/PIRsensor/pir.py) for it out there but if you are interested in specifically using C for this, then you have come to the right place.
 
-##Hardware
+## Hardware
 
 1. Breadboard
 2. Jumper Wires
@@ -28,7 +28,7 @@ We connect board pin number 1 (+3.3 V) to the VCC of the sensor, pin number 6 fo
 ![PIR](/assets/imags/raspi/pirsensor.png "PIR")
 
 
-##The fun begins
+## The fun begins
 
 
 Please make sure your connections are correct. If you are using some other pins then keep them in mind. You will have to change the `#define SENSOR` and `#define LED` macro in that case. The below given C program depends on [bcm2835 library](http://www.airspayce.com/mikem/bcm2835/). It will not compile without it.  First copy paste the contents of pir.c file or you can find the [raw file](https://raw.githubusercontent.com/bhavyanshu/rPiExperiments/master/PIRsensor/pir.c) here.
@@ -39,7 +39,7 @@ Please make sure your connections are correct. If you are using some other pins 
 /**
  * Program for PIRsensor. Detects movement and activates connected LED
  * for 2 seconds.
- * Connect on board pin number 07 to Sensor, 11 to LED 
+ * Connect on board pin number 07 to Sensor, 11 to LED
  * - Refer RPiGPIOPin section of
  *   http://www.airspayce.com/mikem/bcm2835/group__constants.html
  */
@@ -75,7 +75,7 @@ int main(int argc, char **argv)
 		{
 			printf("Movement at %d\n",(int)time(NULL));
 			bcm2835_gpio_set(LED);
-			/* Comment out both system() lines 
+			/* Comment out both system() lines
 			if don't wanna play wav file */
 			system("omxplayer beep.wav");
 			sleep(2);
@@ -116,14 +116,14 @@ It has to be run as root for it to be able to access hardware.
 
 That's all. Now move around the sensor. You will see LED is HIGH while you move and the .wav file also plays. Once you stand still, the LED will go off too. If there is an audio issue, take a look at [this](http://www.raspberrypi.org/documentation/configuration/audio-config.md) or post a comment below.
 
-Now let us quickly go through python implementation as well. [Raw File](https://raw.githubusercontent.com/bhavyanshu/rPiExperiments/master/PIRsensor/pir.py) 
+Now let us quickly go through python implementation as well. [Raw File](https://raw.githubusercontent.com/bhavyanshu/rPiExperiments/master/PIRsensor/pir.py)
 
 **pir.py** file :
- 
+
 	{% highlight python %}
 #!/usr/bin/env python
 
-# Info - This program is for PIR sensor. Contionusly checks for state, 
+# Info - This program is for PIR sensor. Contionusly checks for state,
 #        set LED if movement detected and plays wav file on detection.
 
 import RPi.GPIO as GPIO
@@ -142,7 +142,7 @@ val = False
 GPIO.setmode(GPIO.BOARD)	# Change this if using GPIO numbering
 GPIO.setup(PIR, GPIO.IN)	# Set PIR as input
 GPIO.setup(LED, GPIO.OUT)	# Set LED as output
- 
+
 try:
 	while True:
 		val = GPIO.input(PIR)		# read input value

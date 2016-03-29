@@ -12,7 +12,7 @@ I personally use parse.com as backend for a lot of projects so I thought it woul
 
 > NOTE : It will work in most cases but if the field is of pointer/array type, then it will put the complete pointer type field value under single column. Also, no dependency issue. You might wanna `pip install python-dateutil` in case you are using the datautil.parser to convert date time to better readable format.
 
-##Code [Updated - 26/12/2015]
+## Code [Updated - 26/12/2015]
 
 Update: Old script was comparing createdAt field and hence was stuck in loop. The updated code addresses that concern and has more functionality like using limit and skip functionality provided by parse API. Thanks to Janny for letting me know about this bug.
 

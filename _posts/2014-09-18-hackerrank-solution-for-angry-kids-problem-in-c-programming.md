@@ -9,7 +9,7 @@ priority: 0.8
 date: 2014-09-18 08:45:43
 ---
 
-##Problem Overview
+## Problem Overview
 
 Bill Gates is on one of his philanthropic journeys to a village in Utopia. He has N packets of candies and would like to distribute one packet to each of the K children in the village (each packet may contain different number of candies). To avoid any fighting among the children, he would like to pick K out of N packets, such that unfairness is minimized.
 
@@ -27,7 +27,7 @@ Output
 An integer that denotes the minimum possible value of unfairness.
 
 
-##Program that works for all test cases
+## Program that works for all test cases
 
 (Compiled & Tested on Linux with GNU GCC)
 
@@ -37,11 +37,11 @@ An integer that denotes the minimum possible value of unfairness.
 #include<stdlib.h>
 
 /*
- * Comparison function required by qsort - 
- * The comparison function must return an integer less 
+ * Comparison function required by qsort -
+ * The comparison function must return an integer less
  * than, equal to, or greater than zero if the first   
  * argument is considered to be respectively less than,   
- * equal to, or greater than the second. If two members 
+ * equal to, or greater than the second. If two members
  * compare as equal, their order in the sorted array is
  * undefined.
  */
@@ -55,12 +55,12 @@ int main(){
 	long long int i,j,k,n,z;
 	long long int unfairness=999999999999,new_unfairness;
 	long long int min,max;
-	
+
 	scanf("%lld",&n); //Input total number of packets
 
 	scanf("%lld",&k); //Input no. of children
 
-	int arr[n]; 
+	int arr[n];
 	//Input how much candy ith packet contains
 	for(i=0;i<n;i++)
 		scanf("%d",&arr[i]);
