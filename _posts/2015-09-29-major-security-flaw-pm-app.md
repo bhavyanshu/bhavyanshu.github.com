@@ -8,7 +8,7 @@ priority: 0.8
 date: 2015-09-29 14:30:42
 ---
 
-Jump to - <a href="#detailed-vulnerability-disclosure">Detailed Vulnerability Disclosure</a> - <a href="disclosure-to-officials">Disclosure to officials</a> - <a href="#discussion-with-developer">Discussion with developer</a>
+Jump to - <a href="#detailed-vulnerability-disclosure">Detailed Vulnerability Disclosure</a> - <a href="#disclosure-to-officials">Disclosure to officials</a> - <a href="#discussion-with-developer">Discussion with developer</a>
 
 # What were the issues?
 
