@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Developer team fixed vulnerabilities in Honorable PM's app & API"
+title: "Developer team fixed vulnerabilities in Honorable PM's app and API"
 description: "I reported the vulnerability and related exploit to the developer team. Discussed solutions and they have finally fixed the issues."
 tags: ["security"]
 change_frequency: "weekly"
