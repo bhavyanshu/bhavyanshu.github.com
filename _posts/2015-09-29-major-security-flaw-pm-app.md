@@ -28,7 +28,7 @@ The main issue was how the app was communicating with the API served by narendra
 
 Found major security loophole in how the app accesses the  "api.narendramodi.in/api/" API. At the time of disclosure, API was being served over "HTTP" as well as "HTTPS". People who were still using the older version of the app were accessing endpoints over HTTP. This was an issue because data (passwords, email addresses) was being transmitted as plain text. In simple terms, your login credentials could easily be intercepted. MITM attack could easily fetch passwords and email addresses. Also, if your ISP keeps log of data, which it probably does, then they might already have your email address, passwords etc in plain text. So if you were using this app, **I would suggest you to change your password immediately**. Can't leave out a possibility of it being compromised.
 
-Another major problem was that the token needed to access API was giving a false sense of security to developers. The access token could easily be fetched & anyone could send hand-crafted HTTP requests to the server. It would result in a valid JSON response without authenticating the user making the request. This included accessing user-data (primarily email address, fb profile pictures of those registered via fb) for any user and posting comments as any registered user of the app. There was no authentication check on the API endpoint. Let me explain you with a demo. 
+Another major problem was that the token needed to access API was giving a false sense of security to developers. The access token could easily be fetched & anyone could send hand-crafted HTTP requests to the server. It would result in a valid JSON response without authenticating the user making the request. This included accessing user-data (primarily email address, fb profile pictures of those registered via fb) for any user and posting comments as any registered user of the app. There was no authentication check on the API endpoint. Let me explain you with a demo.
 
 The API endpoint to fetch user profile information (email address) was *getprofile*. Before the vulnerability was fixed, the endpoint was accessible via "http://www.narendramodi.in/api/getprofile?userid=useridvalue&token=sometokenvalue". As you can see, it only required two parameters. *userid*, which we could easily iterate on starting from 1 & *token* which was a fixed value. There was no authentication check on API access layer. Hand-crafting such requests resulted in a valid JSON response which exposed critical data like email addresses of each and every user. I quickly wrote a very simply script to fetch some data to demonstrate. Here is the sample output for xrange(1,10).
 
@@ -44,7 +44,7 @@ They have fixed all these vulnerabilities. I still believe it wouldn't have take
 
 ## Disclosure to officials
 
-The email address provided on Google play store returned a response stating "The email account that you tried to reach is over quota". Had to get in touch with authorities via twitter. 
+The email address provided on Google play store returned a response stating "The email account that you tried to reach is over quota". Had to get in touch with authorities via twitter.
 
 **Vulnerability disclosed to authorities on 30th sep, 2015 around 5:30 AM**
 
@@ -62,7 +62,7 @@ The email address provided on Google play store returned a response stating "The
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/buzzindelhi">@buzzindelhi</a>  Should I forward the proposed solution to you that will eliminate the vulnerability?  <a href="https://twitter.com/pranesh_prakash">@pranesh_prakash</a></p>&mdash; Bhavyanshu Parasher (@pytacular) <a href="https://twitter.com/pytacular/status/649460681880678400">October 1, 2015</a></blockquote>
 
-<br>After this, I mailed them a solution regarding the issues. 
+<br>After this, I mailed them a solution regarding the issues.
 
 <hr>
 
