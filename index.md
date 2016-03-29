@@ -38,15 +38,17 @@ priority: 1.0
  </div>
 </div>
 
->##Contact
->> Got some work? Send an email at <ask@bhavyanshu.me>  or if just wanna say hi, then write to <bvyn@ya.ru>         
->> <br> PGP Key: `FDF1A9AB` - Verify at <a target="_blank" href="https://keybase.io/bhavyanshu">keybase.io</a> | <a href="https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0xCD1967F4FDF1A9AB" target="_blank">pgp.mit.edu</a> <br>              
->> <a href="https://github.com/{{ site.author.github }}" class="zocial github icon" target="_blank"><span class="hidden-desktop">Github</span></a>
->> <a href="https://plus.google.com/112306240164215805986" rel="author" class="zocial googleplus icon" target="_blank"><span class="hidden-desktop">Google+</span></a><a href="http://pytacular.tumblr.com" class="zocial tumblr icon" target="_blank"><span class="hidden-desktop">Tumblr</span></a>
->><a href="https://twitter.com/pytacular" class="zocial twitter icon" target="_blank"><span class="hidden-desktop">Twitter</span></a><a href="http://bhavyanshu.me/subscribe.html" class="zocial rss icon" target="_blank"><span class="hidden-desktop">Subscribe via Email</span></a>          
->> <br><a href="http://www.fsf.org/fb"><img style="width:150px;height:auto;" src="https://static.fsf.org/nosvn/no-facebook-me.png" alt="Not f'd — you won't find me on Facebook" /></a><br>
->> <br>
->> You can visit [tags section](/tags.html) to easily find topics of interest.
+
+## Contact  
+
+> Got some work? Send email to <mail@bhavyanshu.me>  or if just wanna say hi, then write to <bvyn@ya.ru>         
+> <br> PGP Key: `FDF1A9AB` - Verify at <a target="_blank" href="https://keybase.io/bhavyanshu">keybase.io</a> | <a href="https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0xCD1967F4FDF1A9AB" target="_blank">pgp.mit.edu</a> <br>              
+> <a href="https://github.com/{{ site.author.github }}" class="zocial github icon" target="_blank"><span class="hidden-desktop">Github</span></a>
+> <a href="https://plus.google.com/112306240164215805986" rel="author" class="zocial googleplus icon" target="_blank"><span class="hidden-desktop">Google+</span></a><a href="http://pytacular.tumblr.com" class="zocial tumblr icon" target="_blank"><span class="hidden-desktop">Tumblr</span></a>
+> <a href="https://twitter.com/pytacular" class="zocial twitter icon" target="_blank"><span class="hidden-desktop">Twitter</span></a>
+> <a href="http://bhavyanshu.me/subscribe.html" class="zocial rss icon" target="_blank"><span class="hidden-desktop">Subscribe via Email</span></a>          
+> <br>You won't find me on Facebook or LinkedIn. <br>
+> You can visit [tags section](/tags.html) to easily find topics of interest.
 
 <div class="row-fluid">
 <!-- Latest Post Div -->
