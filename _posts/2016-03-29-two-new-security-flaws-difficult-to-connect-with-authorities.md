@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Two new security flaws discovered but it's difficult to connect with the authorities"
-description: "Govt should try harder to make gov apps secure. Two new vulnerabilities reported but I have not got any response from the authorities till now."
+description: "Govt should try harder to make gov apps secure. Two new vulnerabilities reported but I haven't received any response from the authorities till now."
 tags: ["security"]
 change_frequency: "weekly"
 priority: 0.8
@@ -9,9 +9,10 @@ date: 2016-03-29 12:33:13
 ---
 
 ## What's going on?
-I have reported new security flaws in two most popular gov websites. I tried to get in touch with concerned authorities via email on 24th March but I haven't heard from them till now. The security flaws have not been made public and will never be made public until I am sure they have fixed them. I am very much interested in getting them fixed but it looks like they are not. I am bothered about it even if they are not because it is putting user identifiable information at risk and anyone with malicious intent can harvest all that information. Your data can be sold to companies and there is nothing new in it. It's just more credible if that data comes from government sources (*seriously*). Their own policy claims to protect user identifiable information but the truth is that they just aren't trying hard enough to secure things.
 
-I have the disclosure reports ready and I have already told them via email that they should share their pgp key so that I can send them encrypted copies of the reports. I haven't heard from them till now. *I had to go public again and this is the part I hate the most*. If the concerned authorities are not interested, it becomes my responsibility to push them to take things seriously. So, [just like before](https://bhavyanshu.me/major-security-flaw-pm-app/09/29/2015#disclosure-to-officials), I had to get in touch with Mr. Arvind Gupta.
+I have reported new security flaws in two most popular gov websites. I tried to get in touch with concerned authorities via email on **Thursday, 24th March 2016** but I haven't heard from them till now. The security flaws have not been made public and will never be made public until I am sure they have fixed them. I am very much interested in getting them fixed but it looks like they are not. I am bothered about it even if they are not because it is putting user identifiable information at risk and anyone with malicious intent can harvest all that information. Your data can be sold to companies and there is nothing new in it. It's just more credible if that data comes from government sources (*seriously*). Their own policy claims to protect user identifiable information but the truth is that they are not trying hard enough to secure apps.
+
+I have the disclosure reports ready and I have already told them via email that they should share their PGP key so that I can send them encrypted copies of the reports. I haven't heard from them till now. *I had to go public again and this is the part I hate the most*. If the concerned authorities are not interested, it becomes my responsibility to push them to take things seriously. So, [just like before](https://bhavyanshu.me/major-security-flaw-pm-app/09/29/2015#disclosure-to-officials), I had to get in touch with Mr. Arvind Gupta.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/pytacular">@pytacular</a> Contact <a href="https://twitter.com/amishra77">@amishra77</a></p>&mdash; Arvind Gupta (@buzzindelhi) <a href="https://twitter.com/buzzindelhi/status/714658965703958528">March 29, 2016</a></blockquote>
 
