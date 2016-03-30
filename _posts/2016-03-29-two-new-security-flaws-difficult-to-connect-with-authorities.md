@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Two new security flaws discovered but it's difficult to connect with the authorities"
-description: "Govt just isn't trying hard enough to make things secure for digital India."
+description: "Govt should try harder to make gov apps secure. Two new vulnerabilities reported but I have not got any response from the authorities till now."
 tags: ["security"]
 change_frequency: "weekly"
 priority: 0.8
