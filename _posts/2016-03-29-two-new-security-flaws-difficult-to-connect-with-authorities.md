@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Two news security flaws discovered but it's difficult to connect with the authorities"
+title: "Two new security flaws discovered but it's difficult to connect with the authorities"
 description: "Govt just isn't trying hard enough to make things secure for digital India."
 tags: ["security"]
 change_frequency: "weekly"
