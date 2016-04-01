@@ -20,6 +20,8 @@ I have the disclosure reports ready and I have already told them via email that 
 
 Just waiting for a reply so I can be done with this. I even have suggestions ready for them to quickly mitigate these problems. They just need to follow instructions mentioned in the disclosure reports and they will be able to fix these security issues. Also, I have written a [web app](https://github.com/bhavyanshu/openvid-sys) that can be dedicated for the purpose of better communication between researchers and concerned authorities. I can help modify it according to the needs of the government. This will surely help in future if someone wants to disclose vulnerabilities as it will reduce all these problems of communication.
 
+*****************
+
 ### Update - 2nd April, 2016
 
 After waiting for them to respond since 24th March, I am updating this post with more information. The authorities are being completely irresponsible with this. I cannot disclose the flaw but it's important to wake them up. I would like to inform you all that user identifiable information like email addresses, physical addresses can be fetched easily from myGov for all users. It's a goldmine for spammers. If you use myGov and have your valid email address registered with them, it can be assumed that your email address, name, physical address has already been sold out by now. This may not be problem for you and it may not bother you but let me tell you that some people do care about their personal information being leaked out and also myGov is breaking its own policy.
