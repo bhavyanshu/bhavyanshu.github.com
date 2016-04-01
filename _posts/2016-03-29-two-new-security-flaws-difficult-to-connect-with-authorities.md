@@ -20,6 +20,20 @@ I have the disclosure reports ready and I have already told them via email that 
 
 Just waiting for a reply so I can be done with this. I even have suggestions ready for them to quickly mitigate these problems. They just need to follow instructions mentioned in the disclosure reports and they will be able to fix these security issues. Also, I have written a [web app](https://github.com/bhavyanshu/openvid-sys) that can be dedicated for the purpose of better communication between researchers and concerned authorities. I can help modify it according to the needs of the government. This will surely help in future if someone wants to disclose vulnerabilities as it will reduce all these problems of communication.
 
+### Update - 2nd April, 2016
+
+After waiting for them to respond since 24th March, I am updating this post with more information. The authorities are being completely irresponsible with this. I cannot disclose the flaw but it's important to wake them up. I would like to inform you all that user identifiable information like email addresses, physical addresses can be fetched easily from myGov for all users. It's a goldmine for spammers. If you use myGov and have your valid email address registered with them, it can be assumed that your email address, name, physical address has already been sold out by now. This may not be problem for you and it may not bother you but let me tell you that some people do care about their personal information being leaked out and also myGov is breaking its own policy.
+
+> "MyGov do not sell or share any personally identifiable information volunteered on this site to any third party (public/private). **Any information provided on MyGov will be protected from loss, misuse, unauthorized access or disclosure, alteration, or destruction**. MyGov gather certain information about the User, such as Internet protocol (IP) address, domain name, browser type, operating system, the date and time of the visit and the pages visited. MyGov make no attempt to link these addresses with the identity of individuals visiting our site unless an attempt to damage MyGov has been detected."
+(https://mygov.in/simple-page/terms-conditions/)
+
+Also,
+
+> "Please note that **MyGov do not share any personally identifiable information volunteered on this site with any third party (public/private)**. Any information provided to this website will be protected from loss, misuse, unauthorized access, disclosure, alteration, or destruction."
+(https://mygov.in/mygov-faq/)
+
+I request the authorities to connect with me as soon as possible and get this fixed. Also, uidai.gov.in is vulnerable as well to an attack. Like I said above, I have the disclosure reports ready with suggestions on how to quickly fix them but the authorities are behaving too casually. I request them to immediately get in touch with me via [email](mail@bhavyanshu.me).
+
 [**I will update this page if there is any progress**]
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
