@@ -34,7 +34,7 @@ Also,
 > "Please note that **MyGov do not share any personally identifiable information volunteered on this site with any third party (public/private)**. Any information provided to this website will be protected from loss, misuse, unauthorized access, disclosure, alteration, or destruction."
 (https://mygov.in/mygov-faq/)
 
-I request the authorities to connect with me as soon as possible and get this fixed. Also, uidai.gov.in is vulnerable as well to an attack. Like I said above, I have the disclosure reports ready with suggestions on how to quickly fix them but the authorities are behaving too casually. I request them to immediately get in touch with me via [email](mail@bhavyanshu.me).
+I request the authorities to connect with me as soon as possible and get this fixed. Also, uidai.gov.in is vulnerable as well to an attack. Like I said above, I have the disclosure reports ready with suggestions on how to quickly fix them but the authorities are behaving too casually. I request them to immediately get in touch with me via [email](mailto:mail@bhavyanshu.me).
 
 [**I will update this page if there is any progress**]
 
