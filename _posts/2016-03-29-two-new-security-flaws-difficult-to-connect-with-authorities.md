@@ -36,11 +36,17 @@ Also,
 
 The problem with uidai.gov.in is complex. They are running an unpatched version of a server software which I can't disclose right now for obvious reasons but that particular server software has a CVE assigned to it that uidai.gov.in isn't even aware of. Also, they are using a protocol which has been considered obsolete. This vulnerability is bit complex to describe here and more challenging to exploit. Nonetheless, the risk is too high because uidai.gov.in is data critical and this particular vulnerability is already public with significant research published in order to perform this kind of attack. Well, even our CERT-In knows about this but has it issued any advisory to uidai? I doubt. I can confirm they know about it because I checked on [their website](http://www.cert-in.org.in/) and I can see that CVE listed there. I don't know what's the point of having CERT-In if all they gonna do is sit there and copy-paste CVE info from CERT-US.
 
-After waiting for a reply from Mr. Mishra, I had to finally find his email address myself. I emailed him but I haven't heard back from him till now either. I request the authorities to connect with me as soon as possible and get this fixed. Also, uidai.gov.in is vulnerable as well to an attack. Like I said above, I have the disclosure reports ready with suggestions on how to quickly fix them but the authorities are behaving too casually. I request them to immediately get in touch with me via [email](mailto:mail@bhavyanshu.me).
+*****************
 
-I would like to request Government of India to adopt a framework to improve communication between researchers and authorities. I have the [framework](https://github.com/bhavyanshu/openvid-sys) ready to be deployed that can be dedicated for the purpose of better communication between researchers and concerned authorities for security related issues. I can help modify it according to the needs of the government. This will surely help in future if someone wants to disclose vulnerabilities as it will reduce all these problems of communication. Help me reach out to the government of India. Thanks!
+### Update - 6th April, 2016
+
+UIDAI has finally replied and acknowledged the issue. Thanks to [@nixxin](https://twitter.com/nixxin) & [@jackerhack](https://twitter.com/jackerhack) for helping me reach out to authorities.
+
+Though I am still awaiting response from myGov.
 
 [**I will update this page if there is any progress**]
+
+I would like to request Government of India to adopt a framework to improve communication between researchers and authorities. I have the [framework](https://github.com/bhavyanshu/openvid-sys) ready to be deployed that can be dedicated for the purpose of better communication between researchers and concerned authorities for security related issues. I can help modify it according to the needs of the government. This will surely help in future if someone wants to disclose vulnerabilities as it will reduce all these problems of communication. Help me reach out to the government of India. Thanks!
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 {% include JB/setup %}
