@@ -12,28 +12,28 @@ date: 2015-09-24 07:22:06
 
 > **Please note that this tutorial will not work with laravel 5.2. This will only work with 5.0 and 5.1.**
 
-This tutorial assumes you have already setup laravel 5.0/5.1 project. If you have not, then refer to my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/24/2015/) of laravel 5.0/5.1 series on how to setup laravel & xampp on linux. This tutorial also assumes you have twitter bootstrap setup with your project. [Optional] If not, then refer to the [second tutorial](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/24/2015/). Come back here when you have setup everything and are ready to add authentication to your laravel 5.0/5.1 project.
+This tutorial assumes you have already setup laravel 5.0/5.1 project. If you have not, then refer to my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/24/2015) of laravel 5.0/5.1 series on how to setup laravel & xampp on linux. This tutorial also assumes you have twitter bootstrap setup with your project. [Optional] If not, then refer to the [second tutorial](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/24/2015). Come back here when you have setup everything and are ready to add authentication to your laravel 5.0/5.1 project.
 
 #Let's begin
 
 In laravel 5.0/5.1, the authentication has been made really simple. Earlier for laravel 4, I personally preferred to use *Confide* because it was simple to use and very flexible but laravel 5.0/5.1 makes it really easy and I don't need to use confide anymore. The authentication configuration file is located at *config/auth.php*. It also provides default migrations for user table. These are located in *database/migrations/*. For example,
 
 	2014_10_12_000000_create_users_table
-	2014_10_12_100000_create_password_resets_table 
+	2014_10_12_100000_create_password_resets_table
 
-Now open the *_create_users_table file* and you will see two methods already in it. Nothing is to be changed in these files until and unless you want to add or edit any field that will be created in the database. Not much has changed in case of migrations. It is still very much the same as it was in laravel 4.x. So if you want to learn more on migrations and seeding, [refer to this post](/tutorials/laravel-migrations-tutorial-how-to-manage-database/01/14/2015/). By default, you should have all the important fields like name, email, password, etc. Now let us use *artisan* to create these tables. Execute the following commands and you should get the output if you have configured your database correctly.
+Now open the *_create_users_table file* and you will see two methods already in it. Nothing is to be changed in these files until and unless you want to add or edit any field that will be created in the database. Not much has changed in case of migrations. It is still very much the same as it was in laravel 4.x. So if you want to learn more on migrations and seeding, [refer to this post](/tutorials/laravel-migrations-tutorial-how-to-manage-database/01/14/2015). By default, you should have all the important fields like name, email, password, etc. Now let us use *artisan* to create these tables. Execute the following commands and you should get the output if you have configured your database correctly.
 
 	$ sudo php artisan migrate:install
-	
+
 	Output : Migration table created successfully.
-	
+
 	$ sudo php artisan migrate
-	
-	Output: 
+
+	Output:
 	Migrated: 2014_10_12_000000_create_users_table
 	Migrated: 2014_10_12_100000_create_password_resets_table
 
-That's it. You can open your *phpmyadmin* and check the tables and their structure. Next step is how do we add data to table using forms. For this, we will first create our layouts using blade. Then we will write a controller to handle the actions of login and register. Also, in laravel, we make use of *HTTP Requests*. These let us validate the input provided by the users when they submit the form and also lets us define whether the users are authorized to make such requests or not. 
+That's it. You can open your *phpmyadmin* and check the tables and their structure. Next step is how do we add data to table using forms. For this, we will first create our layouts using blade. Then we will write a controller to handle the actions of login and register. Also, in laravel, we make use of *HTTP Requests*. These let us validate the input provided by the users when they submit the form and also lets us define whether the users are authorized to make such requests or not.
 
 > **Important Note**: By default, laravel has namespace set to "App" and mapped to *app/* directory. But you can change the namespace of all classes using one simple command. For example, in this tutorial, I have changed namespace for the app using command `sudo php artisan app:name Learnlaravel`, where the new namespace is "LearnLaravel".
 
@@ -41,7 +41,7 @@ That's it. You can open your *phpmyadmin* and check the tables and their structu
 
 Now moving on, first create the following blade layouts. In laravel 5, the views have been moved to *app/resources/views* directory. In that, create the following files. Please follow the directory structure otherwise you will have to make changes in routes as well.
 
-**baselayout.blade.php** (In app/resources/views/) - This is our parent layout. This uses twitter bootstrap. Learn how to integrate twitter bootstrap with your laravel project in this [post](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/24/2015/). If you just want to try it out, you can use CDN bootstrap and jquery. Just remove Html::style & Html::script instances in <head> section and uncomment the commented part.
+**baselayout.blade.php** (In app/resources/views/) - This is our parent layout. This uses twitter bootstrap. Learn how to integrate twitter bootstrap with your laravel project in this [post](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/24/2015). If you just want to try it out, you can use CDN bootstrap and jquery. Just remove Html::style & Html::script instances in <head> section and uncomment the commented part.
 
 	{% highlight html %}
 <!DOCTYPE html>
@@ -54,14 +54,14 @@ Now moving on, first create the following blade layouts. In laravel 5, the views
 
         {!! Html::script('js/jquery.min.js') !!}
         {!! Html::script('js/bootstrap.min.js') !!}
-        
+
         <!-- Bootstrap and jquery cdn - Uncomment this to use CDN.
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		-->
     </head>
-    
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -118,7 +118,7 @@ Now moving on, first create the following blade layouts. In laravel 5, the views
 		{!! Form::password('password', array('class' => 'form-control')) !!}
 		<br>
 		{!! Form::submit('Sign In' , array('class' => 'btn btn-primary')) !!}
-		
+
 		{!! Form::close() !!}
 		<br>
 	</div>
@@ -146,7 +146,7 @@ Now moving on, first create the following blade layouts. In laravel 5, the views
         {!! Html::ul($errors->all(), array('class'=>'errors')) !!}
 
         {!! Form::open(array('url' => 'users/register','class'=>'form')) !!}
-        
+
         <br>{!! Form::label('name', 'Username') !!}
         {!! Form::text('name', null, array('class' => 'form-control','placeholder' => 'kenny')) !!}
         <br>{!! Form::label('email', 'E-Mail Address') !!}
@@ -158,7 +158,7 @@ Now moving on, first create the following blade layouts. In laravel 5, the views
         {!! Form::password('password_confirmation',['class'=>'form-control']) !!}
         <br>
         {!! Form::submit('Sign Up' , array('class' => 'btn btn-primary')) !!}
-        
+
         {!! Form::close() !!}
         <br>
     </div>
@@ -188,7 +188,7 @@ That's it. We have our basic layouts ready. Next, we setup routes.
 
 -------------------------------------------------------------------------------------------------
 
-## Routes 
+## Routes
 Open *app/Http/routes.php*, and in that add the following
 
 	{% highlight php %}
@@ -226,13 +226,13 @@ AuthController.php
 
 // use ...
 
-/* IMPORTANT! 
-   change namespace "Learnlaravel" in below statements to whatever you have set. 
-   If not set then change it to "App" otherwise it will give an error 
+/* IMPORTANT!
+   change namespace "Learnlaravel" in below statements to whatever you have set.
+   If not set then change it to "App" otherwise it will give an error
    stating LoginRequest not found. */
 
 use Illuminate\Contracts\Auth\Guard;
-use Learnlaravel\Http\Requests\Auth\LoginRequest; 
+use Learnlaravel\Http\Requests\Auth\LoginRequest;
 use Learnlaravel\Http\Requests\Auth\RegisterRequest;
 
 class AuthController extends Controller
@@ -242,8 +242,8 @@ class AuthController extends Controller
      * User model instance
      * @var User
      */
-    protected $user; 
-    
+    protected $user;
+
     /**
      * For Guard
      *
@@ -260,7 +260,7 @@ class AuthController extends Controller
      */
     public function __construct(Guard $auth, User $user)
     {
-        $this->user = $user; 
+        $this->user = $user;
         $this->auth = $auth;
         $this->middleware('guest', ['except' => 'getLogout']);
     }
@@ -304,7 +304,7 @@ class AuthController extends Controller
         if ($this->auth->attempt($request->only('email', 'password'))) {
             return redirect()->route('dashboard');
         }
- 
+
         return redirect('users/login')->withErrors([
             'email' => 'The email or the password is invalid. Please try again.',
         ]);
@@ -353,7 +353,7 @@ In your projects root, execute
 Now it will automatically create the two required classes in *App/Http/Requests/Auth/* and will add template methods to them. We just have to edit the methods now. In both, set `authorize()` to return true. Like,
 
 	{% highlight php %}
-<?php 
+<?php
 //......
 public function authorize()
 {
@@ -364,7 +364,7 @@ public function authorize()
 And in **RegisterRequest.php**, edit `rules()` as,
 
 	{% highlight php %}
-<?php 
+<?php
 //......
 public function rules()
     {
@@ -378,7 +378,7 @@ public function rules()
 In **LoginRequest.php**, edit `rules()` as,
 
 	{% highlight php %}
-<?php 
+<?php
 //......
 public function rules()
     {
@@ -393,8 +393,8 @@ public function rules()
 Next, we need to edit *app/Http/Middleware/Authenticate.php* which handles redirection of user who is not logged in and is trying to access a page that requires authentication. Open that file and edit `handle()` function,
 
 	{% highlight php %}
-<?php 
-//......	
+<?php
+//......
 public function handle($request, Closure $next)
 {
     if ($this->auth->guest()) {

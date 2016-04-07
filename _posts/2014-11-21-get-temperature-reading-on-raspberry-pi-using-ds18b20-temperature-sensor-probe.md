@@ -162,7 +162,7 @@ else
 fi
 	{% endhighlight %}
 
-Now to automate you just tie this bash script to the cron job and run it few times a day. You can additionally add FTP details in the bash script to automatically upload latest log.json file to your server. On your server, you can write a code that generates a graph from this JSON data. Another way to plot graph would be to use matplotlib to plot graph on raspberry pi itself and auto-upload it to server using bash script. I am doing the same thing. [Look what you can make out of this](/building-homemade-weather-station-project/11/22/2014/).
+Now to automate you just tie this bash script to the cron job and run it few times a day. You can additionally add FTP details in the bash script to automatically upload latest log.json file to your server. On your server, you can write a code that generates a graph from this JSON data. Another way to plot graph would be to use matplotlib to plot graph on raspberry pi itself and auto-upload it to server using bash script. I am doing the same thing. [Look what you can make out of this](/building-homemade-weather-station-project/11/22/2014).
 
 
 If you don't want to generate all these log files, you can simply use [this bash script](https://raw.githubusercontent.com/bhavyanshu/rPiExperiments/master/TemperaturePi/temp.sh) that prints output to terminal instead of generating a log file. Leave a comment if you get stuck anywhere. I will try to help you out.

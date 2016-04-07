@@ -60,6 +60,6 @@ Each processes is identified by a unique **Process Identification** value known 
 Well the value can be increased to upto 4 million even. This is in <code> linux/threads.h </code>. This value can be increased via **proc/sys/kernel/pid_max**.				
 
 
-[Continue to part 2](http://bhavyanshu.github.io/tutorials/process-management-part-2/10/30/2013/)
+[Continue to part 2](http://bhavyanshu.github.io/tutorials/process-management-part-2/10/30/2013)
 
 {% include JB/setup %}

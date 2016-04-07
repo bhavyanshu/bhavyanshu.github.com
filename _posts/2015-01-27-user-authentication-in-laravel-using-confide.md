@@ -10,7 +10,7 @@ priority: 0.8
 date: 2015-01-27 03:24:34
 ---
 
-**This tutorial is for laravel 4**. For laravel 5 user authentication tutorial, [refer to this](/tutorials/easy-user-registration-and-authentication-in-laravel-5/09/24/2015/)
+**This tutorial is for laravel 4**. For laravel 5 user authentication tutorial, [refer to this](/tutorials/easy-user-registration-and-authentication-in-laravel-5/09/24/2015)
 
 ## Overview
 
@@ -44,7 +44,7 @@ At the end of config/app.php add 'Confide' => 'Zizaco\Confide\Facade' to the ali
 
 ),
 	{% endhighlight %}
- 
+
 Run the Composer update
 
 	$ composer update
@@ -63,34 +63,34 @@ Remove contents of your models/user.php file with the below ones
 use Zizaco\Confide\ConfideUser;
 use Zizaco\Confide\ConfideUserInterface;
 
-class User extends Eloquent implements ConfideUserInterface 
+class User extends Eloquent implements ConfideUserInterface
 {
 	use ConfideUser;
 }
 	{% endhighlight %}
 
 Confide comes with generator scripts for controllers and routes. To create the UsersController.php and to register the routes run the following:
-	
+
 	$ php artisan confide:controller
 	$ php artisan confide:routes
 
-Now just refresh, 
-	
+Now just refresh,
+
 	$ composer dump-autoload
 
 To test whether we have setup authentication, we will view it at localhost:8000/users/create
 
 	$ php artisan serve
 
-Similarly, routes have been added for login at users/login. So you can view that too at *http://localhost:8000/users/login*. That's ugly right? No it's not. It's actually functional. The forms are ugly. In the previous tutorial, I showed how you can use twitter bootstrap. To know how to create a view & style it with twitter bootstrap, [read this tutorial](//bhavyanshu.me/tutorials/basic-website-in-laravel-styling-it-with-twitter-bootstrap/01/15/2015/) first. Now let us test authentication.
+Similarly, routes have been added for login at users/login. So you can view that too at *http://localhost:8000/users/login*. That's ugly right? No it's not. It's actually functional. The forms are ugly. In the previous tutorial, I showed how you can use twitter bootstrap. To know how to create a view & style it with twitter bootstrap, [read this tutorial](//bhavyanshu.me/tutorials/basic-website-in-laravel-styling-it-with-twitter-bootstrap/01/15/2015) first. Now let us test authentication.
 
 Go on and open up your */LARAVEL_PROJECT_ROOT/app/views* folder. In that create a file called **layout.blade.php**. Also, you must have a **home.blade.php** in */LARAVEL_PROJECT_ROOT/app/views/users/* folder which will be the view that will be loaded when your user logs in. Now in home.blade.php file add
-   
+
               {% highlight text %}                 
-           
+
 @section('content')
 @if(Auth::check()) <h2> Hi, <%= Auth::user()->username %> </h2>
-@stop 
+@stop
         {% endhighlight %}
 
 Ofcourse, this will print "Hi, your_username" whenever user logs in. But first we need to setup controller, routes and filters. Filters are extremely useful components of laravel. Like for example, they can be used to check whether the user is logged in or not before loading a view and the decision can be made based on it. Let us see how this works. Open up your */LARAVEL_PROJECT_ROOT/app/filters.php* file and in that go to line ** Authentication Filters**. Change the code block for `auth` filter to
@@ -124,7 +124,7 @@ Route::get('/dashboard', array('before' => 'auth', function()
 That's it. It looks great. What we did here is basically applied a filter to a route. Now there is one more way to do this. Since we will be needing `auth` filter on many routes in our application, it is not a good idea to repeat same code again and again. Well, laravel has a way to do this. This is a sample from one of my applications, you can take a look at this.
 
 	{% highlight php %}
-Route::group(['before' => 'auth'], function() 
+Route::group(['before' => 'auth'], function()
 {
     	Route::post('users/passwordupdate', 'UsersController@passwordupdate');
 	Route::get('/profile/edit',array('as'=>'profileditform','uses'=>'ProfilesController@edit'));

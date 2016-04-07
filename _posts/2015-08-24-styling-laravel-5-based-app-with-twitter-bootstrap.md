@@ -10,9 +10,9 @@ priority: 0.8
 date: 2015-08-24 03:04:17
 ---
 
-If you have not setup laravel project yet, then follow my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/24/2015/) on how to setup laravel & xampp on linux. If you already have everything configuered then you may skip it.
+If you have not setup laravel project yet, then follow my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/24/2015) on how to setup laravel & xampp on linux. If you already have everything configuered then you may skip it.
 
-#Let's begin 
+#Let's begin
 
 Run `sudo npm install` in project root to get bootstrap-sass and laravel-elixir. You can also get bootstrap with bower (see below) but you need laravel-elixir.
 
@@ -63,12 +63,12 @@ Run `sudo npm install` in project root to get bootstrap-sass and laravel-elixir.
 		var jqueryPath = 'resources/assets/vendor/jquery';
 		mix.sass('app.scss')
 			.copy(jqueryPath + '/dist/jquery.min.js', 'public/js')
-			.copy(bpath + '/fonts', 'public/fonts') 
+			.copy(bpath + '/fonts', 'public/fonts')
 			.copy(bpath + '/javascripts/bootstrap.min.js', 'public/js');
       });
 
 * Next we install gulp using,
-	
+
       sudo npm install -g gulp
 
 * Now finally we execute gulp in project root
@@ -90,7 +90,7 @@ After it is finished copying all the files, our public directory tree should loo
 	|   `-- jquery.min.js
 	`-- robots.txt
 
-Now we have got jquery and bootstrap setup. We can now test them by including them in our blade template. 
+Now we have got jquery and bootstrap setup. We can now test them by including them in our blade template.
 
 -----------------------------------------------
 
@@ -121,7 +121,7 @@ Finally, add two class aliases to the aliases array of config/app.php:
 	// ...
 	],
 
-You may delete *resources/views/welcome.blade.php* and create new file called *baselayout.blade.php* in views directory. In that add, 
+You may delete *resources/views/welcome.blade.php* and create new file called *baselayout.blade.php* in views directory. In that add,
 
 	{% highlight html %}
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ You may delete *resources/views/welcome.blade.php* and create new file called *b
 		}
         </style>
     </head>
-    
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">

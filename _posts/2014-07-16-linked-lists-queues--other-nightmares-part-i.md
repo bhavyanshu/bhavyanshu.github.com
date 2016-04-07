@@ -14,7 +14,7 @@ date: 2014-07-16 08:05:45
 
 Oh well, I have been away from writing for a while now because of work. But I think I should share this little nightmare of mine with you all. I hate to admit that I have always disliked programming when it comes to data structures. But recently while going through the linux kernel source, i found that it really implements all these data structures in many cases so i must conquer this fear if i had to proceed with the kernel code.
 
-Better to focus on concepts and then think of how you can code it. First I am gonna talk about **pointers** because it is the most important and basic element required to construct data structures in C. This is also the major part where people are afraid to work upon but let me tell you one thing. Once you understand pointers, you won't ever leave C programming because it is actually a beautiful language and gives you more control over the hardware than any other language can. Forget java and c++ or c#, they are good for making fancy GUIs and mobile applications. If you wish to learn microcontroller programming or you wish to interact with the hardware, then C is the way to do it. Also I would like to let you know that I will be using [GNU GCC](https://gcc.gnu.org/) for compiling so you should know how to use it. If you don't then here is a [tutorial](http://bhavyanshu.me/programming-in-gcc/09/04/2013/) I wrote long time back. Refer to it and come back here to proceed.
+Better to focus on concepts and then think of how you can code it. First I am gonna talk about **pointers** because it is the most important and basic element required to construct data structures in C. This is also the major part where people are afraid to work upon but let me tell you one thing. Once you understand pointers, you won't ever leave C programming because it is actually a beautiful language and gives you more control over the hardware than any other language can. Forget java and c++ or c#, they are good for making fancy GUIs and mobile applications. If you wish to learn microcontroller programming or you wish to interact with the hardware, then C is the way to do it. Also I would like to let you know that I will be using [GNU GCC](https://gcc.gnu.org/) for compiling so you should know how to use it. If you don't then here is a [tutorial](http://bhavyanshu.me/programming-in-gcc/09/04/2013) I wrote long time back. Refer to it and come back here to proceed.
 
 ## Pointers
 
@@ -160,7 +160,7 @@ One more common thing that occurs when you deal with pointers is **Segmentation 
 
 In this I have encountered a segmentation fault because i was not initializing `Stack *ptr;`. The line where i was receiving the SIGSEGV was `ptr->top-1;`. I came to know this using **gdb**. To start gdb, open terminal and first compile the source using gcc `gcc -g stack.c -o stack` and then run `gdb stack`. The *-g* argument in gcc command generated necessary info for gdb. `b 20` in the image is a command to add a breakpoint in the code. Then I used `run` command to run the *stack* program. It runs till line 20 and the breaks off. Then I declared a new breakpoint `b 30` but the error was encountered at line 21. **gdb** is a very useful tool and you must get used to of using it.
 
-Look at [part II](http://bhavyanshu.me/tutorials/linked-lists-queues-and-other-nightmares-part-ii---queues/07/16/2014/) for Queues.
+Look at [part II](http://bhavyanshu.me/tutorials/linked-lists-queues-and-other-nightmares-part-ii---queues/07/16/2014) for Queues.
 
 [1]: /assets/imags/tuts/linuxkernel/gdb.png
 

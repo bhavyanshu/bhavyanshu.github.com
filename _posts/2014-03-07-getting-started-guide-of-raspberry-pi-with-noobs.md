@@ -50,7 +50,7 @@ They have even put up a nice video explaining how to setup OS on Raspberry Pi.
 For those, who can't watch the above video, I am going to explain how to setup.
 
 1. Go to the <a href="http://www.raspberrypi.org/downloads">downloads page</a> of Raspberry Pi. There you will find NOOBS right on top. Download the torrent file of *NOOBS (offline and network install)*.
-2. In the meantime, you should plugin your SDHC card and format it to **FAT32** using any formatter tool. [How to format on linux?](/tutorials/how-to-format-sdhc-card-in-linux-using-command-line/08/11/2015/)
+2. In the meantime, you should plugin your SDHC card and format it to **FAT32** using any formatter tool. [How to format on linux?](/tutorials/how-to-format-sdhc-card-in-linux-using-command-line/08/11/2015)
 3. Once the download is completed, extract the files in the ZIP archive to your SDHC card and unmount/eject the SDHC card.
 4. Now plug in your SDHC card in the raspberry Pi SDHC card slot and power up your Raspberry Pi. Make sure you have connected all the required peripheral devices, i.e, a monitor, a mini-usb keyboard, LAN cable etc.
 5. At first if you cannot see any display on powering up the Raspberry Pi, make sure your connections are correct and Raspberry Pi's on-board RED LED is on and GREEN LED is flickering at times on powering on your Pi. It's perfectly normal if it is.

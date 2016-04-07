@@ -12,7 +12,7 @@ date: 2015-08-12 14:50:56
 
 ## Overview
 
-I recently upgraded my [weather monitoring system](https://bhavyanshu.me/building-homemade-weather-station-project/11/22/2014/). To those who don't know, it basically records temperature, humidity, atmospheric pressure etc using various sensors. The sensors are integrated with GPIOs of my Raspberry Pi. Many people have asked me to share the circuit diagram & code for it so here it is. I designed it using Fritzing for linux. The code is still rough but it will give you a basic idea about how it all works. Please figure out the dependencies yourself. I have mentioned important ones though.
+I recently upgraded my [weather monitoring system](https://bhavyanshu.me/building-homemade-weather-station-project/11/22/2014). To those who don't know, it basically records temperature, humidity, atmospheric pressure etc using various sensors. The sensors are integrated with GPIOs of my Raspberry Pi. Many people have asked me to share the circuit diagram & code for it so here it is. I designed it using Fritzing for linux. The code is still rough but it will give you a basic idea about how it all works. Please figure out the dependencies yourself. I have mentioned important ones though.
 
 ## Requirements
 
