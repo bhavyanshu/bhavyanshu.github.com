@@ -71,7 +71,7 @@ public void showChangeLangDialog() {
     final EditText edt = (EditText) dialogView.findViewById(R.id.edit1);
 
     dialogBuilder.setTitle("Custom dialog");
-    dialogBuilder.setMessage("Enter text below"));
+    dialogBuilder.setMessage("Enter text below");
     dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
         public void onClick(DialogInterface dialog, int whichButton) {
             //do something with edt.getText().toString();

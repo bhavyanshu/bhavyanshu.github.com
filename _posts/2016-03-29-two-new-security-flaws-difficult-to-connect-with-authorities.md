@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Two new security flaws discovered but it's difficult to connect with the authorities"
-description: "Govt should try harder to make gov apps secure. Two new vulnerabilities reported but I haven't received any response from the authorities till now."
+description: "Govt should try harder to make gov apps secure. There is no way we can report security flaws."
 tags: ["security"]
 change_frequency: "weekly"
 priority: 0.8
