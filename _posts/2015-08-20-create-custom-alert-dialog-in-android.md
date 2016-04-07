@@ -87,6 +87,6 @@ public void showChangeLangDialog() {
 }
     {% endhighlight %}
 
-That's it. If you want to see how to use a spinner inside the custom alert dialog, [see this tutorial](/tutorials/provide-multiple-language-support-in-your-android-app/08/20/2015/).
+That's it. If you want to see how to use a spinner inside the custom alert dialog, [see this tutorial](/tutorials/provide-multiple-language-support-in-your-android-app/08/20/2015).
 
 {% include JB/setup %}
