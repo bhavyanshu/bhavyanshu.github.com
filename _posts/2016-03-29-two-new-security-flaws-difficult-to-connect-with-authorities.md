@@ -40,11 +40,13 @@ The problem with uidai.gov.in is complex. They are running an unpatched version 
 
 ### Update - 6th April, 2016
 
-UIDAI has finally replied and acknowledged the issue. Thanks to [@nixxin](https://twitter.com/nixxin) & [@jackerhack](https://twitter.com/jackerhack) for helping me reach out to authorities.
+UIDAI has finally replied and acknowledged the issue. Thanks to [@nixxin](https://twitter.com/nixxin) & [@jackerhack](https://twitter.com/jackerhack) for helping me reach out to authorities. UIDAI have fixed the issue as well.
 
-Though I am still awaiting response from myGov.
+### Update - 5th May, 2016
 
-[**I will update this page if there is any progress**]
+Though I am still awaiting response from myGov. They have not even bothered to reply. I am closing this post here. I will no longer update this. If government still wants to fix it, then they can directly get in touch with me.
+
+**********************
 
 I would like to request Government of India to adopt a framework to improve communication between researchers and authorities. I have the [framework](https://github.com/bhavyanshu/openvid-sys) ready to be deployed that can be dedicated for the purpose of better communication between researchers and concerned authorities for security related issues. I can help modify it according to the needs of the government. This will surely help in future if someone wants to disclose vulnerabilities as it will reduce all these problems of communication. Help me reach out to the government of India. Thanks!
 
