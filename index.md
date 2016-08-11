@@ -32,8 +32,8 @@ priority: 1.0
   Currently staying in
   <span itemprop="address" itemscope
     itemtype="http://data-vocabulary.org/Address">
-    <span itemprop="locality">Gurgaon</span>, 
-    <span itemprop="region">India</span> 
+    <span itemprop="locality">Illinois</span>,
+    <span itemprop="region">USA</span>
   </span></p>
  </div>
 </div>
@@ -68,11 +68,11 @@ priority: 1.0
 </div>
 <!-- End of twitter div -->					
 </div>
-<!-- 
+<!--
 <div class="grid_double_2" style="width:auto;margin-top:5px;position:relative;">
 <div id="github_parent" class="rssDiv" style="float:left; margin-top:30px;">
-<h2>My Github Activity</h2> 
-<div id="divRss"></div> 
+<h2>My Github Activity</h2>
+<div id="divRss"></div>
 </div>
 </div>
 -->
