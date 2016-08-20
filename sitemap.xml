@@ -570,7 +570,15 @@
         <loc>
             https://bhavyanshu.me/two-new-security-flaws-difficult-to-connect-with-authorities/03/29/2016
         </loc>
-        <lastmod>2016-05-23T12:42:57+05:30</lastmod>
+        <lastmod>2016-08-20T04:52:10+05:30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>
+            https://bhavyanshu.me/linux-configuration-for-uisedu-campus-wifi-using-netid/08/20/2016
+        </loc>
+        <lastmod>2016-08-20T05:27:10+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -584,21 +592,21 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/json/</loc>
-        <lastmod>2016-05-23T12:42:57+05:30</lastmod>
+        <lastmod>2016-08-20T05:27:10+05:30</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/apps/tmd/</loc>
         <lastmod>2016-03-31T01:31:39+05:30</lastmod>
     </url>
     <url>
-        <loc>https://bhavyanshu.me/pages/duel_masters/</loc>
-        <lastmod>2016-03-31T01:31:39+05:30</lastmod>
-    </url>
-    <url>
         <loc>https://bhavyanshu.me/</loc>
-        <lastmod>2016-03-31T01:31:39+05:30</lastmod>
+        <lastmod>2016-08-11T05:43:07+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://bhavyanshu.me/pages/duel_masters/</loc>
+        <lastmod>2016-03-31T01:31:39+05:30</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages.html</loc>
@@ -613,11 +621,11 @@
         <lastmod>2016-03-31T01:31:39+05:30</lastmod>
     </url>
     <url>
-        <loc>https://bhavyanshu.me/pages/apps/thingstodo/privacy.html</loc>
+        <loc>https://bhavyanshu.me/pages/apps/tmd/privacy.html</loc>
         <lastmod>2016-03-31T01:31:39+05:30</lastmod>
     </url>
     <url>
-        <loc>https://bhavyanshu.me/pages/apps/tmd/privacy.html</loc>
+        <loc>https://bhavyanshu.me/pages/apps/thingstodo/privacy.html</loc>
         <lastmod>2016-03-31T01:31:39+05:30</lastmod>
     </url>
     <url>
