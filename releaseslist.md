@@ -6,7 +6,7 @@ description: "This page contains the index of the software releases by me. Most 
 
 #Software Releases
 
-1. [LightMd Markdown Editor for Linux & Windows](lightmd-markdown-editor-for-linux-and-windows/11/06/2014/)
+1. [LightMd Markdown Editor for Linux & Windows](lightmd-markdown-editor-for-linux-and-windows/11/05/2014)
 2. [Geeklist Console](software-list-of-releases-for-geeklist-console/11/14/2013) 						
 3. [zBzOCR](list-of-zbzocr-releases/01/19/2014/)					
 4. [Shell Finder](list-of-shell-finder-releases/11/14/2013) 	
