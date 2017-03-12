@@ -148,7 +148,7 @@
         <loc>
             https://bhavyanshu.me/how-this-blog-works-list-of-free-tools-which-bloggers-look-out-for/12/01/2013
         </loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T22:04:35-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -326,7 +326,7 @@
         <loc>
             https://bhavyanshu.me/what-happens-when-you-switch-on-your-computer-facts-that-most-computer-science-engineers-wouldnt-know/10/20/2014
         </loc>
-        <lastmod>2017-03-11T00:21:22-06:00</lastmod>
+        <lastmod>2017-03-11T22:05:06-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -516,7 +516,7 @@
         <loc>
             https://bhavyanshu.me/tutorials/easy-user-registration-and-authentication-in-laravel-5/09/24/2015
         </loc>
-        <lastmod>2017-03-11T21:34:01-06:00</lastmod>
+        <lastmod>2017-03-11T21:59:24-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -560,7 +560,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/json/</loc>
-        <lastmod>2017-03-11T21:40:19-06:00</lastmod>
+        <lastmod>2017-03-11T22:05:06-06:00</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/duel_masters/</loc>
@@ -596,7 +596,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/releaseslist.html</loc>
-        <lastmod>2016-09-20T15:12:21-05:00</lastmod>
+        <lastmod>2017-03-11T21:58:29-06:00</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/search.html</loc>
@@ -628,7 +628,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/toc-laravel.html</loc>
-        <lastmod>2017-03-11T21:45:39-06:00</lastmod>
+        <lastmod>2017-03-11T22:03:19-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -646,7 +646,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/toc-raspberrypi.html</loc>
-        <lastmod>2017-03-11T21:44:47-06:00</lastmod>
+        <lastmod>2017-03-11T22:01:59-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

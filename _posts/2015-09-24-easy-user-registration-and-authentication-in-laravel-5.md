@@ -41,7 +41,7 @@ That's it. You can open your *phpmyadmin* and check the tables and their structu
 
 Now moving on, first create the following blade layouts. In laravel 5, the views have been moved to *app/resources/views* directory. In that, create the following files. Please follow the directory structure otherwise you will have to make changes in routes as well.
 
-**baselayout.blade.php** (In app/resources/views/) - This is our parent layout. This uses twitter bootstrap. Learn how to integrate twitter bootstrap with your laravel project in this [post](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/24/2015). If you just want to try it out, you can use CDN bootstrap and jquery. Just remove Html::style & Html::script instances in <head> section and uncomment the commented part.
+**baselayout.blade.php** (In app/resources/views/) - This is our parent layout. This uses twitter bootstrap. Learn how to integrate twitter bootstrap with your laravel project in this [post](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/23/2015). If you just want to try it out, you can use CDN bootstrap and jquery. Just remove Html::style & Html::script instances in <head> section and uncomment the commented part.
 
 	{% highlight html %}
 <!DOCTYPE html>
