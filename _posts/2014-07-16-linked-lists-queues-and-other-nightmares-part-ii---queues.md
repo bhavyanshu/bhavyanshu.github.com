@@ -9,7 +9,7 @@ priority: 0.8
 date: 2014-07-16 18:05:45
 ---
 
-This is in continuation to [Part I](http://bhavyanshu.me/tutorials/linked-lists-queues--other-nightmares-part-i/07/16/2014) in which I showed the use of pointers in implementing stack. I also talked about various concepts on pointers. Now we can move further.
+This is in continuation to [Part I](http://bhavyanshu.me/tutorials/linked-lists-queues-other-nightmares-part-i/07/16/2014) in which I showed the use of pointers in implementing stack. I also talked about various concepts on pointers. Now we can move further.
 
 ## Queues
 

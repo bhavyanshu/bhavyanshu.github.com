@@ -30,7 +30,7 @@ LightMd Markdown Editor is a free and open source editor for Markdown with a lot
 * Focus Mode and Full Screen Mode for distraction free typing
 * Multi-theme support
 
-View [changelog](https://github.com/bhavyanshu/LightMd_Editor/blob/master/changlog.md) for more details.
+View [changelog](https://github.com/bhavyanshu/LightMd_Editor/blob/master/changelog.md) for more details.
 
 To know what more features will be added, view [this](https://github.com/bhavyanshu/LightMd_Editor/labels/enhancement). You can also post a feature request here.
 

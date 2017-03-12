@@ -90,7 +90,7 @@ That's all. So as you can see that the bootstrapping procedure is rather complex
 * [Unreal Mode](wiki.osdev.org/Unreal_Mode "Unreal Mode OSWiki Link")
 * [Understanding the Linux Kernel by Daniel P. Bovet & Marco Cesati](http://www.amazon.in/Understanding-Linux-Kernel-Daniel-Bovet/dp/8184040830 "A very good book on Linux Kernel")
 * [x86 Wiki](http://en.wikipedia.org/wiki/X86 "x86 Wiki")
-* [80x86 Boot State Specifications](http://bcos.hopto.org/www2/spec/80x86/bstates/index.html "80x86 Boot State Specifications")
+* [80x86 Boot State Specifications](http://bcos.zapto.org/spec/ts/80x86/index.html "80x86 Boot State Specifications")
 
 
 {% include JB/setup %}

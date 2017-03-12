@@ -10,7 +10,7 @@ priority: 0.8
 date: 2015-08-24 03:04:17
 ---
 
-If you have not setup laravel project yet, then follow my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/24/2015) on how to setup laravel & xampp on linux. If you already have everything configuered then you may skip it.
+If you have not setup laravel project yet, then follow my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/23/2015) on how to setup laravel & xampp on linux. If you already have everything configuered then you may skip it.
 
 #Let's begin
 

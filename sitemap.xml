@@ -97,14 +97,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>
-            https://bhavyanshu.me/how-we-built-one-of-the-finest-disaster-alert-systems-in-48-hours/10/30/2013
-        </loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://bhavyanshu.me/tutorials/sql-joins-explained/11/02/2013</loc>
         <lastmod>2016-03-30T15:01:39-05:00</lastmod>
         <changefreq>weekly</changefreq>
@@ -132,7 +124,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/tutorials/linux-device-drivers-part-1/11/17/2013</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T21:40:19-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -178,14 +170,6 @@
     </url>
     <url>
         <loc>
-            https://bhavyanshu.me/tutorials/currently-in-a-phase-of-learning-opengl/12/24/2013
-        </loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>
             https://bhavyanshu.me/tutorials/setting-up-a-development-environment-for-opengl/01/02/2014
         </loc>
         <lastmod>2016-03-30T15:01:39-05:00</lastmod>
@@ -200,14 +184,6 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/list-of-zbzocr-releases/01/19/2014</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>
-            https://bhavyanshu.me/happy-to-anounce-the-release-of-first-cloud-based-android-app--its-open-source/01/22/2014
-        </loc>
         <lastmod>2016-03-30T15:01:39-05:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -312,7 +288,7 @@
         <loc>
             https://bhavyanshu.me/tutorials/linked-lists-queues--other-nightmares-part-i/07/16/2014
         </loc>
-        <lastmod>2016-04-07T09:00:43-05:00</lastmod>
+        <lastmod>2017-03-11T20:45:59-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -320,7 +296,7 @@
         <loc>
             https://bhavyanshu.me/tutorials/linked-lists-queues-and-other-nightmares-part-ii---queues/07/16/2014
         </loc>
-        <lastmod>2016-04-07T08:59:06-05:00</lastmod>
+        <lastmod>2017-03-11T20:42:54-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -329,14 +305,6 @@
         <lastmod>2016-03-30T15:01:39-05:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>
-            https://bhavyanshu.me/software-patenting-would-kill-innovation-must-not-follow-us/08/11/2014
-        </loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
     </url>
     <url>
         <loc>
@@ -358,7 +326,7 @@
         <loc>
             https://bhavyanshu.me/what-happens-when-you-switch-on-your-computer-facts-that-most-computer-science-engineers-wouldnt-know/10/20/2014
         </loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T00:21:22-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -372,7 +340,7 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/lightmd-markdown-editor-for-linux-and-windows/11/05/2014</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T20:59:14-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -532,7 +500,7 @@
         <loc>
             https://bhavyanshu.me/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/23/2015
         </loc>
-        <lastmod>2016-04-07T09:00:42-05:00</lastmod>
+        <lastmod>2017-03-11T21:16:22-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -540,7 +508,7 @@
         <loc>
             https://bhavyanshu.me/deitys-national-encryption-policy-is-a-disaster/09/19/2015
         </loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T20:53:47-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -548,13 +516,13 @@
         <loc>
             https://bhavyanshu.me/tutorials/easy-user-registration-and-authentication-in-laravel-5/09/24/2015
         </loc>
-        <lastmod>2016-04-07T09:00:43-05:00</lastmod>
+        <lastmod>2017-03-11T21:34:01-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bhavyanshu.me/major-security-flaw-pm-app/09/29/2015</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2016-12-02T18:08:57-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -592,10 +560,10 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/json/</loc>
-        <lastmod>2016-08-19T18:57:10-05:00</lastmod>
+        <lastmod>2017-03-11T21:40:19-06:00</lastmod>
     </url>
     <url>
-        <loc>https://bhavyanshu.me/pages/apps/tmd/</loc>
+        <loc>https://bhavyanshu.me/pages/duel_masters/</loc>
         <lastmod>2016-03-30T15:01:39-05:00</lastmod>
     </url>
     <url>
@@ -603,10 +571,6 @@
         <lastmod>2016-08-10T19:13:07-05:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://bhavyanshu.me/pages/duel_masters/</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages.html</loc>
@@ -617,15 +581,11 @@
         <lastmod>2016-03-30T15:01:39-05:00</lastmod>
     </url>
     <url>
-        <loc>https://bhavyanshu.me/pages/apps/bsdownloader/privacy.html</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
-    </url>
-    <url>
-        <loc>https://bhavyanshu.me/pages/apps/tmd/privacy.html</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
-    </url>
-    <url>
         <loc>https://bhavyanshu.me/pages/apps/thingstodo/privacy.html</loc>
+        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+    </url>
+    <url>
+        <loc>https://bhavyanshu.me/pages/apps/bsdownloader/privacy.html</loc>
         <lastmod>2016-03-30T15:01:39-05:00</lastmod>
     </url>
     <url>
@@ -656,37 +616,37 @@
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/toc-android-tutorials.html</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T21:47:27-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/toc-kernel.html</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T21:47:48-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/toc-laravel.html</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T21:45:39-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/toc-laravel5.html</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T21:42:47-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/toc-opengl.html</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T21:48:23-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://bhavyanshu.me/pages/toc-raspberrypi.html</loc>
-        <lastmod>2016-03-30T15:01:39-05:00</lastmod>
+        <lastmod>2017-03-11T21:44:47-06:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

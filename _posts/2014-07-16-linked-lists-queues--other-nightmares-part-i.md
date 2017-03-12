@@ -160,7 +160,7 @@ One more common thing that occurs when you deal with pointers is **Segmentation 
 
 In this I have encountered a segmentation fault because i was not initializing `Stack *ptr;`. The line where i was receiving the SIGSEGV was `ptr->top-1;`. I came to know this using **gdb**. To start gdb, open terminal and first compile the source using gcc `gcc -g stack.c -o stack` and then run `gdb stack`. The *-g* argument in gcc command generated necessary info for gdb. `b 20` in the image is a command to add a breakpoint in the code. Then I used `run` command to run the *stack* program. It runs till line 20 and the breaks off. Then I declared a new breakpoint `b 30` but the error was encountered at line 21. **gdb** is a very useful tool and you must get used to of using it.
 
-Look at [part II](http://bhavyanshu.me/tutorials/linked-lists-queues-and-other-nightmares-part-ii---queues/07/16/2014) for Queues.
+Look at [part II](https://bhavyanshu.me/tutorials/linked-lists-queues-and-other-nightmares-part-ii-queues/07/16/2014) for Queues.
 
 [1]: /assets/imags/tuts/linuxkernel/gdb.png
 

@@ -47,7 +47,7 @@ Although kernel modules don't execute sequentially, most actions performed by th
 
 This basically tells the developer that "I am a very dangerous function and only use me if you really know what you are doing". Yup, it's one badass type function. These generally are the llow-level component of the interface.
 
-That's it. I guess this is enough theory for now. Let us get on with writing our first module in the [next part](/tutorials/linux-device-drivers-part-2--writing-your-first-kernel-module/11/17/2013).
+That's it. I guess this is enough theory for now. Let us get on with writing our first module in the [next part](/tutorials/linux-device-drivers-part-2-writing-your-first-kernel-module/11/17/2013).
 
 {% include JB/setup %}
 
