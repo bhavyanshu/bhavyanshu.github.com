@@ -16,7 +16,7 @@ window.location = window.location.toString().replace(/^http:/, "https:");
 <link rel="icon" type="image/x-icon" href="https://bhavyanshu.me/favicon.ico?v=3"/>
 <title>
   {% if page.title %}
-  {{ page.title }} | 
+  {{ page.title }} |
   {% endif %}
   Bhavyanshu's Blog
 </title>
@@ -27,7 +27,7 @@ window.location = window.location.toString().replace(/^http:/, "https:");
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="author" href="https://plus.google.com/112306240164215805986"/>
 <!-- Google translate -->
-<meta name="google-translate-customization" content="bb7ab015109b8f9f-4c99376c1c5f8757-gbacc4f9d65539b3c-14"></meta>	
+<meta name="google-translate-customization" content="bb7ab015109b8f9f-4c99376c1c5f8757-gbacc4f9d65539b3c-14"></meta>
 
 <meta content="{{ site.title }}" property="og:site_name">
 {% if page.title %}
@@ -86,12 +86,10 @@ window.location = window.location.toString().replace(/^http:/, "https:");
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link href="{{ ASSET_PATH }}/css/fuelx.css" rel="stylesheet">
-<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">   
+<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css-social-buttons/css/zocial.stripped.css">
 <link href="{{ ASSET_PATH }}/css/pygments-light.css" rel="stylesheet" type="text/css" media="all">
-<link href="{{ ASSET_PATH }}/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">    
-<link href="{{ ASSET_PATH }}/css/style-light.css?body=1" rel="stylesheet" type="text/css" media="all">
+<link href="{{ ASSET_PATH }}/css/style-light.css?v=2" rel="stylesheet" type="text/css" media="all">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
@@ -128,7 +126,7 @@ window.location = window.location.toString().replace(/^http:/, "https:");
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
          <li><a href="/projects.html">Projects</a></li>
-         <li><a href="/archive.html">Blog</a></li>     
+         <li><a href="/archive.html">Blog</a></li>
          <li><a href="/releaseslist.html">Software Releases</a></li>
          <li><a href="/tags.html">Tags</a></li>
        </ul>
@@ -163,21 +161,21 @@ window.location = window.location.toString().replace(/^http:/, "https:");
                     <span class="hidden-desktop">Google+</span>
                   </a>
                 </li>
-                {% endif %}    
+                {% endif %}
                 {% if site.author.twitter %}
                 <li>
                   <a href="https://twitter.com/{{ site.author.twitter }}" class="zocial twitter icon" target="_blank">
                     <span class="hidden-desktop">Twitter</span>
                   </a>
                 </li>
-                {% endif %}                          
+                {% endif %}
                 {% if site.author.linkedin %}
                 <li>
                   <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="zocial linkedin icon" target="_blank">
                     <span class="hidden-desktop">LinkedIn</span>
                   </a>
                 </li>
-                {% endif %}                    
+                {% endif %}
                 {% if site.author.feedburner %}
                 <li>
                   <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}" class="zocial rss icon" target="_blank">
@@ -210,7 +208,7 @@ window.location = window.location.toString().replace(/^http:/, "https:");
           </footer>
     </div> <!-- /container -->
     <script type="text/javascript">
-    $(document).ready(function() { 
+    $(document).ready(function() {
      $("#srch_frm").submit(function(){
       var parameter = $('#q').val();
       if(parameter != null && parameter.length != 0) {
@@ -234,7 +232,7 @@ window.location = window.location.toString().replace(/^http:/, "https:");
     _gaq.push(['_setAccount', 'UA-46107357-1']);
     _gaq.push(['_trackPageview']);
     (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();

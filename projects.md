@@ -12,7 +12,7 @@ priority: 1.0
 ------------------------
 
 <script type="text/javascript">
-$(document).ready(function () {$("#my-github-projects").loadRepositories("bhavyanshu");}); 
+$(document).ready(function () {$("#my-github-projects").loadRepositories("bhavyanshu");});
 </script>
 <div id="my-github-projects">
 </div>

@@ -3,15 +3,11 @@ layout: page
 title: Bhavyanshu Parasher
 description : "Backend application developer, android application developer, python and php application developer."
 tags: ["bhavyanshu parasher", "bhavyanshu", "android application developer","backend application developer"]
-tagline: <a href="https://keybase.io/bhavyanshu">PGP key (Keybase.io)</a>
+tagline: <a href="https://keybase.io/bhavyanshu">PGP key</a>
 change_frequency: "weekly"
 priority: 1.0
 ---
 {% include JB/setup %}
-<!--<div class="myimg" style="float:none;">  
-<span class="g-person" data-href="//plus.google.com/112306240164215805986" data-theme="dark" data-layout="landscape" data-rel="author"></span>
-</div>-->
-<br>
 
 <h2>Bio</h2> <a href="https://twitter.com/pytacular" class="twitter-follow-button" data-show-count="true" data-size="large" data-lang="en">Follow @pytacular</a>
 <link href="https://plus.google.com/112306240164215805986" rel="publisher" />
@@ -19,17 +15,16 @@ priority: 1.0
 
 <div itemscope itemtype="http://data-vocabulary.org/Person" class="row" style="">
  <div class="col-sm-2" style="text-align:center;">
-    <img itemprop="image" class="myimg" style="display: block;float:none;height:130px;width:130px;margin:0px auto;" src="https://avatars0.githubusercontent.com/u/3829459" />
+    <img itemprop="image" class="myimg" style="display: block;float:none;height:130px;width:130px;margin:0px auto;" src="https://avatars0.githubusercontent.com/u/3829459" alt="bhavyanshu parasher" />
  </div>
 
  <div class="col-md-9">
-   <p>Hi, I am <span itemprop="name">Bhavyanshu Parasher</span>.
-   Welcome to my blog
-   <a href="http://bhavyanshu.me" itemprop="url">bhavyanshu.me</a>.
-   Graduated as a <span itemprop="title">computer science engineer</span> in 2014 and have worked as a backend developer. I prefer to write most of my code in PHP, Python, C and Java. I maintain a lot of open source projects and have contributed to many open source projects. Don't forget to check out my <a href="https://bhavyanshu.me/projects.html">projects</a>.
-   I use this blog to share my work or just talk about "things". Feel free to look around.<br>
+   <p>
+     I am a computer science grad</span> with experience as full stack developer and interest in cyber security. I am currently working at <a href="http://uis.edu" target="_blank">UIS</a> as a Student Web Associate. I have developed a lot of projects in PHP, Python, C and Java. Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
+     I use this blog to share my work or just talk about "things". Feel free to look around.
+   </p>
 
-  Currently staying in
+  <p>Currently staying in
   <span itemprop="address" itemscope
     itemtype="http://data-vocabulary.org/Address">
     <span itemprop="locality">Illinois</span>,
@@ -39,17 +34,18 @@ priority: 1.0
 </div>
 
 
-## Contact  
+##Contact  
 
-> Got some work? Send email to <mail@bhavyanshu.me>  or if just wanna say hi, then write to <bvyn@ya.ru>         
-> <br> PGP Key: `FDF1A9AB` - Verify at <a target="_blank" href="https://keybase.io/bhavyanshu">keybase.io</a> | <a href="https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0xCD1967F4FDF1A9AB" target="_blank">pgp.mit.edu</a> <br>              
-> <a href="https://github.com/{{ site.author.github }}" class="zocial github icon" target="_blank"><span class="hidden-desktop">Github</span></a>
-> <a href="https://plus.google.com/112306240164215805986" rel="author" class="zocial googleplus icon" target="_blank"><span class="hidden-desktop">Google+</span></a><a href="http://pytacular.tumblr.com" class="zocial tumblr icon" target="_blank"><span class="hidden-desktop">Tumblr</span></a>
-> <a href="https://twitter.com/pytacular" class="zocial twitter icon" target="_blank"><span class="hidden-desktop">Twitter</span></a>
-> <a href="http://bhavyanshu.me/subscribe.html" class="zocial rss icon" target="_blank"><span class="hidden-desktop">Subscribe via Email</span></a>          
-> <br>You won't find me on Facebook or LinkedIn. <br>
-> You can visit [tags section](/tags.html) to easily find topics of interest.
+Got some work? Send email to <mail@bhavyanshu.me>  or if just wanna say hi, then write to <bvyn@ya.ru>         
+`0xCD1967F4FDF1A9AB` Verify at <a target="_blank" href="https://keybase.io/bhavyanshu">keybase.io</a> | <a href="https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0xCD1967F4FDF1A9AB" target="_blank">pgp.mit.edu</a>                
+<a href="https://github.com/{{ site.author.github }}" class="zocial github icon" target="_blank"><span class="hidden-desktop"></span></a>
+<a href="https://plus.google.com/112306240164215805986" rel="author" class="zocial googleplus icon" target="_blank"><span class="hidden-desktop"></span></a>
+<a href="https://twitter.com/pytacular" class="zocial twitter icon" target="_blank"><span class="hidden-desktop"></span></a>
+<a href="http://bhavyanshu.me/subscribe.html" class="zocial rss icon" target="_blank"><span class="hidden-desktop"></span></a>          
+You won't find me on Facebook or LinkedIn.         
+You can visit [tags section](/tags.html) to easily find topics of interest.  
 
+<hr/>
 <div class="row-fluid">
 <!-- Latest Post Div -->
 <div class="col-md-8 latest_posts">
