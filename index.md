@@ -20,7 +20,7 @@ priority: 1.0
 
  <div class="col-md-9">
    <p>
-     I am a computer science grad</span> with experience as full stack developer and interest in cyber security. I am currently working at <a href="http://uis.edu" target="_blank">UIS</a> as a Student Web Associate. I have developed a lot of projects in PHP, Python, C and Java. Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
+     I am a computer science grad with experience as full stack developer and interest in cyber security. I am currently working at <a href="http://uis.edu" target="_blank">UIS</a> as a Student Web Associate. I have developed a lot of projects in PHP, Python, C and Java. Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
      I use this blog to share my work or just talk about "things". Feel free to look around.
    </p>
 
