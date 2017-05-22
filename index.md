@@ -34,7 +34,7 @@ priority: 1.0
 </div>
 
 
-##Contact  
+## Contact  
 
 Got some work? Send email to <mail@bhavyanshu.me>  or if just wanna say hi, then write to <bvyn@ya.ru>         
 `0xCD1967F4FDF1A9AB` Verify at <a target="_blank" href="https://keybase.io/bhavyanshu">keybase.io</a> | <a href="https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0xCD1967F4FDF1A9AB" target="_blank">pgp.mit.edu</a>                
