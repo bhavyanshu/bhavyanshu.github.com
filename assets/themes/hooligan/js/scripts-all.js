@@ -1,0 +1,7 @@
+// @koala-append "gitquery.js"
+// @koala-append "gitreleases.js"
+// @koala-append "jquery.urlshortner.js"
+// @koala-append "liquidescape.js"
+// @koala-append "scrollto.js"
+// @koala-append "subscribe.js"
+// @koala-append "twitter.js"
