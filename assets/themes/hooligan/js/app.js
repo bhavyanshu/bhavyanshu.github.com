@@ -24120,7 +24120,7 @@ var Github = function (_Component) {
         repoDesc: {},
         repoMeta: {
           position: 'absolute',
-          bottom: '5'
+          bottom: '5px'
         },
         repoMetaChild: {
           marginRight: '10px'
@@ -24153,7 +24153,7 @@ var Github = function (_Component) {
                 var lang = repo.language ? repo.language : '';
                 return _react2.default.createElement(
                   'div',
-                  { className: 'col-md-4', style: styles.repoWrapper },
+                  { className: 'col-md-4', key: index, style: styles.repoWrapper },
                   _react2.default.createElement(
                     'div',
                     { style: styles.repo },

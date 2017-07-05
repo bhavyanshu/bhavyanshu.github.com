@@ -57,7 +57,7 @@ class Github extends Component {
       },
       repoMeta: {
         position: 'absolute',
-        bottom: '5'
+        bottom: '5px'
       },
       repoMetaChild: {
         marginRight: '10px'
@@ -80,7 +80,7 @@ class Github extends Component {
                   var url = repo.homepage ? repo.homepage : repo.html_url;
                   var lang = repo.language ? repo.language : '';
                   return (
-                    <div className="col-md-4" style={styles.repoWrapper}>
+                    <div className="col-md-4" key={index} style={styles.repoWrapper}>
                       <div style={styles.repo}>
                         <h3><a href={url}>{repo.name}</a></h3>
                         <p>{repo.description.split(" ").splice(0,15).join(" ") + '...'}</p>
