@@ -1,0 +1,33 @@
+#my-github {
+  .emptyDiv {
+    text-align: center;
+  }
+  .loadingImg {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+    display: block;
+  }
+  .repoWrapper {
+    margin-bottom: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    .repo {
+      background-color: #eee;
+      height: 150px;
+      padding-top: 5px;
+      padding-left: 5px;
+
+      .repoMeta {
+        position: absolute;
+        bottom: 5px;
+
+        .repoMetaChild {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
