@@ -8,13 +8,10 @@ priority: 1.0
 ---
 
 
-<h2>My On-going projects (Interested contributors can fork)</h2>      
+<h2>Built with React</h2>      
 ------------------------
 
-<script type="text/javascript">
-$(document).ready(function () {$("#my-github-projects").loadRepositories("bhavyanshu");});
-</script>
-<div id="my-github-projects">
+<div id="my-github" class="row">
 </div>
 
 {% include JB/setup %}

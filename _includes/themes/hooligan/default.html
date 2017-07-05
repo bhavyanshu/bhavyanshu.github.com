@@ -89,12 +89,14 @@ window.location = window.location.toString().replace(/^http:/, "https:");
 <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css-social-buttons/css/zocial.stripped.css">
 <link href="{{ ASSET_PATH }}/css/pygments-light.css" rel="stylesheet" type="text/css" media="all">
-<link href="{{ ASSET_PATH }}/css/style-light.css?v=2" rel="stylesheet" type="text/css" media="all">
+<link href="{{ ASSET_PATH }}/css/style-light.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-<script src="{{ ASSET_PATH }}/js/scripts-all.min.js?v=1"></script>
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <style>
 .ggd {
@@ -202,6 +204,10 @@ window.location = window.location.toString().replace(/^http:/, "https:");
             </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           </footer>
     </div> <!-- /container -->
+
+    <script src="{{ ASSET_PATH }}/js/plugins.js?v=1"></script>
+    <script src="{{ ASSET_PATH }}/js/app.js?v=1"></script>
+
     <script type="text/javascript">
     $(document).ready(function() {
      $("#srch_frm").submit(function(){

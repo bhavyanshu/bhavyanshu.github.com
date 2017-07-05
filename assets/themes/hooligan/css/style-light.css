@@ -2042,11 +2042,10 @@ code {
   word-wrap: break-word;
 }
 
-input {
-	border-radius:5px;
+/*input {
 	border-radius: 5px;
 	border: 3px solid #E14F78;
-}
+}*/
 
 .nav-container2 { width:auto; margin:auto; height:30px;}
 .social-media-list { width: 100%; max-width: 1000px; }
@@ -2102,4 +2101,19 @@ input {
 .button_project:active {
 	position:relative;
 	top:1px;
+}
+
+/* Custom styles */
+
+#mc_embed_signup {
+  padding: 20px;
+}
+
+.mc-field-group {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#mce-EMAIL {
+  width: 300px;
 }

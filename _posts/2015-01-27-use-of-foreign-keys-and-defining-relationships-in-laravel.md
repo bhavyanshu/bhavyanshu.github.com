@@ -10,12 +10,12 @@ priority: 0.8
 date: 2015-01-27 14:08:23
 ---
 
-**This tutorial is for laravel 4**
+**This tutorial is for laravel 4. This is an outdated tutorial.**
 
 ## Overview
 
-This tutorial assumes you have already setup a laravel app. If not then please go through these [tutorials](/pages/toc-laravel.html) first. 
-We have already seen how powerful are laravel's views, controllers, routes, models & filters. Now we will look at how we can define relations between our models. In the previous tutorial we used Confide to create user authentication system. In that we had a **users** table. So we won't be going through all that again. This tutorial is specific to defining relationships. We will use a project example to create all this. Sit tight and code along. It will be a lot easier. 
+This tutorial assumes you have already setup a laravel app. If not then please go through these [tutorials](/pages/toc-laravel.html) first.
+We have already seen how powerful are laravel's views, controllers, routes, models & filters. Now we will look at how we can define relations between our models. In the previous tutorial we used Confide to create user authentication system. In that we had a **users** table. So we won't be going through all that again. This tutorial is specific to defining relationships. We will use a project example to create all this. Sit tight and code along. It will be a lot easier.
 
 
 
@@ -128,7 +128,7 @@ Now it is time to roll this migration and let it create a **profiles** table in 
 	$ php artisan migrate:refresh
 
 
-Also using profile fields in blade template is really easy. I wrote a ProfilesController.php and in that added a show() function which displays user his/her own profile. 
+Also using profile fields in blade template is really easy. I wrote a ProfilesController.php and in that added a show() function which displays user his/her own profile.
 
 
 

@@ -10,7 +10,7 @@ priority: 0.8
 date: 2015-09-24 07:22:06
 ---
 
-> **Please note that this tutorial will not work with laravel 5.2. This will only work with 5.0 and 5.1.**
+> **Please note that this tutorial will not work with laravel > 5.2. This is an outdated tutorial.**
 
 This tutorial assumes you have already setup laravel 5.0/5.1 project. If you have not, then refer to my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/23/2015) of laravel 5.0/5.1 series on how to setup laravel & xampp on linux. This tutorial also assumes you have twitter bootstrap setup with your project. [Optional] If not, then refer to the [second tutorial](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/23/2015). Come back here when you have setup everything and are ready to add authentication to your laravel 5.0/5.1 project.
 
@@ -167,7 +167,7 @@ Now moving on, first create the following blade layouts. In laravel 5, the views
 @stop
 	{% endhighlight %}
 
-**dashboard.blade.php** (In app/resources/views/users directory)  - Once users are logged in, they will get redirected to this page which is only accessible to authenticated users. `{{Auth::user()->name}}` displays the name of the logged in user. The *name* value corresponding to the authenticated user is stored in database when they register.
+**dashboard.blade.php** (In app/resources/views/users directory)  - Once users are logged in, they will get redirected to this page which is only accessible to authenticated users. {{ Auth::user()->name }} displays the name of the logged in user. The *name* value corresponding to the authenticated user is stored in database when they register.
 
 	{% highlight html %}
 @extends('baselayout')
@@ -178,7 +178,7 @@ Now moving on, first create the following blade layouts. In laravel 5, the views
 <div class="row">
 	<h1>Dashboard</h1>
 	<div class="well">
-		<p>Welcome <strong>{{Auth::user()->name}}</strong></p>
+		<p>Welcome <strong>{{ Auth::user()->name }}</strong></p>
 	</div>
 </div>
 @stop
