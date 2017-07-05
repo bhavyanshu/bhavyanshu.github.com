@@ -8,7 +8,7 @@ priority: 1.0
 ---
 
 
-<h2>Built with React</h2>      
+<p><a target="_blank" href="https://github.com/bhavyanshu/bhavyanshu.github.com/blob/master/webpack/components/github.js">Built with React</a></p>      
 ------------------------
 
 <div id="my-github" class="row">
