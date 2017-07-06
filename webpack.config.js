@@ -1,12 +1,17 @@
+var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+var fontPath = './assets/themes/hooligan/fonts/';
+
 module.exports = {
   entry: {
-    'bootstrap.js' : './webpack/bootstrap.js',
-    'plugins.js': './webpack/plugins.js',
-    'app.js': './webpack/app.js'
+    'js/bootstrap.js' : './webpack/js/bootstrap.js',
+    'js/plugins.js': './webpack/js/plugins.js',
+    'js/app.js': './webpack/js/app.js'
   },
   output: {
     // we’re going to put the generated file in the assets folder so jekyll will grab it.
-    path: __dirname + '/assets/themes/hooligan/js/',
+    path: __dirname + '/assets/themes/hooligan/',
     filename: '[name]'
   },
   module: {
@@ -20,21 +25,36 @@ module.exports = {
         }
       },
       {
+        test: /\.(woff2?|svg)$/,
+        loader: 'url-loader?limit=10000&name=' + fontPath + '/[hash].[ext]'
+      },
+      {
+        test: /\.(ttf|eot)$/,
+        loader: 'file-loader?name=' + fontPath + '/[hash].[ext]'
+      },
+      {
         test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/,
         loader: 'imports-loader?jQuery=jquery'
       },
       {
         test: /\.scss$/,
         loaders: [ 'style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap' ]
-      },
+      },      
       {
-        test: /\.(woff2?|svg)$/,
-        loader: 'url-loader?limit=10000&name=fonts/[name].[ext]'
-      },
-      {
-        test: /\.(ttf|eot)$/,
-        loader: 'file-loader?&name=fonts/[name].[ext]'
+        test: require.resolve('jquery'),
+        loader: 'expose-loader?jQuery!expose-loader?$'
       }
     ]
-  }
+  },
+  plugins: [
+
+    new ExtractTextPlugin({
+      filename: "[name].css"
+    }),
+
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
+  ]
 };
