@@ -1,7 +1,9 @@
+var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var fontPath = './assets/themes/hooligan/fonts/';
+var buildPath = '/assets/themes/hooligan/';
 
 module.exports = {
   entry: {
@@ -12,7 +14,8 @@ module.exports = {
   output: {
     // we’re going to put the generated file in the assets folder so jekyll will grab it.
     path: __dirname + '/assets/themes/hooligan/',
-    filename: '[name]'
+    filename: '[name]',
+    publicPath: buildPath
   },
   module: {
     loaders: [
@@ -26,11 +29,11 @@ module.exports = {
       },
       {
         test: /\.(woff2?|svg)$/,
-        loader: 'url-loader?limit=10000&name=' + fontPath + '/[hash].[ext]'
+        loader: 'url-loader?limit=10000&name=./fonts/[hash].[ext]'
       },
       {
         test: /\.(ttf|eot)$/,
-        loader: 'file-loader?name=' + fontPath + '/[hash].[ext]'
+        loader: 'file-loader?name=./fonts/[hash].[ext]'
       },
       {
         test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/,
@@ -39,7 +42,7 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: [ 'style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap' ]
-      },      
+      },
       {
         test: require.resolve('jquery'),
         loader: 'expose-loader?jQuery!expose-loader?$'

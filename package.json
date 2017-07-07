@@ -27,5 +27,9 @@
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "loadash": "0.0.1"
   }
 }
