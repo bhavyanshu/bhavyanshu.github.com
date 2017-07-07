@@ -25,6 +25,7 @@ remote-repo/
 coverage/
 .module-cache
 *.gem
+package-lock.json
 docs/.bundle
 docs/code
 docs/_site

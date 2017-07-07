@@ -4,9 +4,10 @@ import ReactDOM from 'react-dom';
 import Github from './components/github';
 
 // Stylesheets
-require('../stylesheets/app.scss');
+require('../stylesheets/github.scss');
 
-ReactDOM.render(
-  <Github username="bhavyanshu" />,
-  document.getElementById('my-github')
-);
+var elem = document.getElementById('my-github');
+
+if(elem) {
+  ReactDOM.render(<Github username="bhavyanshu" />, elem);
+}

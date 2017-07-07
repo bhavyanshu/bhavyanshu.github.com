@@ -1,0 +1,219 @@
+// Header
+
+// Navbar
+
+// Body Components
+.bio {
+  margin-bottom: 10px;
+}
+.social {
+  h2 {
+    width: 300px;
+  }
+  a {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    span {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+code, pre {
+  text-shadow: none;
+  color: #DADADA;
+  background: #333333;
+}
+
+code {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+//Footer
+.footer-wrapper {
+  background: #3a403e;
+  color: #eee;
+}
+
+//font-awesome customs
+.fa-nav {
+  font-size: 1.7em;
+}
+.fa-10x {
+  font-size: 128px;
+}
+
+// Thanks to https://codepen.io/ameyraut/pen/yfzog
+.social {
+  .fa-apple{
+    &:hover {
+      color:#aeb5c5;
+    }
+  }
+  .fa-android{
+    &:hover {
+      color:#A5C63B;
+    }
+  }
+  .fa-bitbucket,.fa-bitbucket-square{
+    &:hover {
+      color:#003366;
+    }
+  }
+  .fa-bitcoin,.fa-btc{
+    &:hover {
+      color:#F7931A;
+    }
+  }
+  .fa-css3{
+    &:hover {
+      color:#1572B7;
+    }
+  }
+  .fa-dribbble{
+    &:hover {
+      color:#F46899;
+    }
+  }
+  .fa-dropbox{
+    &:hover {
+      color:#018BD3;
+    }
+  }
+  .fa-facebook,.fa-facebook-square{
+    &:hover {
+      color:#3C599F;
+    }
+  }
+  .fa-flickr{
+    &:hover {
+      color:#FF0084;
+    }
+  }
+  .fa-foursquare{
+    &:hover {
+      color:#0086BE;
+    }
+  }
+  .fa-github,.fa-github-alt,.fa-github-square{
+    &:hover {
+      color:#070709;
+    }
+  }
+  .fa-google-plus,.fa-google-plus-square{
+    &:hover {
+      color:#CF3D2E;
+    }
+  }
+  .fa-html5{
+    &:hover {
+      color:#E54D26;
+    }
+  }
+  .fa-instagram{
+    &:hover {
+      color:#A1755C;
+    }
+  }
+  .fa-linkedin,.fa-linkedin-square{
+    &:hover {
+      color:#0085AE;
+    }
+  }
+  .fa-linux{
+    &:hover {
+      color:#FBC002;
+    }
+    color:#333;}
+  .fa-maxcdn{
+    &:hover {
+      color:#F6AE1C;
+    }
+  }
+  .fa-pagelines{
+    &:hover {
+      color:#241E20;
+    }
+    color:#3984EA;}
+  .fa-pinterest,.fa-pinterest-square{
+    &:hover {
+      color:#CC2127;
+    }
+  }
+  .fa-renren{
+    &:hover {
+      color:#025DAC;
+    }
+  }
+  .fa-skype{
+    &:hover {
+      color:#01AEF2;
+    }
+  }
+  .fa-stack-exchange{
+    &:hover {
+      color:#245590;
+    }
+  }
+  .fa-stack-overflow{
+    &:hover {
+      color:#FF7300;
+    }
+  }
+  .fa-trello{
+    &:hover {
+      color:#265A7F;
+    }
+  }
+  .fa-tumblr,.fa-tumblr-square{
+    &:hover {
+      color:#314E6C;
+    }
+  }
+  .fa-twitter,.fa-twitter-square{
+    &:hover {
+      color:#32CCFE;
+    }
+  }
+  .fa-vimeo-square{
+    &:hover {
+      color:#229ACC;
+    }
+  }
+  .fa-vk{
+    &:hover {
+      color:#375474;
+    }
+  }
+  .fa-weibo{
+    &:hover {
+      color:#D72B2B;
+    }
+  }
+  .fa-windows{
+    &:hover {
+      color:#12B6F3;
+    }
+  }
+  .fa-xing,.fa-xing-square{
+    &:hover {
+      color:#00555C;
+    }
+  }
+  .fa-youtube,.fa-youtube-play,.fa-youtube-square{
+    &:hover {
+      color:#C52F30;
+    }
+  }
+}
+
+.icon-zoom .fa:hover, .icon-zoom .fa:active {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}

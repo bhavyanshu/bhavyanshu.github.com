@@ -9,7 +9,8 @@ module.exports = {
   entry: {
     'js/bootstrap.js' : './webpack/js/bootstrap.js',
     'js/plugins.js': './webpack/js/plugins.js',
-    'js/app.js': './webpack/js/app.js'
+    'js/app.js': './webpack/js/app.js',
+    'js/font-awesome.js':'font-awesome-loader'
   },
   output: {
     // we’re going to put the generated file in the assets folder so jekyll will grab it.
@@ -52,7 +53,7 @@ module.exports = {
   plugins: [
 
     new ExtractTextPlugin({
-      filename: "./css/[name].css"
+      filename: "./css/app.css"
     }),
 
     new webpack.ProvidePlugin({

@@ -17,14 +17,18 @@ class Github extends Component {
   }
 
   componentDidMount() {
+    var self = this;
     axios.get('https://api.github.com/users/' + this.props.username + '/repos?per_page=100')
     .then(res => {
       const initrepos = res.data;
       this.sortByStars(initrepos);
-      this.setState({
-        loading: false,
-        repos: initrepos
-      });
+
+      setTimeout(() => {
+        self.setState({
+          loading: false,
+          repos: initrepos
+        });
+      }, 1000);
     });
   }
 
@@ -35,8 +39,8 @@ class Github extends Component {
         <div>
           {this.state.loading ? (
           <div className="emptyDiv">
-          <h2>Hold on tight, digging out {this.props.username} repositories</h2>
-          <img src="assets/themes/hooligan/images/bgs/453.GIF" className="loadingImg" alt="Loading.." />
+            <h2>Opening box of Awesomeness!</h2>
+            <span className="fa fa-github fa-10x fa-spin" aria-hidden="true"></span>
           </div>
           ) : (
             <div className="">
