@@ -52,7 +52,7 @@ module.exports = {
   plugins: [
 
     new ExtractTextPlugin({
-      filename: "[name].css"
+      filename: "./css/[name].css"
     }),
 
     new webpack.ProvidePlugin({
