@@ -9,11 +9,11 @@ priority: 0.8
 date: 2015-08-20 12:04:23
 ---
 
-#Overview
+# Overview
 
 This is for my own reference actually but if someone is looking for a solution on how to create a custom alert dialog, then this is the right tutorial for you.
 
-Create a new layout file under *res/layout* 
+Create a new layout file under *res/layout*
 
 **custom_dialog.xml**
 
@@ -30,7 +30,7 @@ Create a new layout file under *res/layout*
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text" />
-    
+
 </LinearLayout>
 	{% endhighlight %}
 
@@ -49,7 +49,7 @@ int id = item.getItemId();
     	case R.id.action_custom_dialog:
             showChangeLangDialog();
             return true;
-        
+
         //similarly write for other actions
 
         default:

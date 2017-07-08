@@ -9,7 +9,7 @@ priority: 0.4
 date: 2014-02-20 14:25:50
 ---
 
-#Why PDO is required?
+# Why PDO is required?
 
 First thing first. Let us understand the importance of PDO and why we must not use `mysql_*` & `mysqli` anymore.
 

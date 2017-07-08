@@ -12,7 +12,7 @@ date: 2015-08-24 03:04:17
 
 If you have not setup laravel project yet, then follow my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/23/2015) on how to setup laravel & xampp on linux. If you already have everything configuered then you may skip it.
 
-#Let's begin
+# Let's begin
 
 Run `sudo npm install` in project root to get bootstrap-sass and laravel-elixir. You can also get bootstrap with bower (see below) but you need laravel-elixir.
 
@@ -186,7 +186,7 @@ Next we create content specific to our pages. We would want different content fo
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 	<h2>Sign In</h2>
 	{!! Html::ul($errors->all(), array('class'=>'errors')) !!}

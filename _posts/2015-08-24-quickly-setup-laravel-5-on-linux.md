@@ -76,7 +76,7 @@ What is [xampp][2]?
 
   where *learn-laravel5* is the directory where all the laravel files will be stored. It's gonna take its time to download and install all the dependencies. If you get an error on *composer* command, just make sure */usr/local/bin/composer* is executable. For that, just do **sudo chmod +x /usr/local/bin/composer**. It should work now.
 
-##Testing
+## Testing
 
 First, `cd learn-laravel5` and then type
 

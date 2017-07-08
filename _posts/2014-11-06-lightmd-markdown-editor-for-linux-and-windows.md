@@ -14,10 +14,10 @@ date: 2014-11-06 5:20:42
 * [Download Section](#download--install)
 * [Screenshots](#screenshots)
 * [Contribute](#contribute)
-* [License](#license)         
+* [License](#license)
 
 
-#LightMd Markdown Editor
+# LightMd Markdown Editor
 
 LightMd Markdown Editor is a free and open source editor for Markdown with a lot of features. It has been tested on Linux as well as Windows. In near future, support for Mac OS will be added.
 
@@ -36,7 +36,7 @@ To know what more features will be added, view [this](https://github.com/bhavyan
 
 ## Screenshots
 
-![LightMd](/assets/imags/lightmd/lightmd1.png "LightMd")  
+![LightMd](/assets/imags/lightmd/lightmd1.png "LightMd")
 
 
 ![LightMd](/assets/imags/lightmd/lightmd2.png "LightMd")
@@ -63,8 +63,8 @@ If you just want a tarball of this, get it from the [releases](https://github.co
 
 This application is under GNU GPLv3. Please read the COPYING.txt file for further terms and conditions of the license.
 
->Copyright 2014 Bhavyanshu Parasher  
- This file is part of "LightMd Editor".  
+>Copyright 2014 Bhavyanshu Parasher
+ This file is part of "LightMd Editor".
  "LightMd Editor" is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the Free Software Foundation,
  either version 3 of the License, or (at your option) any later version.
@@ -87,7 +87,7 @@ Use the following commands to build. Make sure you have g++, gcc and Qt5 librari
 
 This will build the application if you have all the build dependencies. Come outside the *src* folder, you will see *build* & *bin* folders. In the *bin* folder, there is an executable file for the main application.
 
-**For those building on windows**  
+**For those building on windows**
 
 Get the latest Qt Creator. Download [source](https://github.com/bhavyanshu/LightMd_Editor/archive/master.zip). Go to *src* directory and open *src.pro* file in Qt Creator. Configure and run the project. It will build and run automatically.
 

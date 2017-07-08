@@ -10,9 +10,7 @@ priority: 1.0
 <div id="my-github" class="col-md-12">
 </div>
 
-
---------------------
 <div class="text-center"><a target="_blank" href="https://github.com/bhavyanshu/bhavyanshu.github.com/blob/master/webpack/components/github.js">Built with React</a></div>
---------------------
+
 
 {% include JB/setup %}

@@ -14,7 +14,7 @@ date: 2015-09-24 07:22:06
 
 This tutorial assumes you have already setup laravel 5.0/5.1 project. If you have not, then refer to my [first tutorial](/tutorials/quickly-setup-laravel-5-on-linux/08/23/2015) of laravel 5.0/5.1 series on how to setup laravel & xampp on linux. This tutorial also assumes you have twitter bootstrap setup with your project. [Optional] If not, then refer to the [second tutorial](/tutorials/styling-laravel-5-based-app-with-twitter-bootstrap/08/23/2015). Come back here when you have setup everything and are ready to add authentication to your laravel 5.0/5.1 project.
 
-#Let's begin
+# Let's begin
 
 In laravel 5.0/5.1, the authentication has been made really simple. Earlier for laravel 4, I personally preferred to use *Confide* because it was simple to use and very flexible but laravel 5.0/5.1 makes it really easy and I don't need to use confide anymore. The authentication configuration file is located at *config/auth.php*. It also provides default migrations for user table. These are located in *database/migrations/*. For example,
 

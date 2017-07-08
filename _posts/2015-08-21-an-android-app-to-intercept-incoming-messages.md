@@ -9,7 +9,7 @@ priority: 0.8
 date: 2015-08-23 09:14:21
 ---
 
-#Overview
+# Overview
 
 It is possible in Android to read all incoming SMS messages. That's why you see so many alternative apps for managing your SMS/MMS. Sometimes you see apps directly reading your incomming messages, like small code generated when you register with some app? It will automatically check if the incoming code in the message matches the one on their server. All this can be done using specific permissions which you can specify in *AndroidManifest.xml* file. They basically start a Receiver service which can have `onReceive` method to intercept all incoming messages and look for the required code. In this example I have shown how to log complete incoming message. You can view it in logcat.
 
@@ -83,7 +83,7 @@ public class SMSLog extends BroadcastReceiver {
                         String arrayString[] = msg_body.split("\\s+"); // you can now iterate over this as well
 
                         //or just check in the message for a word
-                        if(msg_body.toLowerCase().contains("SomeWordToLookFor".toLowerCase())) { 
+                        if(msg_body.toLowerCase().contains("SomeWordToLookFor".toLowerCase())) {
                             //Valid message, now send it to DB maybe? or just log it for now
                             String tolog = "Log: ["+getreadabledate()+"] New Message: "+msg_body+" - "+msg_from+"\n";
                             Log.d("Got",tolog);
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                 PackageManager.DONT_KILL_APP);
         Toast.makeText(this, "Enabled logging", Toast.LENGTH_SHORT).show();
-        
+
         //Let us also show a notification
         Notification notification = new Notification.Builder(getApplicationContext())
                 .setContentTitle("SMS Logger Running")

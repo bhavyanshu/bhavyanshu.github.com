@@ -1,22 +1,132 @@
 // Header
 
 // Navbar
+.navbar {
+  margin-bottom: 0px;
+}
 
 // Body Components
+.content {
+  a {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    :hover {
+      cursor: pointer;
+      cursor: hand;
+    }
+  }
+
+  p {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  ul.posts {
+    padding-left: 20px;
+    list-style: circle;
+
+    li {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .tag_box {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    overflow: hidden;
+
+    li {
+      float: left;
+      padding: 3px;
+      margin: 3px;
+      background-color: #e8efeb;
+      border-radius: 3px;
+      -webkit-box-shadow: -1px 3px 5px 0px #e6e6e6;
+      -moz-box-shadow: -1px 3px 5px 0px #e6e6e6;
+      box-shadow: -1px 3px 5px 0px #e6e6e6;
+
+      &:hover {
+        background-color: #c7ffe3;
+      }
+
+      a {
+
+        span {
+          vertical-align: super;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+  .social-media-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 5px 0;
+    overflow: hidden;
+    position: relative;
+
+    li {
+      float: left;
+      margin: 3px;
+    }
+  }
+
+  .pagination {
+    a.btn {
+      background-color: #131514;
+
+      &:hover {
+        color: #c7ffe3;
+        background-color: #3a403e;
+      }
+    }
+  }
+}
+
 .bio {
   margin-bottom: 10px;
 }
 .social {
-  h2 {
-    width: 300px;
+  .social-icons {
+    a {
+      color: #3a403e;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
   }
+
   a {
-    margin-left: 5px;
-    margin-right: 5px;
 
     span {
       padding-left: 5px;
       padding-right: 5px;
+    }
+  }
+}
+.page-header {
+  padding-bottom: 20px;
+
+  .date {
+    margin-left: 5px;
+  }
+
+  .social-media-list {
+    padding: 0px;
+    list-style: none;
+
+    li {
+      display: inline;
+      list-style: none;
+      float: left;
+      margin: auto;
     }
   }
 }
@@ -36,6 +146,21 @@ code {
 .footer-wrapper {
   background: #3a403e;
   color: #eee;
+  word-wrap: break-word;
+  padding: 2px;
+  height: 300px;
+
+  @media only screen and (max-width: 480px) {
+    height: 350px;
+  }
+
+  a {
+    color: #3fd8a6;
+  }
+
+  #top-btn {
+    margin: 10px;
+  }
 }
 
 //font-awesome customs
@@ -216,4 +341,6 @@ code {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
+  cursor: pointer;
+  cursor: hand;
 }

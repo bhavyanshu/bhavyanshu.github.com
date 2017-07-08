@@ -40,7 +40,7 @@ class Github extends Component {
           {this.state.loading ? (
           <div className="emptyDiv">
             <h2>Opening box of Awesomeness!</h2>
-            <span className="fa fa-github fa-10x fa-spin" aria-hidden="true"></span>
+            <span className="fa fa-cog fa-10x fa-spin" aria-hidden="true"></span>
           </div>
           ) : (
             <div className="">

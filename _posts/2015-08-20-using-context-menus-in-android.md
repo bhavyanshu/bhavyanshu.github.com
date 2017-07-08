@@ -9,7 +9,7 @@ priority: 0.8
 date: 2015-08-20 12:02:23
 ---
 
-#Overview
+# Overview
 
 I wrote this for my own reference but I hope this helps someone looking for a solution to register two different ListViews to show respective context menus in the same activity layout.
 
@@ -40,7 +40,7 @@ So now we have two listviews, we need to create two seperate menu layouts. In yo
 	{% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <menu
-    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/remove"
@@ -91,7 +91,7 @@ public void onCreateContextMenu(ContextMenu menu, View v,
 }
 	{% endhighlight %}
 
-Then in `onContextItemSelected()` we handle whatever the user presses just like we normally do. It does not matter what menu it belongs to because we are already handling all that in `onCreateContextMenu()` 
+Then in `onContextItemSelected()` we handle whatever the user presses just like we normally do. It does not matter what menu it belongs to because we are already handling all that in `onCreateContextMenu()`
 
 	{% highlight java %}
 @Override
@@ -131,10 +131,10 @@ protected void onCreate(Bundle savedInstanceState) {
     setContentView(R.layout.activity_main);
 
     //other stuffs
-    
+
     mListView1 = (ListView) findViewById(R.id.list1);
     mListView2 = (ListView) findViewById(R.id.list2);
-    
+
     // setadapter and other listeners and then finally
 
     registerForContextMenu(mListView1);

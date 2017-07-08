@@ -16,7 +16,7 @@ priority: 1.0
   </div>
   <div class="bio-text">
     <p>
-      I am a computer science grad with experience as full stack developer and interest in cyber security. I am currently working at <a href="http://uis.edu" target="_blank">UIS</a> as a Student Web Associate. I have developed a lot of projects in PHP, Python, C and Java. Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
+      I am a computer science grad with experience as full stack developer and interest in cyber security. I am currently working at <a href="http://uis.edu" target="_blank">UIS</a> as a Student Web Associate. Currently working on projects built using PHP, Python, jQuery, React, React native and Vuejs. Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
       I use this blog to share my work or just talk about "things". Feel free to look around.
     </p>
     <p>Currently staying in
@@ -36,11 +36,11 @@ priority: 1.0
     Social
     <a href="https://twitter.com/pytacular" class="twitter-follow-button" data-show-count="true" data-size="medium" data-lang="en">Follow @pytacular</a>
     </h2>
-    <p>
-      <a href="https://github.com/{{ site.author.github }}" target="_blank"><span class="fa fa-2x fa-github"></span><span class="hidden-xs">Github</span></a>
-      <a href="https://twitter.com/pytacular" target="_blank"><span class="fa fa-2x fa-twitter"></span><span class="hidden-xs">Twitter</span></a>
-      <a href="https://plus.google.com/112306240164215805986" rel="author" target="_blank"><span class="fa fa-2x fa-google-plus"></span><span class="hidden-xs">Google +</span></a>
-      <a href="http://bhavyanshu.me/subscribe.html" target="_blank"><span class="fa fa-2x fa-rss"></span><span class="hidden-xs">Subscribe</span></a>
+    <p class="social-icons">
+      <a href="https://github.com/{{ site.author.github }}" target="_blank"><span class="fa fa-2x fa-github"></span></a>
+      <a href="https://twitter.com/pytacular" target="_blank"><span class="fa fa-2x fa-twitter"></span></a>
+      <a href="https://plus.google.com/112306240164215805986" rel="author" target="_blank"><span class="fa fa-2x fa-google-plus"></span></a>
+      <a href="http://bhavyanshu.me/subscribe.html" target="_blank"><span class="fa fa-2x fa-rss"></span></a>
     </p>
     <p>You won't find me on Facebook or LinkedIn.
     You can visit <a href="/tags.html">tags section</a> to easily find topics of interest.</p>

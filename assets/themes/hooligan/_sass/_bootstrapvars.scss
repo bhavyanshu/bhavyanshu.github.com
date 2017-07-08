@@ -1,12 +1,12 @@
 $gray-base:              #000 !default;
 $gray-darker:            #3a403e !default;
 $gray-dark:              #6b736f !default;
-$gray:                   #98978B !default;
+$gray:                   #3fd8a6 !default;
 $gray-light:             #DFD7CA !default;
 $gray-lighter:           #F8F5F0 !default;
 
 $brand-primary:         #325D88 !default;
-$brand-success:         #4bc6a5 !default;
+$brand-success:         #059666 !default;
 $brand-info:            #29ABE0 !default;
 $brand-warning:         #F47C3C !default;
 $brand-danger:          #d9534f !default;
@@ -17,7 +17,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fbfbfb !default;
+$body-bg:               #ececec !default;
 //** Global text color on `<body>`.
 $text-color:            #3E3F3A !default;
 
@@ -26,7 +26,7 @@ $link-color:            $brand-success !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 10%) !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 //== Typography
@@ -39,7 +39,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          15px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -844,4 +844,4 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Point at which .dl-horizontal becomes horizontal
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
-$hr-border:                   $gray-lighter !default;
+$hr-border:                   $gray-dark !default;

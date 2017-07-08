@@ -10,11 +10,11 @@ priority: 0.8
 date: 2015-08-20 12:06:23
 ---
 
-#Overview
+# Overview
 
 Supporting multiple languages in android app is one of the most important tasks. Try to do it from the beginning otherwise you will end up with lots of strings to translate by the end. If you are not in a habbit of writing each and every string in *strings.xml* file then you probably should start doing that because it is easier to manage translations that way. We will see that how it is possible to do so.
 
-#Let's code
+# Let's code
 
 Create a new android app project. Just like you normally would. I ain't gonna tell you how to do that. In that open up *strings.xml* file and one thing I found very useful in new Android studio is that it has an inbuilt translation editor which is pretty useful. Before opening the translation editor, open your *strings.xml* file and write some strings in it. (Showing support for hindi in this tutorial)
 
@@ -62,7 +62,7 @@ In that you have buttons for *Add key* and *Add Locale*. Click *Add Locale* and 
 </resources>
 	{% endhighlight %}
 
-Next we add items to menu in which one would be used to show custom language selection dialog. Create new file in *res/menu/* called *menu_main.xml*. 
+Next we add items to menu in which one would be used to show custom language selection dialog. Create new file in *res/menu/* called *menu_main.xml*.
 
 **menu_main.xml**
 
@@ -71,7 +71,7 @@ Next we add items to menu in which one would be used to show custom language sel
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
-    
+
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
@@ -113,7 +113,7 @@ Next we add items to menu in which one would be used to show custom language sel
 </menu>
 	{% endhighlight %}
 
-Before we move onto the java part, let us quickly create a custom dialog layout with a spinner in it to select our languages from. 
+Before we move onto the java part, let us quickly create a custom dialog layout with a spinner in it to select our languages from.
 
 **language_dialog.xml**
 
@@ -133,7 +133,7 @@ Before we move onto the java part, let us quickly create a custom dialog layout 
         android:prompt="@string/language_setting"
         android:padding="10dp"
         />
-    
+
 </LinearLayout>
 	{% endhighlight %}
 
@@ -152,7 +152,7 @@ int id = item.getItemId();
     	case R.id.action_change_language:
             showChangeLangDialog();
             return true;
-        
+
         //similarly write for other actions
 
         default:

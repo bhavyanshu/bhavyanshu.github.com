@@ -1,4 +1,6 @@
 #my-github {
+  padding-bottom: 20px;
+
   .emptyDiv {
     text-align: center;
   }
@@ -10,13 +12,14 @@
     display: block;
   }
   .repoWrapper {
-    background-color: #f8fbfa;
     margin-bottom: 15px;
     padding-right: 5px;
     padding-left: 5px;
+    word-wrap: break-word;
 
     .repo {
-      height: 150px;
+      background-color: #e8efeb;
+      height: 200px;
       padding-top: 5px;
       padding-left: 5px;
 
