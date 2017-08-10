@@ -38,11 +38,12 @@ priority: 1.0
     </h2>
     <p class="social-icons">
       <a href="https://github.com/{{ site.author.github }}" target="_blank"><span class="fa fa-2x fa-github"></span></a>
+      <a href="https://www.linkedin.com/in/bhavyanshu/" target="_blank"><span class="fa fa-2x fa-linkedin"></span></a>
       <a href="https://twitter.com/pytacular" target="_blank"><span class="fa fa-2x fa-twitter"></span></a>
       <a href="https://plus.google.com/112306240164215805986" rel="author" target="_blank"><span class="fa fa-2x fa-google-plus"></span></a>
       <a href="http://bhavyanshu.me/subscribe.html" target="_blank"><span class="fa fa-2x fa-rss"></span></a>
     </p>
-    <p>You won't find me on Facebook or LinkedIn.
+    <p>You won't find me on Facebook.
     You can visit <a href="/tags.html">tags section</a> to easily find topics of interest.</p>
   </div>
   <div class="col-md-5" id="contact">
