@@ -3,7 +3,7 @@ layout: page
 title: Bhavyanshu Parasher
 description : "Backend application developer, android application developer, python and php application developer."
 tags: ["bhavyanshu parasher", "bhavyanshu", "android application developer","backend application developer"]
-tagline: <a href="https://keybase.io/bhavyanshu">PGP key</a>
+tagline: <a href="https://bhavyanshu.keybase.pub/files/resume-aug-2017.pdf" target="_blank">Resume</a>
 change_frequency: "weekly"
 priority: 1.0
 ---
@@ -54,7 +54,6 @@ priority: 1.0
     <p>
     0xCD1967F4FDF1A9AB - Verify at <a target="_blank" href="https://keybase.io/bhavyanshu">keybase.io</a> | <a href="https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0xCD1967F4FDF1A9AB" target="_blank">pgp.mit.edu</a>
     </p>
-    <p><a href="https://bhavyanshu.keybase.pub/files/resume-aug-2017.pdf" target="_blank">Resume</a></p>
   </div>
 </div>
 
