@@ -54,6 +54,7 @@ priority: 1.0
     <p>
     0xCD1967F4FDF1A9AB - Verify at <a target="_blank" href="https://keybase.io/bhavyanshu">keybase.io</a> | <a href="https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0xCD1967F4FDF1A9AB" target="_blank">pgp.mit.edu</a>
     </p>
+    <p><a href="https://bhavyanshu.keybase.pub/files/resume-aug-2017.pdf" target="_blank">Resume</a></p>
   </div>
 </div>
 
