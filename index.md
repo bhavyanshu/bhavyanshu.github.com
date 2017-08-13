@@ -16,8 +16,8 @@ priority: 1.0
   </div>
   <div class="bio-text">
     <p>
-      I am a computer science grad with experience as full stack developer and interest in cyber security. I am currently working at <a href="http://uis.edu" target="_blank">UIS</a> as a Student Web Associate. Currently working on projects built using PHP, Python, jQuery, React, React native and Vuejs. Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
-      I use this blog to share my work or just talk about "things". Feel free to look around.
+    I am a computer science grad with experience in full stack web development and interest in cybersecurity. I have been actively contributing to open source projects from past 4 years, mostly developing in PHP, JavaScript and Python. Apart from programming, I enjoy taking part in hackathons, CTF events, etc to enhance my knowledge of best practices in cyber security.
+    Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
     </p>
     <p>Currently staying in
      <span itemprop="address" itemscope
