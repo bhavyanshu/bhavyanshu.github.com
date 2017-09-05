@@ -30,7 +30,7 @@ Bolt CTF is a CTF hosting platform built using Laravel and VueJS. This tutorial 
 * We need to setup `Procfile` in the project root. Add following contents to the file:
 
   ```
-  web: vendor/bin/heroku-php-apache2 public
+  echo "web: vendor/bin/heroku-php-apache2 public" > Procfile
   ```
 
 * Next, we need to create a new app on heroku. This will generate the URL for the app.
@@ -64,6 +64,7 @@ Bolt CTF is a CTF hosting platform built using Laravel and VueJS. This tutorial 
   #default pgsql for heroku, you can also use mysql
   DB_CONNECTION=pgsql
   DB_HOST=CHANGE_DB_HOST
+  DB_PORT=CHANGE_DB_PORT
   DB_DATABASE=CHANGE_DB_NAME
   DB_USERNAME=CHANGE_DB_USER
   DB_PASSWORD=CHANGE_DB_PASSWORD
@@ -84,6 +85,8 @@ Bolt CTF is a CTF hosting platform built using Laravel and VueJS. This tutorial 
   MAIL_USERNAME=null
   MAIL_PASSWORD=null
   MAIL_ENCRYPTION=null
+  MAIL_FROM_ADDRESS=no-reply@some.herokuapp.com
+  MAIL_FROM_NAME=no-reply
   ```
 
 * Next we build the assets locally and then we push to heroku.
@@ -98,7 +101,7 @@ Bolt CTF is a CTF hosting platform built using Laravel and VueJS. This tutorial 
   npm run prod
 
   git add .
-  git add -f .env public/*
+  git add -f .env public/* storage/*
   git commit -m "First commit"
   git push heroku master
   ```
@@ -109,6 +112,7 @@ Bolt CTF is a CTF hosting platform built using Laravel and VueJS. This tutorial 
 
   ```bash
   heroku run php artisan migrate:refresh --seed
+  heroku run chmod -R 775 storage/
   ```
 
 If you face any problems, feel free to post on [github issues](https://github.com/bhavyanshu/boltctf/issues).
