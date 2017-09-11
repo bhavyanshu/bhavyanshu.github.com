@@ -3,7 +3,7 @@ layout: page
 title: Bhavyanshu Parasher
 description : "Backend application developer, android application developer, python and php application developer."
 tags: ["bhavyanshu parasher", "bhavyanshu", "android application developer","backend application developer"]
-tagline: <a href="https://bhavyanshu.keybase.pub/files/resume-aug-2017.pdf" target="_blank">Resume</a>
+tagline: <a href="https://bhavyanshu.keybase.pub/files/resume.pdf" target="_blank">Resume</a>
 change_frequency: "weekly"
 priority: 1.0
 ---
