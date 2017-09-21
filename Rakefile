@@ -54,7 +54,7 @@ task :post do
     exit -1
   end
   filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
-  currentdate = (Time.now.utc).strftime('%Y-%m-%d %H:%M:%S')
+  currentdate = (Time.now).strftime('%Y-%m-%d %H:%M:%S')
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
