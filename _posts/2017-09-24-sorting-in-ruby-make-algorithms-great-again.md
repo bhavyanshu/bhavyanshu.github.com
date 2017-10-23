@@ -70,9 +70,11 @@ describe BubbleSort do
 
 end
 ```
-
+------------
 
 ## Insertion Sort
+
+Basic implementation of Insertion Sort
 
 ```ruby
 class InsertionSort
