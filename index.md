@@ -16,7 +16,7 @@ priority: 1.0
   </div>
   <div class="bio-text">
     <p>
-    I am a computer science grad with experience in full stack web development and interest in cybersecurity. I have been actively contributing to open source projects from past 4 years, mostly developing in PHP, JavaScript and Python. Apart from programming, I enjoy taking part in hackathons, CTF events, etc to enhance my knowledge of best practices in cyber security.
+    I am a computer science grad with experience in full stack web development and interest in cybersecurity. I have been actively contributing to open source projects from past 4 years, mostly developing in Ruby, PHP, JavaScript and Python. Apart from programming, I enjoy taking part in hackathons, CTF events, etc to enhance my knowledge of best practices in cyber security.
     Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
     </p>
     <p>Currently staying in
