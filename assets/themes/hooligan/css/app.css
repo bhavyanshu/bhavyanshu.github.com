@@ -8429,6 +8429,12 @@ button.close {
   margin-top: 10px;
   background: #f7fcff;
   padding: 10px;
+  height: 400px;
+}
+
+.content .projects-home .project img {
+  height: 300px;
+  width: 100%;
 }
 
 .content .projects-home .project .image-block {

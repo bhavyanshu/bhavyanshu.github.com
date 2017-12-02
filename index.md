@@ -58,37 +58,42 @@ priority: 1.0
 </div>
 <hr/>
 <div class="row projects-home">
-  <h2 class="text-center">Featured Projects</h2>
+  <h2 id="featured-projects" class="text-center">Featured Projects</h2>
   <div class="col-md-12 text-center">
-    <div class="col-md-4 project">
-      <div class="image-block" style="background:url('assets/imags/lightmd/lightmd1.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
-      </div>
+    <div class="col-sm-4 project">
+      <img  src="assets/imags/lightmd/lightmd1.png" />
       <p><a href="https://github.com/bhavyanshu/LightMd_Editor" target="_blank">LightMd Markdown Editor</a></p>
+      <p>Built in C & C++ Qt Framework</p>
     </div>
-    <div class="col-md-4 project">
-      <div class="image-block" style="background:url('assets/imags/boltctf/boltctf.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
-      </div>
+    <div class="col-sm-4 project">
+      <img  src="assets/imags/boltctf/boltctf.png"/>
       <p><a href="https://github.com/bhavyanshu/BoltCTF" target="_blank">BoltCTF - CTF hosting platform</a></p>
+      <p>Built using Laravel & Vue.js Frameworks</p>
     </div>
-    <div class="col-md-4 project">
-      <div class="image-block" style="background:url('assets/imags/chatbase/chatbase-ex.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
-      </div>
-      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Chatbase Library in Elixir</a></p>
+    <div class="col-sm-4 project">
+      <img  src="assets/imags/chatbase/chatbase-ex.png"/>
+      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Google's Chatbase Library</a></p>
+      <p>Built using Elixir</p>
     </div>
-    <div class="col-md-4 project">
-      <div class="image-block" style="background:url('assets/imags/csc/csc-uis.jpg'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+    <div class="col-sm-4 project">
+      <div class="image-block" style="background:url('assets/imags/csc/csc-uis.jpg'); background-repeat:no-repeat; background-position:center top; background-size:contain;">
       </div>
-      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Computer Science Dept. @ UIS - Ruby on Rails</a></p>
+      <p><a href="https://csc.uis.edu" target="_blank">Computer Science Dept. @ UIS</a></p>
+      <p>Built using Ruby on Rails & Vue.js</p>
     </div>
-    <div class="col-md-4 project">
-      <div class="image-block" style="background:url('assets/imags/csc/csclub-uis.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+    <div class="col-sm-4 project">
+      <div class="image-block" style="background:url('assets/imags/csc/csclub-uis.png'); background-repeat:no-repeat; background-position:center top; background-size:contain;">
       </div>
-      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Computer Science Club @ UIS - Drupal</a></p>
+      <p><a href="http://csclub.uis.edu" target="_blank">Computer Science Club @ UIS</a></p>
+      <p>Built on Drupal using Bootstrap Framework</p>
     </div>
-    <div class="col-md-4 project">
-      <div class="image-block" style="background:url('assets/imags/chatbase/chatbase-ex.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+    <div class="col-sm-4 project">
+      <a href="https://twitter.com/UISedu/status/925808247742914560" target="_blank">
+      <div class="image-block" style="background:url('assets/imags/csc/alexa.png'); background-repeat:no-repeat; background-position:center top; background-size:contain;">
       </div>
-      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Chatbase Library in Elixir</a></p>
+      </a>
+      <p><a href="https://www.uis.edu/webservices/projects/alexa-skill/" target="_blank">Alexa Skills : UIS</a></p>
+      <p>Built using Alexa SDK in Node.js</p>
     </div>
   </div>
   <p class="text-center">
