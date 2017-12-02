@@ -34,6 +34,7 @@
     "webpack": "^3.9.1"
   },
   "scripts": {
+    "serve": "bundle exec jekyll s",
     "watch": "./node_modules/.bin/webpack --watch",
     "build": "./node_modules/.bin/webpack"
   },

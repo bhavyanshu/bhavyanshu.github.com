@@ -5,6 +5,14 @@
   margin-bottom: 0px;
 }
 
+.pad-top {
+  padding-top: 10px;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
 // Body Components
 .content {
   a {
@@ -46,14 +54,14 @@
       float: left;
       padding: 3px;
       margin: 3px;
-      background-color: #e8efeb;
+      background-color: #f7fcff;
       border-radius: 3px;
-      -webkit-box-shadow: -1px 3px 5px 0px #e6e6e6;
-      -moz-box-shadow: -1px 3px 5px 0px #e6e6e6;
-      box-shadow: -1px 3px 5px 0px #e6e6e6;
+      -webkit-box-shadow: -1px 3px 5px 0px #f7fcff;
+      -moz-box-shadow: -1px 3px 5px 0px #f7fcff;
+      box-shadow: -1px 3px 5px 0px #f7fcff;
 
       &:hover {
-        background-color: #c7ffe3;
+        background-color: #e9f5ff;
       }
 
       a {
@@ -62,6 +70,27 @@
           vertical-align: super;
           font-size: 0.8em;
         }
+      }
+    }
+  }
+
+  .projects-home {
+    .project {
+      margin-top: 10px;
+      background: #f7fcff;
+      padding: 10px;
+
+      // img {
+      //   height: 300px;
+      //   width: 100%;
+      // }
+
+      .image-block {
+        height: 300px;
+      }
+
+      p {
+        margin-top: 10px;
       }
     }
   }
@@ -81,11 +110,10 @@
 
   .pagination {
     a.btn {
-      background-color: #131514;
+      background-color: $gray-darker;
 
       &:hover {
-        color: #c7ffe3;
-        background-color: #3a403e;
+        color: $gray;
       }
     }
   }
@@ -144,7 +172,7 @@ code {
 
 //Footer
 .footer-wrapper {
-  background: #3a403e;
+  background: $gray-darker;
   color: #eee;
   word-wrap: break-word;
   padding: 2px;
@@ -155,7 +183,7 @@ code {
   }
 
   a {
-    color: #3fd8a6;
+    color: $gray;
   }
 
   #top-btn {
@@ -343,4 +371,8 @@ code {
   transform: scale(1.1);
   cursor: pointer;
   cursor: hand;
+}
+
+#share {
+  font-size: 24px;
 }

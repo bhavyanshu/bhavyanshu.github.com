@@ -3,7 +3,7 @@ layout: page
 title: Bhavyanshu Parasher
 description : "Backend application developer, android application developer, python and php application developer."
 tags: ["bhavyanshu parasher", "bhavyanshu", "android application developer","backend application developer"]
-tagline: <a href="https://bhavyanshu.keybase.pub/files/resume.pdf" target="_blank">Resume</a>
+tagline: <a class="small" href="https://bhavyanshu.keybase.pub/files/resume.pdf" target="_blank">Resume</a>
 change_frequency: "weekly"
 priority: 1.0
 ---
@@ -56,7 +56,45 @@ priority: 1.0
     </p>
   </div>
 </div>
-
+<hr/>
+<div class="row projects-home">
+  <h2 class="text-center">Featured Projects</h2>
+  <div class="col-md-12 text-center">
+    <div class="col-md-4 project">
+      <div class="image-block" style="background:url('assets/imags/lightmd/lightmd1.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+      </div>
+      <p><a href="https://github.com/bhavyanshu/LightMd_Editor" target="_blank">LightMd Markdown Editor</a></p>
+    </div>
+    <div class="col-md-4 project">
+      <div class="image-block" style="background:url('assets/imags/boltctf/boltctf.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+      </div>
+      <p><a href="https://github.com/bhavyanshu/BoltCTF" target="_blank">BoltCTF - CTF hosting platform</a></p>
+    </div>
+    <div class="col-md-4 project">
+      <div class="image-block" style="background:url('assets/imags/chatbase/chatbase-ex.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+      </div>
+      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Chatbase Library in Elixir</a></p>
+    </div>
+    <div class="col-md-4 project">
+      <div class="image-block" style="background:url('assets/imags/csc/csc-uis.jpg'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+      </div>
+      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Computer Science Dept. @ UIS - Ruby on Rails</a></p>
+    </div>
+    <div class="col-md-4 project">
+      <div class="image-block" style="background:url('assets/imags/csc/csclub-uis.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+      </div>
+      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Computer Science Club @ UIS - Drupal</a></p>
+    </div>
+    <div class="col-md-4 project">
+      <div class="image-block" style="background:url('assets/imags/chatbase/chatbase-ex.png'); background-repeat:no-repeat; background-position:center; background-size:contain;">
+      </div>
+      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Chatbase Library in Elixir</a></p>
+    </div>
+  </div>
+  <p class="text-center">
+    <a class="btn btn-sm btn-primary margin-top" href="/projects.html">View More</a>
+  </p>
+</div>
 <hr/>
 <div class="row-fluid">
   <div class="col-md-8 latest_posts">
