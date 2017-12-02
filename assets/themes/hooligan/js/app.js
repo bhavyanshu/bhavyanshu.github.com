@@ -23745,6 +23745,7 @@ var Github = function (_Component) {
               if (repo.name != _this3.props.username.toLowerCase() + '.github.com' && repo.fork != true) {
                 var url = repo.homepage ? repo.homepage : repo.html_url;
                 var lang = repo.language ? repo.language : '';
+                var description = repo.description ? repo.description : '';
                 return _react2.default.createElement(
                   'div',
                   { className: 'col-md-4 repoWrapper', key: index },
@@ -23763,7 +23764,7 @@ var Github = function (_Component) {
                     _react2.default.createElement(
                       'p',
                       null,
-                      repo.description.split(" ").splice(0, 15).join(" ") + '...'
+                      description.split(" ").splice(0, 15).join(" ") + '...'
                     ),
                     _react2.default.createElement(
                       'div',

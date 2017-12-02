@@ -49,11 +49,12 @@ class Github extends Component {
                 if ((repo.name != (this.props.username.toLowerCase()+'.github.com')) && (repo.fork != true)) {
                   var url = repo.homepage ? repo.homepage : repo.html_url;
                   var lang = repo.language ? repo.language : '';
+                  var description = repo.description? repo.description: '';
                   return (
                     <div className="col-md-4 repoWrapper" key={index}>
                       <div className="repo">
                         <h3><a href={url}>{repo.name}</a></h3>
-                        <p>{repo.description.split(" ").splice(0,15).join(" ") + '...'}</p>
+                          <p>{description.split(" ").splice(0,15).join(" ") + '...'}</p>
                         <div className="repoMeta">
                           <span className="repoMetaChild">{lang}</span>
                           <span className="fa fa-star"></span> <span className="repoMetaChild">{repo.watchers}</span>
