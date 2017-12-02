@@ -17,7 +17,7 @@ priority: 1.0
   <div class="bio-text">
     <p>
     I am a computer science grad with experience in full stack web development and interest in cybersecurity. I have been actively contributing to open source projects from past 4 years, mostly developing in Ruby, PHP, JavaScript and Python. Apart from programming, I enjoy taking part in hackathons, CTF events, etc to enhance my knowledge of best practices in cyber security.
-    Do check out my <a href="https://bhavyanshu.me/projects.html">projects</a> section.
+    Do check out my <a href="#featured-projects">projects</a> section.
     </p>
     <p>Currently staying in
      <span itemprop="address" itemscope
@@ -62,17 +62,17 @@ priority: 1.0
   <div class="col-md-12 text-center">
     <div class="col-sm-4 project">
       <img  src="assets/imags/lightmd/lightmd1.png" />
-      <p><a href="https://github.com/bhavyanshu/LightMd_Editor" target="_blank">LightMd Markdown Editor</a></p>
+      <p><a href="https://github.com/bhavyanshu/LightMd_Editor" target="_blank">LightMd Markdown Editor - FOSS</a></p>
       <p>Built in C & C++ Qt Framework</p>
     </div>
     <div class="col-sm-4 project">
       <img  src="assets/imags/boltctf/boltctf.png"/>
-      <p><a href="https://github.com/bhavyanshu/BoltCTF" target="_blank">BoltCTF - CTF hosting platform</a></p>
+      <p><a href="https://github.com/bhavyanshu/BoltCTF" target="_blank">BoltCTF - FOSS CTF hosting platform</a></p>
       <p>Built using Laravel & Vue.js Frameworks</p>
     </div>
     <div class="col-sm-4 project">
       <img  src="assets/imags/chatbase/chatbase-ex.png"/>
-      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Google's Chatbase Library</a></p>
+      <p><a href="https://github.com/bhavyanshu/Chatbase-elixir" target="_blank">Google's Chatbase Library- FOSS</a></p>
       <p>Built using Elixir</p>
     </div>
     <div class="col-sm-4 project">
