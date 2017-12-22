@@ -8,13 +8,18 @@ change_frequency: "weekly"
 priority: 1.0
 ---
 {% include JB/setup %}
-
+<style>
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+</style>
 <div class="row">
  <div class="col-md-12 bio">
-  <div class="pull-left">
-   <img itemprop="image" class="bio-img" style="display: block; width: 150px; margin-right: 8px; margin-bottom:5px;" src="https://avatars0.githubusercontent.com/u/3829459" alt="bhavyanshu parasher" />
+  <div class="col-md-3">
+    <div class="embed-container">
+    <iframe src="https://www.youtube.com/embed/7Fy1_9NHIzY" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
-  <div class="bio-text">
+  <div class="col-md-9 bio-text">
     <p>
     I am a computer science grad with experience in full stack web development and interest in cybersecurity. I have been actively contributing to open source projects from past 4 years, mostly developing in Ruby, PHP, JavaScript and Python. Apart from programming, I enjoy taking part in hackathons, CTF events, etc to enhance my knowledge of best practices in cyber security.
     Do check out my <a href="#featured-projects">projects</a> section.
