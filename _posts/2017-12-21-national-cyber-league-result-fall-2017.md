@@ -10,13 +10,13 @@ date: 2017-12-21 23:07:58
 
 ## Regular Season Round
 
-**National Rank : 37**
-Bracket : Gold
-Bracket Rank : 34
-Total Score : 2,740
-Total Flag Captures : 164
-Total Flag Attempts : 183
-Accuracy : 89.62%
+**National Rank : 37**  
+Bracket : Gold  
+Bracket Rank : 34  
+Total Score : 2,740  
+Total Flag Captures : 164  
+Total Flag Attempts : 183  
+Accuracy : 89.62%  
 
 [Scouting Report for Regular Season and Pre-Season](https://bhavyanshu.keybase.pub/files/Bhavyanshu%20Parasher%20NCL%202017%20Fall%20Regular%20Season%20Scouting%20Report.pdf) (pdf bhavyanshu.keybase.pub)
 
@@ -28,13 +28,13 @@ Highlights:
 
 ## Post Season Round
 
-**National Rank : 18**
-Bracket : Silver
-Bracket Rank : 9
-Total Score : 2,570
-Total Flag Captures : 143
-Total Flag Attempts : 162
-Accuracy : 88.27%
+**National Rank : 18**  
+Bracket : Silver  
+Bracket Rank : 9  
+Total Score : 2,570  
+Total Flag Captures : 143  
+Total Flag Attempts : 162  
+Accuracy : 88.27%  
 
 Highlights:
 
