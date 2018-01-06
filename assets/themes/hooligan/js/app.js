@@ -23743,12 +23743,12 @@ var Github = function (_Component) {
             { className: '' },
             this.state.repos.map(function (repo, index) {
               if (repo.name != _this3.props.username.toLowerCase() + '.github.com' && repo.fork != true) {
-                var url = repo.homepage ? repo.homepage : repo.html_url;
+                var url = repo.html_url;
                 var lang = repo.language ? repo.language : '';
                 var description = repo.description ? repo.description : '';
                 return _react2.default.createElement(
                   'div',
-                  { className: 'col-md-4 repoWrapper', key: index },
+                  { className: 'col-md-4 repoWrapper', key: repo.id },
                   _react2.default.createElement(
                     'div',
                     { className: 'repo' },

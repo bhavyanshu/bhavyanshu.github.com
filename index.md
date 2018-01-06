@@ -71,7 +71,8 @@ priority: 1.0
       <p>Built in C & C++ Qt Framework</p>
     </div>
     <div class="col-sm-4 project">
-      <img  src="assets/imags/boltctf/boltctf.png"/>
+      <div class="image-block" style="background:url('assets/imags/boltctf/boltctf.png'); background-repeat:no-repeat; background-position:center top; background-size:contain;">
+      </div>
       <p><a href="https://github.com/bhavyanshu/BoltCTF" target="_blank">BoltCTF - FOSS CTF hosting platform</a></p>
       <p>Built using Laravel & Vue.js Frameworks</p>
     </div>

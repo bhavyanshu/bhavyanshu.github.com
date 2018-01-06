@@ -47,11 +47,11 @@ class Github extends Component {
             {
               this.state.repos.map((repo, index) => {
                 if ((repo.name != (this.props.username.toLowerCase()+'.github.com')) && (repo.fork != true)) {
-                  var url = repo.homepage ? repo.homepage : repo.html_url;
+                  var url = repo.html_url;
                   var lang = repo.language ? repo.language : '';
                   var description = repo.description? repo.description: '';
                   return (
-                    <div className="col-md-4 repoWrapper" key={index}>
+                    <div className="col-md-4 repoWrapper" key={repo.id}>
                       <div className="repo">
                         <h3><a href={url}>{repo.name}</a></h3>
                           <p>{description.split(" ").splice(0,15).join(" ") + '...'}</p>
