@@ -8470,6 +8470,16 @@ button.close {
   margin-bottom: 10px;
 }
 
+.bio .bio-text {
+  padding-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .bio .certs {
+    width: 50%;
+  }
+}
+
 .social .social-icons a {
   color: #3a403e;
   margin-left: 5px;

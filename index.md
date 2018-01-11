@@ -32,6 +32,12 @@ priority: 1.0
      </span>
     </p>
   </div>
+  <div class="certs col-sm-3">
+    <a href="https://bhavyanshu.keybase.pub/files/AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf" target="_blank">
+      <img class="cert-img img-responsive" src="assets/imags/certs/Logo_SAA_1176x600_Color.png" alt="AWS logo" />
+      <img class="cert-img img-responsive" src="assets/imags/certs/Tag_SAA_588x300-Black.png" alt="AWS tag" />
+    </a>
+  </div>
  </div>
 </div>
 

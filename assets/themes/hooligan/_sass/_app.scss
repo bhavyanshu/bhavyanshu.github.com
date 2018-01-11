@@ -122,6 +122,16 @@
 
 .bio {
   margin-bottom: 10px;
+  
+  .bio-text {
+    padding-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .certs {
+      width: 50%;
+    }
+  }
 }
 .social {
   .social-icons {
