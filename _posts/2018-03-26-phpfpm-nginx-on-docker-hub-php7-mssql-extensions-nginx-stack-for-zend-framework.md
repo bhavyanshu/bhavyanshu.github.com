@@ -10,6 +10,8 @@ date: 2018-03-26 13:55:29
 
 A stack ideal for zend framework app running on nginx with php7.1-fpm. It has all the required extensions and MS SQL drivers for PHP.
 
+- [View on Docker Hub](https://hub.docker.com/r/bhavyanshu/phpfpm-nginx/)
+
 ## Docker
 
 - It will mount the code to the /var/www/app of docker container.
