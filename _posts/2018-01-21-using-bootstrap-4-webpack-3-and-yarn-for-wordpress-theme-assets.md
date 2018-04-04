@@ -70,6 +70,9 @@ $ yarn add bootstrap-loader jquery popper.js
 $ yarn add --dev webpack babel babel-core babel-loader bootstrap copy-webpack-plugin css-loader extract-text-webpack-plugin node-sass postcss-loader resolve-url-loader url-loader style-loader sass-loader
 ```
 
+> Webpack@4 has issues with extract-text-webpack-plugin. Try using npm i -D extract-text-webpack-plugin@next
+
+
 It will add the following dependencies to the package.json
 
 ```
