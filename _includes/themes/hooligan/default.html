@@ -101,46 +101,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav" style="margin-top: 2px;">
             <li><a id="top" href="{{ HOME_PATH }}">{{ site.title }}</a></li>
-            <li><a href="#featured-projects">Projects</a></li>
+            <li><a href="{{ site.url }}/#featured-projects">Projects</a></li>
             <li><a href="/archive.html">Blog</a></li>
-            <li><a href="/releaseslist.html">Software Releases</a></li>
             <li><a href="/tags.html">Tags</a></li>
          </ul>
          <div class="navbar-right">
-           <ul class="nav navbar-nav social visible-lg icon-zoom">
-              {% if site.author.github %}
-              <li>
-                <a href="https://github.com/{{ site.author.github }}" target="_blank">
-                  <span class="fa fa-nav fa-github"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/pytacular" target="_blank">
-                  <span class="fa fa-nav fa-twitter"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/bhavyanshu/" target="_blank">
-                  <span class="fa fa-nav fa-linkedin"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://plus.google.com/112306240164215805986" rel="me" target="_blank">
-                  <span class="fa fa-nav fa-google-plus"></span>
-                </a>
-              </li>
-              <li>
-                <a href="http://pytacular.tumblr.com" target="_blank">
-                  <span class="fa fa-nav fa-tumblr"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://bhavyanshu.me/subscribe.html" target="_blank">
-                  <span class="fa fa-nav fa-rss"></span>
-                </a>
-              </li>
-              {% endif %}
-            </ul>
             <div class="nav navbar-nav navbar-form">
               <form id="srch_frm">
                 <div class="input-group">
